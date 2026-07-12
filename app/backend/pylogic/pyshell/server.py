@@ -1,0 +1,5 @@
+server = PylogicXMLRPCServer(("localhost", 9999), requestHandler=PylogicRequestHandler, locals=locals())
+server_thread = Thread(target=server.serve_forever)
+server_thread.setName('PyShell')
+server_thread.setDaemon(True)
+server_thread.start()
