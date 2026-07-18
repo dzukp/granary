@@ -1,10 +1,10 @@
-
 class Hysteresis:
     """
-        Hysteresis heater
-        If value > hi -> process() return False
-        If value < low -> process() return True
+    Hysteresis heater
+    If value > hi -> process() return False
+    If value < low -> process() return True
     """
+
     def __init__(self, low, hi):
         self.low = low
         self.hi = hi

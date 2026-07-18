@@ -1,4 +1,3 @@
-import aspiration
 from mechanism import MechManager
 from pylogic.channel import InChannel, OutChannel
 from pylogic.io_object import IoObject
@@ -7,7 +6,6 @@ from pylogic.timer import Ton
 
 
 class Top(IoObject, MechManager, ModbusDataObject):
-
     _save_attrs = ('explosion_control_enabled',)
 
     def __init__(self, name, parent):
@@ -40,7 +38,6 @@ class Top(IoObject, MechManager, ModbusDataObject):
             self.counter = (self.counter + 1) % 2**16
             self.counter_ton.process(False)
 
-
     def mb_cells(self):
         return [0, self.mb_cells_idx + len(self.mb_output(self.mb_cells_idx))]
 
@@ -51,9 +48,9 @@ class Top(IoObject, MechManager, ModbusDataObject):
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
             status = (
-                int(self.explosion_control_enabled)  * (1 << 0) +
-                int(self.di_explosion.val) * (1 << 1) +
-                0
+                int(self.explosion_control_enabled) * (1 << 0)
+                + int(self.di_explosion.val) * (1 << 1)
+                + 0
             )
             return {
                 self.mb_cells_idx - start_addr + 0: 1111,

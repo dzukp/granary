@@ -1,6 +1,6 @@
 from exceptions import LogicException
 from mechanism import Mechanism
-from pylogic.channel import OutChannel, InChannel
+from pylogic.channel import InChannel, OutChannel
 from pylogic.modbus_supervisor import ModbusDataObject
 from pylogic.timer import Ton
 
@@ -28,7 +28,7 @@ class Valve(Mechanism, ModbusDataObject):
         self.enabled = True
         self.state = self.UNDEFINED
         self.ton = Ton()
-        self.timeout = 5000
+        self.timeout = 5.0
         self.mb_cells_idx = None
 
     def process(self):
@@ -53,14 +53,18 @@ class Valve(Mechanism, ModbusDataObject):
             self.do_close.val = False
             if not self.check_next_mechanisms():
                 self._set_state(self.CLOSING)
-                self.logger.warning(f'{self.name}: next mechanism not running -> CLOSING')
+                self.logger.warning(
+                    f'{self.name}: next mechanism not running -> CLOSING',
+                )
             else:
                 opened = self.di_opened.val if not self.disabled_di else False
                 if self.ton.process(not opened, self.timeout):
                     # Таймаут истёк, а задвижка не открылась - авария
                     if not opened:
                         self._set_state(self.FAULT)
-                        self.logger.error(f'{self.name}: open timeout -> FAULT')
+                        self.logger.error(
+                            f'{self.name}: open timeout -> FAULT',
+                        )
                 elif opened:
                     self._set_state(self.OPENED)
                     self.logger.info(f'{self.name}: opened')
@@ -71,7 +75,9 @@ class Valve(Mechanism, ModbusDataObject):
             self.ton.process(False, self.timeout)
             if not self.check_next_mechanisms():
                 self._set_state(self.CLOSING)
-                self.logger.warning(f'{self.name}: next mechanism not running -> CLOSING')
+                self.logger.warning(
+                    f'{self.name}: next mechanism not running -> CLOSING',
+                )
 
         elif self.state == self.CLOSING:
             self.do_open.val = False
@@ -103,10 +109,14 @@ class Valve(Mechanism, ModbusDataObject):
             if not self.disabled_di:
                 if self.di_closed.val:
                     self._set_state(self.CLOSED)
-                    self.logger.info(f'{self.name}: undefined -> CLOSED (di_closed)')
+                    self.logger.info(
+                        f'{self.name}: undefined -> CLOSED (di_closed)',
+                    )
                 elif self.di_opened.val:
                     self._set_state(self.OPENED)
-                    self.logger.info(f'{self.name}: undefined -> OPENED (di_opened)')
+                    self.logger.info(
+                        f'{self.name}: undefined -> OPENED (di_opened)',
+                    )
         else:
             raise LogicException(f'{self.name}: invalid state: {self.state}')
 
@@ -131,10 +141,14 @@ class Valve(Mechanism, ModbusDataObject):
             self.logger.warning(f'{self.name}: open ignored - disabled')
             return
         if self.state in (self.FAULT, self.UNDEFINED):
-            self.logger.warning(f'{self.name}: open command ignored - {self.state}')
+            self.logger.warning(
+                f'{self.name}: open command ignored - {self.state}',
+            )
             return
         if not self.disabled_di and not self.di_ready.val:
-            self.logger.warning(f'{self.name}: open command ignored - NOT_READY')
+            self.logger.warning(
+                f'{self.name}: open command ignored - NOT_READY',
+            )
             return
         if self.state != self.OPENING:
             self._set_state(self.OPENING)
@@ -145,10 +159,14 @@ class Valve(Mechanism, ModbusDataObject):
             self.logger.warning(f'{self.name}: close ignored - disabled')
             return
         if self.state in (self.FAULT, self.UNDEFINED):
-            self.logger.warning(f'{self.name}: close command ignored - {self.state}')
+            self.logger.warning(
+                f'{self.name}: close command ignored - {self.state}',
+            )
             return
         if not self.disabled_di and not self.di_ready.val:
-            self.logger.warning(f'{self.name}: close command ignored - NOT_READY')
+            self.logger.warning(
+                f'{self.name}: close command ignored - NOT_READY',
+            )
             return
         if self.state != self.CLOSING:
             self._set_state(self.CLOSING)
@@ -162,26 +180,25 @@ class Valve(Mechanism, ModbusDataObject):
     def disable_di(self):
         if not self.disabled_di:
             self.disabled_di = True
+            self.save()
             self.logger.info(f'{self.name}: disable DI')
 
     def enable_di(self):
         if self.disabled_di:
             self.disabled_di = False
+            self.save()
             self.logger.info(f'{self.name}: enable DI')
 
-    def set_timeout(self, timeout: int):
-        timeout_sec = timeout / 1000
+    def set_timeout(self, timeout_sec: int):
         if self.timeout != timeout_sec:
             self.timeout = timeout_sec
-            self.logger.info(f'{self.name}: timeout set to {timeout} ms')
+            self.save()
+            self.logger.info(f'{self.name}: timeout set to {timeout_sec} s')
 
     def _set_state(self, state: int):
         if self.state != state:
             self.state = state
             self.ton.reset()
-
-    def mb_cells(self):
-        return self.mb_output(0).keys()
 
     def mb_input(self, start_addr, data):
         if self.mb_cells_idx is not None:
@@ -201,18 +218,18 @@ class Valve(Mechanism, ModbusDataObject):
                 self.enable()
             if cmd & 0x0040:
                 self.disable()
-            self.set_timeout(data[zero_addr + 1])
+            self.set_timeout(data[zero_addr + 1] / 1000)
 
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
             status = (
-                int(self.di_opened.val)  * (1 << 0) +
-                int(self.di_closed.val)  * (1 << 1) +
-                int(self.di_ready.val)   * (1 << 2) +
-                int(self.do_open.val)    * (1 << 3) +
-                int(self.do_close.val)   * (1 << 4) +
-                int(self.disabled_di)    * (1 << 5) +
-                int(self.enabled)        * (1 << 6)
+                int(self.di_opened.val) * (1 << 0)
+                + int(self.di_closed.val) * (1 << 1)
+                + int(self.di_ready.val) * (1 << 2)
+                + int(self.do_open.val) * (1 << 3)
+                + int(self.do_close.val) * (1 << 4)
+                + int(self.disabled_di) * (1 << 5)
+                + int(self.enabled) * (1 << 6)
             )
             return {
                 self.mb_cells_idx - start_addr + 0: 0,

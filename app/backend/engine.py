@@ -1,31 +1,31 @@
 from exceptions import LogicException
 from mechanism import Mechanism
-from pylogic.channel import OutChannel, InChannel
+from pylogic.channel import InChannel, OutChannel
 from pylogic.modbus_supervisor import ModbusDataObject
 from pylogic.timer import Ton
 
 
 class Engine(Mechanism, ModbusDataObject):
     # Состояния привода
-    STOPPED   = 0
-    STARTING  = 1
-    RUNNING   = 2
-    STOPPING  = 3
-    FAULT     = 4
+    STOPPED = 0
+    STARTING = 1
+    RUNNING = 2
+    STOPPING = 3
+    FAULT = 4
     NOT_READY = 5
 
     _save_attrs = ('timeout', 'disabled_di')
 
     def __init__(self, name, parent):
         super().__init__(name, parent)
-        self.do_start   = OutChannel(False)
+        self.do_start = OutChannel(False)
         self.di_started = InChannel(False)
-        self.di_ready   = InChannel(False)
+        self.di_ready = InChannel(False)
         self.disabled_di = False
         self.enabled = True
         self.state = self.STOPPED
         self.ton = Ton()
-        self.timeout = 5000
+        self.timeout = 5.0
         self.mb_cells_idx = None
 
     def process(self):
@@ -48,14 +48,18 @@ class Engine(Mechanism, ModbusDataObject):
             self.do_start.val = True
             if not self.check_next_mechanisms():
                 self._set_state(self.STOPPING)
-                self.logger.warning(f'{self.name}: next mechanism not running -> STOPPING')
+                self.logger.warning(
+                    f'{self.name}: next mechanism not running -> STOPPING',
+                )
             else:
                 started = self.di_started.val if not self.disabled_di else False
                 if self.ton.process(not started, self.timeout):
                     # Таймаут истёк, а привод не запустился - авария
                     if not started:
                         self._set_state(self.FAULT)
-                        self.logger.error(f'{self.name}: start timeout -> FAULT')
+                        self.logger.error(
+                            f'{self.name}: start timeout -> FAULT',
+                        )
                 elif started:
                     self._set_state(self.RUNNING)
                     self.logger.info(f'{self.name}: running')
@@ -69,7 +73,9 @@ class Engine(Mechanism, ModbusDataObject):
                 self.logger.error(f'{self.name}: di_started lost -> FAULT')
             elif not self.check_next_mechanisms():
                 self._set_state(self.STOPPING)
-                self.logger.warning(f'{self.name}: next mechanism not running -> STOPPING')
+                self.logger.warning(
+                    f'{self.name}: next mechanism not running -> STOPPING',
+                )
 
         elif self.state == self.STOPPING:
             self.do_start.val = False
@@ -118,7 +124,9 @@ class Engine(Mechanism, ModbusDataObject):
             self.logger.warning(f'{self.name}: start command ignored - FAULT')
             return
         if not self.disabled_di and not self.di_ready.val:
-            self.logger.warning(f'{self.name}: start command ignored - NOT_READY')
+            self.logger.warning(
+                f'{self.name}: start command ignored - NOT_READY',
+            )
             return
         if self.state != self.STARTING:
             self._set_state(self.STARTING)
@@ -140,26 +148,25 @@ class Engine(Mechanism, ModbusDataObject):
     def disable_di(self):
         if not self.disabled_di:
             self.disabled_di = True
+            self.save()
             self.logger.info(f'{self.name}: disable DI')
 
     def enable_di(self):
         if self.disabled_di:
             self.disabled_di = False
+            self.save()
             self.logger.info(f'{self.name}: enable DI')
 
-    def set_timeout(self, timeout: int):
-        timeout_sec = timeout / 1000
+    def set_timeout(self, timeout_sec: int):
         if self.timeout != timeout_sec:
             self.timeout = timeout_sec
-            self.logger.info(f'{self.name}: timeout set to {timeout} ms')
+            self.save()
+            self.logger.info(f'{self.name}: timeout set to {timeout_sec} s')
 
     def _set_state(self, state: int):
         if self.state != state:
             self.state = state
             self.ton.reset()
-
-    def mb_cells(self):
-        return self.mb_output(0).keys()
 
     def mb_input(self, start_addr, data):
         if self.mb_cells_idx is not None:
@@ -179,16 +186,16 @@ class Engine(Mechanism, ModbusDataObject):
                 self.enable()
             if cmd & 0x0040:
                 self.disable()
-            self.set_timeout(data[zero_addr + 3])
+            self.set_timeout(data[zero_addr + 1] / 1000)
 
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
             status = (
-                int(self.di_started.val) * (1 << 0) +
-                int(self.di_ready.val)   * (1 << 1) +
-                int(self.do_start.val)   * (1 << 2) +
-                int(self.disabled_di)    * (1 << 3) +
-                int(self.enabled)        * (1 << 4)
+                int(self.di_started.val) * (1 << 0)
+                + int(self.di_ready.val) * (1 << 1)
+                + int(self.do_start.val) * (1 << 2)
+                + int(self.disabled_di) * (1 << 3)
+                + int(self.enabled) * (1 << 4)
             )
             return {
                 self.mb_cells_idx + 0: 0,

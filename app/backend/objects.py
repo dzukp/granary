@@ -1,4 +1,3 @@
-import mechanism
 from aspiration import Aspiration
 from engine import Engine
 from general_system import GeneralSystem
@@ -132,7 +131,6 @@ mechanisms = {
         'di_ready': 'di_4_7',
         'di_started': 'di_4_8',
     },
-
     # --- Панель 2 ---
     # А5 (DI) / А24 (DO)
     'conveyer_1_4': {
@@ -338,7 +336,6 @@ mechanisms = {
         'di_ready': 'di_13_4',
         'di_started': 'di_13_5',
     },
-
     # --- Панель 4 ---
     # А14 (DI) / А29 (DO)
     'valve_8_11': {
@@ -398,87 +395,87 @@ mechanisms = {
         'di_opened': 'di_16_2',
         'di_closed': 'di_16_3',
     },
-
     # --- Силосы ---
     # А16-А18 (DI)
     'silo_11_1': {
         'class': Silo,
         'mb_cells_idx': 540,
         'di_bottom_level': 'di_16_5',
-        'di_top_level':    'di_16_6',
+        'di_top_level': 'di_16_6',
     },
     'silo_11_2': {
         'class': Silo,
         'mb_cells_idx': 545,
         'di_bottom_level': 'di_16_7',
-        'di_top_level':    'di_16_8',
+        'di_top_level': 'di_16_8',
     },
     'silo_11_3': {
         'class': Silo,
         'mb_cells_idx': 550,
         'di_bottom_level': 'di_17_1',
-        'di_top_level':    'di_17_2',
+        'di_top_level': 'di_17_2',
     },
     'silo_11_4': {
         'class': Silo,
         'mb_cells_idx': 555,
         'di_bottom_level': 'di_17_3',
-        'di_top_level':    'di_17_4',
+        'di_top_level': 'di_17_4',
     },
     'silo_11_5': {
         'class': Silo,
         'mb_cells_idx': 560,
         'di_bottom_level': 'di_17_5',
-        'di_top_level':    'di_17_6',
+        'di_top_level': 'di_17_6',
     },
     'silo_11_6': {
         'class': Silo,
         'mb_cells_idx': 565,
         'di_bottom_level': 'di_17_7',
-        'di_top_level':    'di_17_8',
+        'di_top_level': 'di_17_8',
     },
     'silo_11_7': {
         'class': Silo,
         'mb_cells_idx': 570,
         'di_bottom_level': 'di_18_1',
-        'di_top_level':    'di_18_2',
+        'di_top_level': 'di_18_2',
     },
     'silo_11_8': {
         'class': Silo,
         'mb_cells_idx': 575,
         'di_bottom_level': 'di_18_3',
-        'di_top_level':    'di_18_4',
+        'di_top_level': 'di_18_4',
     },
     'silo_12': {
         'class': Silo,
         'mb_cells_idx': 580,
         'di_bottom_level': 'di_18_5',
-        'di_top_level':    'di_18_6',
+        'di_top_level': 'di_18_6',
     },
 }
 
+
 def pop_mechanisms(*names):
     global mechanisms
-    return { name: mechanisms.pop(name) for name in names }
+    return {name: mechanisms.pop(name) for name in names}
 
 
 objects = {
-        'top': {
-            'class': Top,
-            'mb_cells_idx': 0,
-            'children': {
-                'aspiration': {
-                    'class': Aspiration,
-                    'mb_cells_idx': 10,
-                    'children': {
-                        **pop_mechanisms('sluice_16_3', 'fan_15_3')
-                    }
+    'top': {
+        'class': Top,
+        'mb_cells_idx': 1,
+        'children': {
+            'aspiration': {
+                'class': Aspiration,
+                'mb_cells_idx': 10,
+                'children': {
+                    **pop_mechanisms('sluice_16_3', 'fan_15_3'),
                 },
-                'general_system': {
-                    'class': GeneralSystem,
-                    'mb_cells_idx': 20,
-                    'children': mechanisms
-                }
-            }
-        }
-    }
+            },
+            'general_system': {
+                'class': GeneralSystem,
+                'mb_cells_idx': 20,
+                'children': mechanisms,
+            },
+        },
+    },
+}

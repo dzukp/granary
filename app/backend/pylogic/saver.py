@@ -6,7 +6,6 @@ from pylogic.logged_object import LoggedObject
 
 
 class FileParameterSaver(LoggedObject):
-
     def __init__(self):
         super().__init__()
         self.work_dir = Path(getcwd())
@@ -41,4 +40,3 @@ class FileParameterSaver(LoggedObject):
 
     def filename(self, name):
         return self.save_dir / (name + '.sav')
-

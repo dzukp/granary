@@ -5,33 +5,35 @@ from .tagsrv_logger import logger
 from .module import BaseModule
 
 
-__all__ = ['ModbusRTUModule',]
+__all__ = [
+    'ModbusRTUModule',
+]
 
 
 def u16_to_bestr(u):
     """Given word, return as big-endian binary"""
-    u = (u & 0xFFFF)
+    u = u & 0xFFFF
     return u >> 8 + u & 0xFF
 
 
 def crc16(input_data: bytes):
     """Calculate CRC-16 for Modbus.
-    
+
     Args:
         input_data (bytes): An arbitrary-length message (without the CRC).
 
     Returns:
         A two-byte CRC string, where the least significant byte is first.
-    
+
     Algorithm from the document 'MODBUS over serial line specification and implementation guide V1.02'.
-    
+
     """
     # Constant for MODBUS CRC-16
     poly = 0xA001
- 
+
     # Preload a 16-bit register with ones
     register = 0xFFFF
-    
+
     for byte in input_data:
         # XOR with each character
         register = register ^ byte
@@ -39,17 +41,18 @@ def crc16(input_data: bytes):
             if register & 0x01:
                 register = (register >> 1) ^ poly
             else:
-                register = (register >> 1)
+                register = register >> 1
     return struct.pack('H', register)
-    
+
 
 class ModbusRTUModule(BaseModule):
-    """ Модуль ModBus RTU """
-    
+    """Модуль ModBus RTU"""
+
     class InTagRequest(object):
         def __init__(self, slave, tags):
             def sort_key(tag):
                 return tag.addr
+
             self.tags = tags
             self.tags.sort(key=sort_key)
             addr = self.tags[0].addr
@@ -59,23 +62,23 @@ class ModbusRTUModule(BaseModule):
             # self.req += crc16(self.req)
             self.req = struct.pack('>BBHH', slave, 0x3, addr, len(self.tags))
             self.req += crc16(self.req)
-            #self.ans = chr(slave) + chr(0x3)
+            # self.ans = chr(slave) + chr(0x3)
             self.ans = struct.pack('BB', slave, 0x3)
             self.ans_len = 5 + len(self.tags) * 2
-            
+
         def generate(self):
             return self.req
-        
+
         def is_ans_valid(self, ans):
             if ans[:2] != self.ans:
                 return False
             if len(ans) != self.ans_len:
                 return False
             return True
-        
+
         def ans_process(self, ans):
             quant = len(self.tags)
-            data = struct.unpack(f'>{"H" * quant}', ans[3:3 + quant * 2])
+            data = struct.unpack(f'>{"H" * quant}', ans[3 : 3 + quant * 2])
             for tag, value in zip(self.tags, data):
                 if tag.filter:
                     tag.value = tag.filter.apply(value)
@@ -91,11 +94,12 @@ class ModbusRTUModule(BaseModule):
             #     else:
             #         tag.value = value
             #     i += 2
-        
+
     class OutTagRequest(object):
         def __init__(self, slave, tags):
             def sort_key(tag):
                 return tag.addr
+
             self.tags = tags
             self.tags.sort(key=sort_key)
             addr = self.tags[0].addr
@@ -106,10 +110,12 @@ class ModbusRTUModule(BaseModule):
             # self.ans = chr(slave) + chr(0x10) + \
             #             u16_to_bestr(addr) + \
             #             u16_to_bestr(len(self.tags))
-            self.req = struct.pack('>BBHHB', slave, 0x10, addr, len(self.tags), len(self.tags) * 2)
+            self.req = struct.pack(
+                '>BBHHB', slave, 0x10, addr, len(self.tags), len(self.tags) * 2
+            )
             self.ans = struct.pack('>BBHH', slave, 0x10, addr, len(self.tags))
             self.ans_len = 8
-            
+
         def generate(self):
             values = []
             for tag in self.tags:
@@ -122,27 +128,33 @@ class ModbusRTUModule(BaseModule):
             result = self.req + data
             result += crc16(result)
             return result
-        
+
         def is_ans_valid(self, ans):
             return ans[:6] == self.ans
-        
+
         def ans_process(self, ans):
             pass
-            
+
     class OutTagRequestFunc0(object):
         def __init__(self, slave, tags):
             self.tags = tags
             self.tags.sort(key=lambda t: t.addr)
             addr = self.tags[0].addr
-            self.req = chr(slave) + chr(0x10) + \
-                        u16_to_bestr(addr) + \
-                        u16_to_bestr(len(self.tags)) + \
-                        chr(len(self.tags) * 2)
-            self.ans = chr(slave) + chr(0x10) + \
-                        u16_to_bestr(addr) + \
-                        u16_to_bestr(len(self.tags))
+            self.req = (
+                chr(slave)
+                + chr(0x10)
+                + u16_to_bestr(addr)
+                + u16_to_bestr(len(self.tags))
+                + chr(len(self.tags) * 2)
+            )
+            self.ans = (
+                chr(slave)
+                + chr(0x10)
+                + u16_to_bestr(addr)
+                + u16_to_bestr(len(self.tags))
+            )
             self.ans_len = 8
-            
+
         def generate(self):
             data = ''
             for tag in self.tags:
@@ -154,14 +166,23 @@ class ModbusRTUModule(BaseModule):
             result = self.req + data
             result += crc16(result)
             return result
-        
+
         def is_ans_valid(self, ans):
             return ans[:6] == self.ans
-        
+
         def ans_process(self, ans):
             pass
 
-    def __init__(self, slave, serial, in_tags=tuple(), out_tags=tuple(), io_tags=tuple(), max_answ_len=16, timeout=0.1):
+    def __init__(
+        self,
+        slave,
+        serial,
+        in_tags=tuple(),
+        out_tags=tuple(),
+        io_tags=tuple(),
+        max_answ_len=16,
+        timeout=0.1,
+    ):
         super(ModbusRTUModule, self).__init__(name=f'{serial.name} #{slave}')
         self.slave = slave
         self.serial = serial
@@ -178,7 +199,7 @@ class ModbusRTUModule(BaseModule):
             self.oreqs.append(self.OutTagRequest(slave, tags))
         self.err_cnt = 0
         self.logger = logger
-        
+
     def _forming_tag_list(self, taglist):
         taglist.sort(key=lambda tag: tag.addr)
         formed_taglist = []
@@ -188,7 +209,7 @@ class ModbusRTUModule(BaseModule):
             # по стандарту Modbus за 1 посылку можно передать только 16 ячеек
             begin_addr = taglist[last_tag_idx].addr
             tmp_tags = []
-            for tag in taglist[last_tag_idx:]:                
+            for tag in taglist[last_tag_idx:]:
                 if tag.addr - begin_addr >= self.max_answ_len:
                     break
                 last_tag_idx += 1
@@ -202,19 +223,19 @@ class ModbusRTUModule(BaseModule):
 
     def _value_to_str(self, value):
         return f'{int(value):04x}' if value is not None else '----'
-        
+
     def process(self):
         self.serial.read_all()
         i = 0
-        #first_start_time = time.time()
+        # first_start_time = time.time()
         ok = False
         for req in self.ireqs + self.oreqs:
             i += 1
             try:
-                #start_time = time.time()
+                # start_time = time.time()
                 self.send(req)
                 self.receive(req)
-                #print i, 'send - receive timeout', time.time() - start_time
+                # print i, 'send - receive timeout', time.time() - start_time
             except Exception as e:
                 self.logger.error(e)
             else:
@@ -223,17 +244,19 @@ class ModbusRTUModule(BaseModule):
         self.ok = ok
         if ok:
             self.last_ok = time.time()
-        #print 'all_cycle', time.time() - first_start_time
-    
+        # print 'all_cycle', time.time() - first_start_time
+
     def send(self, req):
         request = req.generate()
         self.logger.debug(f'Send {[hex(x) for x in request]}')
         if not self.serial.write(request):
             self.err_cnt += 1
-            raise Exception('Slave %d (ModBus RTU): Send error (%d)' % (self.slave, self.err_cnt))
-    
+            raise Exception(
+                'Slave %d (ModBus RTU): Send error (%d)' % (self.slave, self.err_cnt)
+            )
+
     def receive(self, req):
-        result = self.serial.read(req.ans_len, self.timeout)[-req.ans_len:]
+        result = self.serial.read(req.ans_len, self.timeout)[-req.ans_len :]
         self.logger.debug(f'Receive {[hex(x) for x in result]}')
         if req.is_ans_valid(result):
             # Обработка ответа ПЧ
@@ -241,16 +264,25 @@ class ModbusRTUModule(BaseModule):
             return True
         else:
             self.err_cnt += 1
-            self.logger.error('Slave %d (ModBus RTU): Receive error (%d), serial read result `%s` request `%s`' % \
-                    (self.slave, self.err_cnt, [hex(r) for r in result], [hex(r) for r in req.generate()]))
-            raise Exception('Slave %d (ModBus RTU): Receive error ModBus RTU' % self.slave)
+            self.logger.error(
+                'Slave %d (ModBus RTU): Receive error (%d), serial read result `%s` request `%s`'
+                % (
+                    self.slave,
+                    self.err_cnt,
+                    [hex(r) for r in result],
+                    [hex(r) for r in req.generate()],
+                )
+            )
+            raise Exception(
+                'Slave %d (ModBus RTU): Receive error ModBus RTU' % self.slave
+            )
 
 
 if __name__ == '__main__':
     print([hex(x) for x in crc16(b'\x01\x06\x80\x00\x00\x00')])
     from .tagsrv import Tag
+
     it = [Tag(addr=i) for i in range(8)]
-    it += [Tag(addr=i) for i in range(15,20)]
+    it += [Tag(addr=i) for i in range(15, 20)]
     rtu_module = ModbusRTUModule(1, None, in_tags=it, out_tags=[])
     print('end')
-
