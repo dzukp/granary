@@ -218,7 +218,7 @@ class Valve(Mechanism, ModbusDataObject):
                 self.enable()
             if cmd & 0x0040:
                 self.disable()
-            self.set_timeout(data[zero_addr + 1] / 1000)
+            self.set_timeout(data[zero_addr + 1])
 
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
@@ -233,7 +233,7 @@ class Valve(Mechanism, ModbusDataObject):
             )
             return {
                 self.mb_cells_idx - start_addr + 0: 0,
-                self.mb_cells_idx - start_addr + 1: int(self.timeout * 1000),
+                self.mb_cells_idx - start_addr + 1: int(self.timeout),
                 self.mb_cells_idx - start_addr + 2: status,
                 self.mb_cells_idx - start_addr + 3: self.state,
             }

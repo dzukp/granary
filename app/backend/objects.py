@@ -12,6 +12,7 @@ mechanisms = {
         'do_start': 'do_21_1',
         'di_ready': 'di_1_1',
         'di_started': 'di_1_2',
+        'next_mechanisms': ['noria_3_3'],
     },
     'conveyer_1_3': {
         'class': Engine,
@@ -19,6 +20,7 @@ mechanisms = {
         'do_start': 'do_21_2',
         'di_ready': 'di_1_3',
         'di_started': 'di_1_4',
+        'next_mechanisms': ['conveyer_6_1'],
     },
     'noria_3_4': {
         'class': Engine,

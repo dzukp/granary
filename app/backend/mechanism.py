@@ -6,6 +6,15 @@ class Mechanism(IoObject):
         super().__init__(name, parent)
         self.next_mechanisms: list[Mechanism] = []
 
+    def init(self):
+        next_mech_names = self.next_mechanisms
+        self.next_mechanisms = []
+        for next_mech in next_mech_names:
+            for child in self.parent.children:
+                if child.name == next_mech:
+                    self.next_mechanisms.append(child)
+                    break
+
     def is_running(self):
         raise NotImplementedError
 
@@ -25,7 +34,6 @@ class Mechanism(IoObject):
 
 
 class MechManager:
-
     def disable(self):
         for child in self.children:
             if isinstance(child, Mechanism):

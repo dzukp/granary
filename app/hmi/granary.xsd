@@ -3,11 +3,12 @@
     <Resources Name="Resources"/>
     <GlobalVariable Name="Global variable"/>
     <Scripts Name="Scripts">
-        <Script Name="Script 0"/>
+        <Script Name="mechanisms"/>
     </Scripts>
     <Documents Name="Documents"/>
     <Screens Name="Screens">
-        <Screen Name="Screen 0"/>
+        <Screen Name="main"/>
+        <Screen Name="engine_dlg"/>
     </Screens>
     <PopupMessage Name="Popup message"/>
     <Databases Name="Databases"/>
@@ -17,31 +18,36 @@
     <Archives Name="Archives"/>
     <Timer Name="Timer"/>
     <Condition Name="Condition"/>
-    <DataModel Name="Data model"/>
+    <DataModel Name="Data model">
+        <CustomModel Name="Custom model 0"/>
+    </DataModel>
     <Devices Name="Devices">
         <TCPsocket Name="TCP socket"/>
         <ComPort Name="Com port"/>
     </Devices>
     <Users Name="Users"/>
     <ProjectPalette SystemPalette="1"/>
-    <ProjectSettings width="1920" dynamicDataDir="" wallpaper="" StartUserRights="0" height="1080" fullScreenMode="0" Comment="" StartupMnemoScreen="Screen 0" RunAfterLoad="0" periodQuery="1000">
+    <ProjectSettings width="1920" dynamicDataDir="" wallpaper="" StartUserRights="0" height="1080" fullScreenMode="0" Comment="" StartupMnemoScreen="main" RunAfterLoad="0" periodQuery="1000">
         <Action Name="Execute script">
             <Expanded Value="0"/>
             <Property Name="Script">
-                <Data Value="0"/>
+                <Data Value=""/>
                 <UserData>
-                    <ExecScript Value=""/>
+                    <ExecScript Value="mechanisms">
+                        <Function Name="init"/>
+                        <ListArgument/>
+                    </ExecScript>
                 </UserData>
             </Property>
         </Action>
         <DefaultFont size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
     </ProjectSettings>
     <MnemoScreenList>
-        <MnemoScreen FullName="Screen 0">
+        <MnemoScreen FullName="main">
             <Properties>
                 <Color g="192" r="192" a="255" b="192"/>
-                <Alignment StepSize="20" Enabled="0">
-                    <AlignColor g="0" r="0" a="128" b="0"/>
+                <Alignment StepSize="10" Enabled="1">
+                    <AlignColor g="255" r="255" a="255" b="0"/>
                 </Alignment>
                 <HotKey key="Not assigned"/>
                 <Password CryptData="0"/>
@@ -72,8 +78,34 @@
             <XMnemoLayers>
                 <XMnemoLayer Name="general" Visible="1"/>
             </XMnemoLayers>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_1" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="61" rect.bottom="84" rect.left="78" rect.right="227"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_1" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="1001" rect.bottom="1080" rect.left="0" rect.right="1920"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <RectangleProperties Rounded="0" Brush="8" PenWidth="1" Frame="1">
+                    <PenColor g="128" r="128" a="255" b="128"/>
+                </RectangleProperties>
+                <States/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoClock" Name="Clock_2" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="1020" rect.bottom="1059" rect.left="1670" rect.right="1909"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Font size="12" family="Courier New" bold="1" underline="0" strikeOut="0" italic="0"/>
+                <Transparency Value="1"/>
+                <Format Value="dd/MM/yyyy | hh:mm:ss"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_3" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="1030" rect.bottom="1049" rect.left="1600" rect.right="1639"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -83,7 +115,557 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="Text" format=""/>
                 <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="m1_2" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="670" rect.bottom="749" rect.left="1210" rect.right="1309"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Execute script">
+                                <Expanded Value="1"/>
+                                <Property Name="Script">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <ExecScript Value="mechanisms">
+                                            <Function Name="showDlg"/>
+                                            <ListArgument>
+                                                <Argument Type="String" Value="m1_2"/>
+                                            </ListArgument>
+                                        </ExecScript>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="engine_dlg"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Transparency Value="0"/>
+                <States>
+                    <State Bitmap_collection="" Name=""/>
+                    <State Bitmap_collection="" Name=""/>
+                    <State Bitmap_collection="" Name=""/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_5" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="670" rect.bottom="749" rect.left="1430" rect.right="1529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Execute script">
+                                <Expanded Value="1"/>
+                                <Property Name="Script">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <ExecScript Value="mechanisms">
+                                            <Function Name="showDlg"/>
+                                            <ListArgument>
+                                                <Argument Type="String" Value="m15_3"/>
+                                            </ListArgument>
+                                        </ExecScript>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="engine_dlg"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Transparency Value="0"/>
+                <States>
+                    <State Bitmap_collection="" Name=""/>
+                    <State Bitmap_collection="" Name=""/>
+                    <State Bitmap_collection="" Name=""/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_6" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="670" rect.bottom="749" rect.left="1550" rect.right="1649"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Execute script">
+                                <Expanded Value="1"/>
+                                <Property Name="Script">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <ExecScript Value="mechanisms">
+                                            <Function Name="showDlg"/>
+                                            <ListArgument>
+                                                <Argument Type="String" Value="m16_3"/>
+                                            </ListArgument>
+                                        </ExecScript>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="engine_dlg"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Transparency Value="0"/>
+                <States>
+                    <State Bitmap_collection="" Name=""/>
+                    <State Bitmap_collection="" Name=""/>
+                    <State Bitmap_collection="" Name=""/>
+                </States>
+            </MnemoObject>
+        </MnemoScreen>
+        <MnemoScreen FullName="engine_dlg">
+            <Properties>
+                <Color g="192" r="192" a="255" b="192"/>
+                <Alignment StepSize="20" Enabled="1">
+                    <AlignColor g="0" r="0" a="128" b="0"/>
+                </Alignment>
+                <Dialog Width="300" Title="" Height="400"/>
+                <HotKey key="Not assigned"/>
+                <Password CryptData="0"/>
+                <Comment Comment=""/>
+                <Activate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Activate>
+                <Deactivate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Deactivate>
+            </Properties>
+            <XMnemoLayers>
+                <XMnemoLayer Name="general" Visible="1"/>
+            </XMnemoLayers>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="pusk" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="320" rect.bottom="379" rect.left="20" rect.right="139"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="0"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="ПУСК"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem AutoIconResize="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="lbl_timeout" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="140" rect.bottom="163" rect.left="20" rect.right="137"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Таймаут" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="stop" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="320" rect.bottom="379" rect.left="160" rect.right="279"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="1"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="СТОП"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="SpinBox_4" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="140" rect.bottom="163" rect.left="220" rect.right="279"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnChangeValue">
+                            <Expanded Value="1"/>
+                            <Action Name="Set cur.value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="="/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_timeout"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <SpinBoxProperties Step="1" Decimals="0" Min="0" Max="32000"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_5" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="260" rect.bottom="289" rect.left="160" rect.right="279"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="4"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Сброс"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_6" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="59" rect.left="20" rect.right="279"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="-" format=""/>
+                <Transparency Value="1"/>
+                <Font size="20" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_7" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="200" rect.bottom="229" rect.left="240" rect.right="279"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="2"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Откл"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_8" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="200" rect.bottom="229" rect.left="180" rect.right="219"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="3"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Вкл"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_9" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="200" rect.bottom="223" rect.left="20" rect.right="119"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Датчик" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="Ellipse_10" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="3"/>
+                <Geometry rect.top="200" rect.bottom="221" rect.left="80" rect.right="99"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <Properties StarFactor="0.5" BezierRadius="1" Brush="0" ShapeType="Free editable" VertexCount="3" FirstPointAngle="270" PenWidth="1">
+                    <PenColor g="255" r="255" a="255" b="255"/>
+                </Properties>
+                <Points>
+                    <Point x="2" y="1"/>
+                    <Point x="10" y="-10"/>
+                    <Point x="6" y="11"/>
+                    <Point x="-9" y="-3"/>
+                </Points>
+                <States>
+                    <State g="128" r="0" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_11" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="80" rect.bottom="119" rect.left="80" rect.right="229"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <DataModel ModelColumn="0" ModelName="Custom model 0"/>
+                <HTML html="1"/>
+                <Text Angle="0" string="_" format=""/>
+                <Transparency Value="0"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="1" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
@@ -109,8 +691,10 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_5" Units="....." Location="5" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="counter" Units="....." Location="5" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="main" Type="XMnemoTextLabel" Name="TextLabel_3"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_6" Units="....." Location="6" IsReadTag="0">
@@ -293,20 +877,28 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_51" Units="....." Location="51" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_2_cmd" Units="....." Location="51" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_52" Units="....." Location="52" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_2_timeout" Units="....." Location="52" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_53" Units="....." Location="53" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_2_status" Units="....." Location="53" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_54" Units="....." Location="54" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_2_state" Units="....." Location="54" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_55" Units="....." Location="55" IsReadTag="0">
@@ -333,19 +925,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_61" Units="....." Location="61" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_3_cmd" Units="....." Location="61" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_62" Units="....." Location="62" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_3_timeout" Units="....." Location="62" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_63" Units="....." Location="63" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_3_status" Units="....." Location="63" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_64" Units="....." Location="64" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_3_state" Units="....." Location="64" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -373,19 +965,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_71" Units="....." Location="71" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_cmd" Units="....." Location="71" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_72" Units="....." Location="72" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_timeout" Units="....." Location="72" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_73" Units="....." Location="73" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_status" Units="....." Location="73" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_74" Units="....." Location="74" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_state" Units="....." Location="74" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -413,19 +1005,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_81" Units="....." Location="81" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_1_cmd" Units="....." Location="81" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_82" Units="....." Location="82" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_1_timeout" Units="....." Location="82" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_83" Units="....." Location="83" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_1_status" Units="....." Location="83" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_84" Units="....." Location="84" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_1_state" Units="....." Location="84" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -453,19 +1045,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_91" Units="....." Location="91" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_cmd" Units="....." Location="91" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_92" Units="....." Location="92" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_timeout" Units="....." Location="92" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_93" Units="....." Location="93" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_status" Units="....." Location="93" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_94" Units="....." Location="94" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_state" Units="....." Location="94" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -493,19 +1085,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_101" Units="....." Location="101" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_6_cmd" Units="....." Location="101" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_102" Units="....." Location="102" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_6_timeout" Units="....." Location="102" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_103" Units="....." Location="103" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_6_status" Units="....." Location="103" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_104" Units="....." Location="104" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_6_state" Units="....." Location="104" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -533,19 +1125,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_111" Units="....." Location="111" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_10_cmd" Units="....." Location="111" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_112" Units="....." Location="112" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_10_timeout" Units="....." Location="112" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_113" Units="....." Location="113" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_10_status" Units="....." Location="113" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_114" Units="....." Location="114" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_10_state" Units="....." Location="114" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -573,19 +1165,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_121" Units="....." Location="121" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_9_cmd" Units="....." Location="121" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_122" Units="....." Location="122" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_9_timeout" Units="....." Location="122" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_123" Units="....." Location="123" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_9_status" Units="....." Location="123" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_124" Units="....." Location="124" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_9_state" Units="....." Location="124" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -613,19 +1205,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_131" Units="....." Location="131" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_3_cmd" Units="....." Location="131" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_132" Units="....." Location="132" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_3_timeout" Units="....." Location="132" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_133" Units="....." Location="133" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_3_status" Units="....." Location="133" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_134" Units="....." Location="134" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_3_state" Units="....." Location="134" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -653,19 +1245,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_141" Units="....." Location="141" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m14_cmd" Units="....." Location="141" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_142" Units="....." Location="142" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m14_timeout" Units="....." Location="142" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_143" Units="....." Location="143" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m14_status" Units="....." Location="143" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_144" Units="....." Location="144" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m14_state" Units="....." Location="144" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -693,19 +1285,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_151" Units="....." Location="151" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_2_cmd" Units="....." Location="151" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_152" Units="....." Location="152" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_2_timeout" Units="....." Location="152" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_153" Units="....." Location="153" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_2_status" Units="....." Location="153" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_154" Units="....." Location="154" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_2_state" Units="....." Location="154" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -733,19 +1325,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_161" Units="....." Location="161" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_3_cmd" Units="....." Location="161" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_162" Units="....." Location="162" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_3_timeout" Units="....." Location="162" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_163" Units="....." Location="163" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_3_status" Units="....." Location="163" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_164" Units="....." Location="164" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_3_state" Units="....." Location="164" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -773,19 +1365,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_171" Units="....." Location="171" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_4_cmd" Units="....." Location="171" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_172" Units="....." Location="172" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_4_timeout" Units="....." Location="172" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_173" Units="....." Location="173" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_4_status" Units="....." Location="173" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_174" Units="....." Location="174" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_4_state" Units="....." Location="174" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -813,19 +1405,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_181" Units="....." Location="181" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_5_cmd" Units="....." Location="181" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_182" Units="....." Location="182" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_5_timeout" Units="....." Location="182" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_183" Units="....." Location="183" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_5_status" Units="....." Location="183" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_184" Units="....." Location="184" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_5_state" Units="....." Location="184" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -853,19 +1445,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_191" Units="....." Location="191" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_6_cmd" Units="....." Location="191" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_192" Units="....." Location="192" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_6_timeout" Units="....." Location="192" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_193" Units="....." Location="193" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_6_status" Units="....." Location="193" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_194" Units="....." Location="194" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_6_state" Units="....." Location="194" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -893,19 +1485,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_201" Units="....." Location="201" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_7_cmd" Units="....." Location="201" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_202" Units="....." Location="202" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_7_timeout" Units="....." Location="202" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_203" Units="....." Location="203" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_7_status" Units="....." Location="203" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_204" Units="....." Location="204" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_7_state" Units="....." Location="204" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -933,19 +1525,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_211" Units="....." Location="211" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_8_cmd" Units="....." Location="211" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_212" Units="....." Location="212" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_8_timeout" Units="....." Location="212" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_213" Units="....." Location="213" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_8_status" Units="....." Location="213" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_214" Units="....." Location="214" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m13_8_state" Units="....." Location="214" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -973,19 +1565,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_221" Units="....." Location="221" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_4_cmd" Units="....." Location="221" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_222" Units="....." Location="222" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_4_timeout" Units="....." Location="222" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_223" Units="....." Location="223" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_4_status" Units="....." Location="223" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_224" Units="....." Location="224" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_4_state" Units="....." Location="224" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1013,19 +1605,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_231" Units="....." Location="231" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_1_cmd" Units="....." Location="231" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_232" Units="....." Location="232" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_1_timeout" Units="....." Location="232" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_233" Units="....." Location="233" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_1_status" Units="....." Location="233" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_234" Units="....." Location="234" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_1_state" Units="....." Location="234" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1053,19 +1645,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_241" Units="....." Location="241" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_8_cmd" Units="....." Location="241" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_242" Units="....." Location="242" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_8_timeout" Units="....." Location="242" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_243" Units="....." Location="243" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_8_status" Units="....." Location="243" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_244" Units="....." Location="244" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_8_state" Units="....." Location="244" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1093,19 +1685,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_251" Units="....." Location="251" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_7_cmd" Units="....." Location="251" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_252" Units="....." Location="252" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_7_timeout" Units="....." Location="252" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_253" Units="....." Location="253" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_7_status" Units="....." Location="253" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_254" Units="....." Location="254" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_7_state" Units="....." Location="254" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1133,19 +1725,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_261" Units="....." Location="261" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_2_cmd" Units="....." Location="261" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_262" Units="....." Location="262" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_2_timeout" Units="....." Location="262" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_263" Units="....." Location="263" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_2_status" Units="....." Location="263" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_264" Units="....." Location="264" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_2_state" Units="....." Location="264" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1173,19 +1765,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_271" Units="....." Location="271" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_6_cmd" Units="....." Location="271" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_272" Units="....." Location="272" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_6_timeout" Units="....." Location="272" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_273" Units="....." Location="273" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_6_status" Units="....." Location="273" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_274" Units="....." Location="274" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_6_state" Units="....." Location="274" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1213,19 +1805,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_281" Units="....." Location="281" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_5_cmd" Units="....." Location="281" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_282" Units="....." Location="282" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_5_timeout" Units="....." Location="282" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_283" Units="....." Location="283" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_5_status" Units="....." Location="283" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_284" Units="....." Location="284" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_5_state" Units="....." Location="284" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1253,19 +1845,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_291" Units="....." Location="291" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_9_cmd" Units="....." Location="291" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_292" Units="....." Location="292" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_9_timeout" Units="....." Location="292" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_293" Units="....." Location="293" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_9_status" Units="....." Location="293" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_294" Units="....." Location="294" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_9_state" Units="....." Location="294" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1293,19 +1885,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_301" Units="....." Location="301" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_10_cmd" Units="....." Location="301" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_302" Units="....." Location="302" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_10_timeout" Units="....." Location="302" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_303" Units="....." Location="303" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_10_status" Units="....." Location="303" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_304" Units="....." Location="304" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_10_state" Units="....." Location="304" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1333,19 +1925,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_311" Units="....." Location="311" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_11_cmd" Units="....." Location="311" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_312" Units="....." Location="312" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_11_timeout" Units="....." Location="312" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_313" Units="....." Location="313" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_11_status" Units="....." Location="313" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_314" Units="....." Location="314" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_11_state" Units="....." Location="314" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1373,19 +1965,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_321" Units="....." Location="321" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_12_cmd" Units="....." Location="321" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_322" Units="....." Location="322" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_12_timeout" Units="....." Location="322" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_323" Units="....." Location="323" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_12_status" Units="....." Location="323" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_324" Units="....." Location="324" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m1_12_state" Units="....." Location="324" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1413,19 +2005,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_331" Units="....." Location="331" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_5_cmd" Units="....." Location="331" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_332" Units="....." Location="332" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_5_timeout" Units="....." Location="332" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_333" Units="....." Location="333" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_5_status" Units="....." Location="333" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_334" Units="....." Location="334" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_5_state" Units="....." Location="334" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1453,19 +2045,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_341" Units="....." Location="341" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_11_cmd" Units="....." Location="341" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_342" Units="....." Location="342" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_11_timeout" Units="....." Location="342" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_343" Units="....." Location="343" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_11_status" Units="....." Location="343" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_344" Units="....." Location="344" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_11_state" Units="....." Location="344" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1493,19 +2085,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_351" Units="....." Location="351" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_cmd" Units="....." Location="351" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_352" Units="....." Location="352" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_timeout" Units="....." Location="352" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_353" Units="....." Location="353" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_status" Units="....." Location="353" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_354" Units="....." Location="354" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_state" Units="....." Location="354" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1533,19 +2125,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_361" Units="....." Location="361" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_6_cmd" Units="....." Location="361" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_362" Units="....." Location="362" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_6_timeout" Units="....." Location="362" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_363" Units="....." Location="363" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_6_status" Units="....." Location="363" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_364" Units="....." Location="364" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_6_state" Units="....." Location="364" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1573,19 +2165,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_371" Units="....." Location="371" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_cmd" Units="....." Location="371" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_372" Units="....." Location="372" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_timeout" Units="....." Location="372" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_373" Units="....." Location="373" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_status" Units="....." Location="373" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_374" Units="....." Location="374" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_state" Units="....." Location="374" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1613,19 +2205,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_381" Units="....." Location="381" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m16_3_cmd" Units="....." Location="381" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_382" Units="....." Location="382" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m16_3_timeout" Units="....." Location="382" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_383" Units="....." Location="383" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m16_3_status" Units="....." Location="383" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_384" Units="....." Location="384" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m16_3_state" Units="....." Location="384" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1653,19 +2245,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_391" Units="....." Location="391" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_9_cmd" Units="....." Location="391" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_392" Units="....." Location="392" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_9_timeout" Units="....." Location="392" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_393" Units="....." Location="393" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_9_status" Units="....." Location="393" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_394" Units="....." Location="394" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_9_state" Units="....." Location="394" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1693,19 +2285,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_401" Units="....." Location="401" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_cmd" Units="....." Location="401" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_402" Units="....." Location="402" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_timeout" Units="....." Location="402" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_403" Units="....." Location="403" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_status" Units="....." Location="403" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_404" Units="....." Location="404" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_state" Units="....." Location="404" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1733,19 +2325,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_411" Units="....." Location="411" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_2_cmd" Units="....." Location="411" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_412" Units="....." Location="412" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_2_timeout" Units="....." Location="412" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_413" Units="....." Location="413" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_2_status" Units="....." Location="413" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_414" Units="....." Location="414" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_2_state" Units="....." Location="414" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1773,19 +2365,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_421" Units="....." Location="421" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_7_cmd" Units="....." Location="421" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_422" Units="....." Location="422" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_7_timeout" Units="....." Location="422" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_423" Units="....." Location="423" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_7_status" Units="....." Location="423" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_424" Units="....." Location="424" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_7_state" Units="....." Location="424" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1813,19 +2405,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_431" Units="....." Location="431" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_cmd" Units="....." Location="431" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_432" Units="....." Location="432" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_timeout" Units="....." Location="432" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_433" Units="....." Location="433" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_status" Units="....." Location="433" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_434" Units="....." Location="434" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_state" Units="....." Location="434" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1853,19 +2445,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_441" Units="....." Location="441" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_13_cmd" Units="....." Location="441" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_442" Units="....." Location="442" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_13_timeout" Units="....." Location="442" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_443" Units="....." Location="443" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_13_status" Units="....." Location="443" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_444" Units="....." Location="444" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_13_state" Units="....." Location="444" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1893,19 +2485,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_451" Units="....." Location="451" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_10_cmd" Units="....." Location="451" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_452" Units="....." Location="452" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_10_timeout" Units="....." Location="452" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_453" Units="....." Location="453" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_10_status" Units="....." Location="453" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_454" Units="....." Location="454" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_10_state" Units="....." Location="454" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1933,19 +2525,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_461" Units="....." Location="461" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_11_cmd" Units="....." Location="461" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_462" Units="....." Location="462" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_11_timeout" Units="....." Location="462" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_463" Units="....." Location="463" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_11_status" Units="....." Location="463" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_464" Units="....." Location="464" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_11_state" Units="....." Location="464" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -1973,19 +2565,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_471" Units="....." Location="471" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_1_cmd" Units="....." Location="471" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_472" Units="....." Location="472" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_1_timeout" Units="....." Location="472" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_473" Units="....." Location="473" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_1_status" Units="....." Location="473" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_474" Units="....." Location="474" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_1_state" Units="....." Location="474" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2013,19 +2605,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_481" Units="....." Location="481" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_5_cmd" Units="....." Location="481" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_482" Units="....." Location="482" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_5_timeout" Units="....." Location="482" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_483" Units="....." Location="483" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_5_status" Units="....." Location="483" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_484" Units="....." Location="484" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_5_state" Units="....." Location="484" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2053,19 +2645,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_491" Units="....." Location="491" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_cmd" Units="....." Location="491" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_492" Units="....." Location="492" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_timeout" Units="....." Location="492" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_493" Units="....." Location="493" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_status" Units="....." Location="493" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_494" Units="....." Location="494" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_state" Units="....." Location="494" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2093,19 +2685,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_501" Units="....." Location="501" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_3_cmd" Units="....." Location="501" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_502" Units="....." Location="502" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_3_timeout" Units="....." Location="502" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_503" Units="....." Location="503" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_3_status" Units="....." Location="503" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_504" Units="....." Location="504" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_3_state" Units="....." Location="504" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2133,19 +2725,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_511" Units="....." Location="511" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_4_cmd" Units="....." Location="511" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_512" Units="....." Location="512" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_4_timeout" Units="....." Location="512" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_513" Units="....." Location="513" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_4_status" Units="....." Location="513" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_514" Units="....." Location="514" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_4_state" Units="....." Location="514" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2173,19 +2765,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_521" Units="....." Location="521" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m15_3_cmd" Units="....." Location="521" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_522" Units="....." Location="522" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m15_3_timeout" Units="....." Location="522" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_523" Units="....." Location="523" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m15_3_status" Units="....." Location="523" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_524" Units="....." Location="524" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m15_3_state" Units="....." Location="524" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2213,19 +2805,19 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_531" Units="....." Location="531" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_7_cmd" Units="....." Location="531" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_532" Units="....." Location="532" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_7_timeout" Units="....." Location="532" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_533" Units="....." Location="533" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_7_status" Units="....." Location="533" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_534" Units="....." Location="534" IsReadTag="0">
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_7_state" Units="....." Location="534" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -2519,16 +3111,86 @@
     </SourcesList>
     <GlobalVariablesList>
         <Group Marker="0" Name="mechanisms"/>
+        <Group Marker="0" Name="engine_dlg">
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
+                <ListenersList>
+                    <Listener Path="main\" Type="Output register" Name="m1_2_cmd(4-51)"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
+                <ListenersList>
+                    <Listener Path="" Type="XMnemoCheckBox" Name="CheckBox_7"/>
+                    <Listener Path="engine_dlg" Type="XMnemoShape" Name="Ellipse_10"/>
+                    <Listener Path="main\" Type="Output register" Name="m1_2_status(4-53)"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
+                <ListenersList>
+                    <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
+                    <Listener Path="main\" Type="Output register" Name="m1_2_timeout(4-52)"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
+                <ListenersList>
+                    <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
+                    <Listener Path="main\" Type="Output register" Name="m1_2_state(4-54)"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
+                <ListenersList>
+                    <Listener Path="engine_dlg" Type="XMnemoTextLabel" Name="TextLabel_6"/>
+                </ListenersList>
+            </GlobalVariable>
+        </Group>
     </GlobalVariablesList>
     <TimersList/>
     <DatabseList/>
     <ArchiveList/>
     <ScriptsList>
-        <Script FullName="Script 0" Prior="150" Name="Script 0"/>
+        <Script FullName="mechanisms" Prior="150" Name="mechanisms"/>
     </ScriptsList>
     <DocumentsList/>
     <ConditionsList/>
-    <ModelList/>
+    <ModelList>
+        <DataModel FullName="Custom model 0">
+            <ColumnCount Value="1"/>
+            <AreasList>
+                <Area TypeArea="Custom">
+                    <Name Value="area1"/>
+                    <RowCount Value="1"/>
+                    <ListItems>
+                        <Item>
+                            <Pos Column="0" Row="0"/>
+                            <Type Value="Listener"/>
+                            <Format>
+                                <Type Value="Enum"/>
+                                <Editable Value="1"/>
+                                <DEFAULT Value=""/>
+                                <Property>
+                                    <Element Key="0" Value="&lt;span style=&quot;color: blue&quot;>Стоп&lt;/span>"/>
+                                    <Element Key="1" Value="&lt;span style=&quot;color: cyan&quot;>Запуск&lt;/span>"/>
+                                    <Element Key="2" Value="&lt;span style=&quot;color: darkgreen&quot;>Работа&lt;/span>"/>
+                                    <Element Key="3" Value="&lt;span style=&quot;color: cyan&quot;>Остановка&lt;/span>"/>
+                                    <Element Key="4" Value="&lt;span style=&quot;color: darkred&quot;>Авария&lt;/span>"/>
+                                    <Element Key="5" Value="&lt;span style=&quot;color: yellow&quot;>Не готов&lt;/span>"/>
+                                </Property>
+                            </Format>
+                            <Decor>
+                                <BaseDecor/>
+                            </Decor>
+                            <ValueItem Value="4"/>
+                        </Item>
+                    </ListItems>
+                </Area>
+            </AreasList>
+            <HeaderList>
+                <Header>
+                    <ValueItem Value="Column 1"/>
+                </Header>
+            </HeaderList>
+            <ActiveArea AreaName="area1"/>
+        </DataModel>
+    </ModelList>
     <TcpSocketList>
         <TcpSocket AutoReconnect="0" Host="192.168.0.11" Marker="0" Comments="" Name="main_tcp_sock" Reconnect_delay="1000" MaxTimeoutCount="1" Port="1502">
             <ListenersList/>

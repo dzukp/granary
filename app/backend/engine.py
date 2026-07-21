@@ -52,7 +52,7 @@ class Engine(Mechanism, ModbusDataObject):
                     f'{self.name}: next mechanism not running -> STOPPING',
                 )
             else:
-                started = self.di_started.val if not self.disabled_di else False
+                started = self.di_started.val if not self.disabled_di else True
                 if self.ton.process(not started, self.timeout):
                     # Таймаут истёк, а привод не запустился - авария
                     if not started:
@@ -79,7 +79,7 @@ class Engine(Mechanism, ModbusDataObject):
 
         elif self.state == self.STOPPING:
             self.do_start.val = False
-            started = self.di_started.val if not self.disabled_di else True
+            started = self.di_started.val if not self.disabled_di else False
             if self.ton.process(started, self.timeout):
                 # Таймаут истёк, а привод не остановился - авария
                 if started:
@@ -101,8 +101,6 @@ class Engine(Mechanism, ModbusDataObject):
             raise LogicException(f'{self.name}: invalid state: {self.state}')
 
     def is_running(self):
-        if not self.enabled:
-            return False
         return self.state in (self.STARTING, self.RUNNING)
 
     def enable(self):
@@ -186,7 +184,7 @@ class Engine(Mechanism, ModbusDataObject):
                 self.enable()
             if cmd & 0x0040:
                 self.disable()
-            self.set_timeout(data[zero_addr + 1] / 1000)
+            self.set_timeout(data[zero_addr + 1])
 
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
@@ -199,7 +197,7 @@ class Engine(Mechanism, ModbusDataObject):
             )
             return {
                 self.mb_cells_idx + 0: 0,
-                self.mb_cells_idx + 1: int(self.timeout * 1000),
+                self.mb_cells_idx + 1: int(self.timeout),
                 self.mb_cells_idx + 2: status,
                 self.mb_cells_idx + 3: self.state,
             }
