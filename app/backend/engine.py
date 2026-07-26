@@ -190,10 +190,10 @@ class Engine(Mechanism, ModbusDataObject):
         if self.mb_cells_idx is not None:
             status = (
                 int(self.di_started.val) * (1 << 0)
-                + int(self.di_ready.val) * (1 << 1)
-                + int(self.do_start.val) * (1 << 2)
-                + int(self.disabled_di) * (1 << 3)
-                + int(self.enabled) * (1 << 4)
+                + int(self.di_ready.val) * (1 << 2)
+                + int(self.do_start.val) * (1 << 3)
+                + int(self.disabled_di) * (1 << 5)
+                + int(self.enabled) * (1 << 6)
             )
             return {
                 self.mb_cells_idx + 0: 0,
