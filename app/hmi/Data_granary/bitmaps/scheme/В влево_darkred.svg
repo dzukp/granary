@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 146.50935 151.97614"
+   width="146.50935"
+   height="151.97614"
+   version="1.1"
+   id="svg72"
+   sodipodi:docname="В влево.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview72"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.73512621"
+     inkscape:cx="-49.651338"
+     inkscape:cy="76.857551"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g71"
+     showgrid="false" />
+  <desc
+     id="desc1">В влево.dxf - scale = 1.000000, origin = (0.000000, 0.000000), method = manual</desc>
+  <defs
+     id="defs64">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:darkred;stroke-width:0.5"
+         id="path1" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="darkred"
+         stroke-width="0.25"
+         linecap="square"
+         id="path2" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="darkred"
+         stroke-width="0.25"
+         linecap="square"
+         id="path3" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="darkred"
+         stroke-width="0.25"
+         linecap="square"
+         id="path4" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Paper_Space0" />
+    <symbol
+       id="KDIMARROW_00">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path5" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_01">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 -18.8976,2.49"
+         id="path6" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m -18.8976,1125.01 1.8897,-2.49"
+         id="path7" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m -17.0079,1122.52 -1.8897,-2.49"
+         id="path8" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M -18.8976,1120.03 0,1122.52"
+         id="path9" />
+      <path
+         d="m 0,1122.5197 -18.897638,-2.4879 1.889764,2.4879 -1.889764,2.4879 z"
+         style="fill:#000000"
+         id="path10" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path11" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_02">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 18.8976,2.49"
+         id="path12" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 18.8976,1125.01 -1.8897,-2.49"
+         id="path13" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 17.0079,1122.52 1.8897,-2.49"
+         id="path14" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 18.8976,1120.03 0,1122.52"
+         id="path15" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H 26.4567"
+         id="path16" />
+      <path
+         d="m 17.007874,1122.5197 1.889764,-2.4879 L 0,1122.5197 l 18.897638,2.4879 z"
+         style="fill:#000000"
+         id="path17" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path18" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_03">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m -4.00819,1126.53 8.01638,-8.02"
+         id="path19" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H 7.55905"
+         id="path20" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path21" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_04">
+      <path
+         d="M -0.944882,1122.5197 0,1123.4646 0.944882,1122.5197 0,1121.5748 l -0.944882,0.9449 H -1.889764 L 0,1124.4094 1.889764,1122.5197 0,1120.6299 l -1.889764,1.8898 H -2.834646 L 0,1125.3543 2.834646,1122.5197 0,1119.685 l -2.834646,2.8347"
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         id="path22" />
+      <path
+         d="M -0.944882,1122.5197 0,1123.4646 0.944882,1122.5197 0,1121.5748 l -0.944882,0.9449 H -1.889764 L 0,1124.4094 1.889764,1122.5197 0,1120.6299 l -1.889764,1.8898 H -2.834646 L 0,1125.3543 2.834646,1122.5197 0,1119.685 l -2.834646,2.8347"
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         id="path23" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path24" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_05">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 -18.8976,2.49"
+         id="path25" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m -18.8976,1125.01 v -2.49"
+         id="path26" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m -18.8976,1122.52 v -2.49"
+         id="path27" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M -18.8976,1120.03 0,1122.52"
+         id="path28" />
+      <path
+         d="m 0,1122.5197 -18.897638,-2.4879 v 2.4879 2.4879 z"
+         style="fill:#000000"
+         id="path29" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path30" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_06">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 18.8976,2.49"
+         id="path31" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 18.8976,1125.01 v -2.49"
+         id="path32" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 18.8976,1122.52 v -2.49"
+         id="path33" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 18.8976,1120.03 0,1122.52"
+         id="path34" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H 26.4567"
+         id="path35" />
+      <path
+         d="m 18.897638,1122.5197 v -2.4879 L 0,1122.5197 l 18.897638,2.4879 z"
+         style="fill:#000000"
+         id="path36" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path37" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_07">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 -18.8976,2.49"
+         id="path38" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 -18.8976,-2.49"
+         id="path39" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path40" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_08">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 18.8976,2.49"
+         id="path41" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 18.8976,-2.49"
+         id="path42" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H 26.4567"
+         id="path43" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path44" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_09">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 -7.55905,7.56"
+         id="path45" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 -7.55905,-7.56"
+         id="path46" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path47" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_10">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 7.55905,7.56"
+         id="path48" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m 0,1122.52 7.55905,-7.56"
+         id="path49" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H 15.1181"
+         id="path50" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path51" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_11">
+      <path
+         d="m 9.448819,1122.5197 a 9.448819,9.448819 0 0 0 -18.897638,0 9.448819,9.448819 0 0 0 18.897638,0 z"
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         id="path52" />
+      <path
+         d="m 9.448819,1122.5197 a 9.448819,9.448819 0 0 0 -18.897638,0 9.448819,9.448819 0 0 0 18.897638,0 z"
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         id="path53" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path54" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_12">
+      <path
+         d="m 5.669291,1122.5197 a 5.669291,5.669291 0 0 0 -11.338582,0 5.669291,5.669291 0 0 0 11.338582,0 z"
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         id="path55" />
+      <path
+         d="m 5.669291,1122.5197 a 5.669291,5.669291 0 0 0 -11.338582,0 5.669291,5.669291 0 0 0 11.338582,0 z"
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         id="path56" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path57" />
+    </symbol>
+    <symbol
+       id="KDIMARROW_13">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="m -4.00819,1118.51 8.01638,8.02"
+         id="path58" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H 7.55905"
+         id="path59" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 H -3.77953"
+         id="path60" />
+    </symbol>
+    <symbol
+       id="U0">
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,1122.52 V 0"
+         id="path61" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 0,0 H 793.701"
+         id="path62" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 793.701,0 V 1122.52"
+         id="path63" />
+      <path
+         style="fill:none;stroke:darkred;stroke-linecap:round"
+         d="M 793.701,1122.52 H 0"
+         id="path64" />
+    </symbol>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g71"
+     transform="translate(-321.9797,-435.7227)">
+    <path
+       d="m 351.78014,487.71072 a 60.579744,60.579744 0 1 0 110.87597,31.71964"
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path65" />
+    <path
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 392.269,444.289 -64.454,2.127"
+       id="path66" />
+    <path
+       d="m 428.33798,521.6685 a 33.515674,33.515674 0 0 0 -67.03134,0 33.515674,33.515674 0 0 0 67.03134,0 z"
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path67" />
+    <path
+       d="m 443.42056,521.66846 a 48.59694,48.59694 0 0 0 -97.19388,0 48.59694,48.59694 0 0 0 97.19388,0 z"
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path68" />
+    <path
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 351.78,487.711 -22.578,0.745"
+       id="path69" />
+    <path
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 329.368,493.48 -1.719,-52.088"
+       id="path70" />
+    <path
+       d="M 462.655,519.42988 A 70.366069,70.366069 0 0 0 392.2691,444.28935"
+       style="fill:none;stroke:darkred;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path71" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Ð¡Ð¸ÑÑÐµÐ¼Ð½ÑÐ¹ ÑÐ»Ð¾Ð¹"
+     id="g72"
+     transform="translate(-321.9797,-435.7227)" />
+</svg>
