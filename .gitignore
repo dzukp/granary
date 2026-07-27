@@ -1,2 +1,3 @@
 /app/backend/logs/*
+/app/backend/saves/*
 /.idea
