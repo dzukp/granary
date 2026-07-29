@@ -59,13 +59,15 @@ class Valve(Mechanism, ModbusDataObject):
             else:
                 opened = self.di_opened.val if not self.disabled_di else False
                 if self.ton.process(not opened, self.timeout):
+                    if self.disabled_di:
+                        opened = True
                     # Таймаут истёк, а задвижка не открылась - авария
-                    if not opened:
+                    elif not opened:
                         self._set_state(self.FAULT)
                         self.logger.error(
                             f'{self.name}: open timeout -> FAULT',
                         )
-                elif opened:
+                if opened:
                     self._set_state(self.OPENED)
                     self.logger.info(f'{self.name}: opened')
 
@@ -84,11 +86,13 @@ class Valve(Mechanism, ModbusDataObject):
             self.do_close.val = True
             closed = self.di_closed.val if not self.disabled_di else False
             if self.ton.process(not closed, self.timeout):
+                if self.disabled_di:
+                    closed = True
                 # Таймаут истёк, а задвижка не закрылась - авария
-                if not closed:
+                elif not closed:
                     self._set_state(self.FAULT)
                     self.logger.error(f'{self.name}: close timeout -> FAULT')
-            elif closed:
+            if closed:
                 self._set_state(self.CLOSED)
                 self.logger.info(f'{self.name}: closed')
 
@@ -140,7 +144,7 @@ class Valve(Mechanism, ModbusDataObject):
         if not self.enabled:
             self.logger.warning(f'{self.name}: open ignored - disabled')
             return
-        if self.state in (self.FAULT, self.UNDEFINED):
+        if self.state in (self.FAULT,):
             self.logger.warning(
                 f'{self.name}: open command ignored - {self.state}',
             )
@@ -158,7 +162,7 @@ class Valve(Mechanism, ModbusDataObject):
         if not self.enabled:
             self.logger.warning(f'{self.name}: close ignored - disabled')
             return
-        if self.state in (self.FAULT, self.UNDEFINED):
+        if self.state in (self.FAULT,):
             self.logger.warning(
                 f'{self.name}: close command ignored - {self.state}',
             )

@@ -4,8 +4,9 @@ current = null
 
 // --- Base class ---
 
-function Mechanism(name) {
+function Mechanism(name, title) {
 	this.name    = name
+	this.title   = title ? title : name
 	this.cmd     = getTag('main', name + '_cmd')
 	this.timeout = getTag('main', name + '_timeout')
 	this.status  = getTag('main', name + '_status')
@@ -32,6 +33,10 @@ Engine.prototype.stop = function() {
 	this.cmd.setValue(0x0002)
 }
 
+Engine.prototype.className = function() {
+	return 'Engine'
+}
+
 // --- Valve ---
 
 function Valve(name) {
@@ -48,11 +53,15 @@ Valve.prototype.close = function() {
 	this.cmd.setValue(0x0002)
 }
 
+Valve.prototype.className = function() {
+	return 'Valve'
+}
+
 // --- Init ---
 
 function init() {
 
-	mechanisms['m1_2']  = new Engine('m1_2')
+	mechanisms['m1_2']  = new Engine('m1_2', 'Конвейер 1.2')
 	mechanisms['m1_3']  = new Engine('m1_3')
 	mechanisms['m3_4']  = new Engine('m3_4')
 	mechanisms['m13_1'] = new Engine('m13_1')
@@ -88,7 +97,7 @@ function init() {
 	mechanisms['m16_3'] = new Engine('m16_3')
 	mechanisms['m15_3'] = new Engine('m15_3')
 	mechanisms['m6_7']  = new Engine('m6_7')
-	mechanisms['m8_9']  = new Valve('m8_9')
+	mechanisms['m8_9']  = new Valve('m8_9', 'Клапан 8.9')
 	mechanisms['m8_8']  = new Valve('m8_8')
 	mechanisms['m8_2']  = new Valve('m8_2')
 	mechanisms['m8_7']  = new Valve('m8_7')
@@ -96,7 +105,7 @@ function init() {
 	mechanisms['m8_13'] = new Valve('m8_13')
 	mechanisms['m8_10'] = new Valve('m8_10')
 	mechanisms['m8_11'] = new Valve('m8_11')
-	mechanisms['m8_1']  = new Valve('m8_1')
+	mechanisms['m8_1']  = new Valve('m8_1', 'Клапан 8.1')
 	mechanisms['m8_5']  = new Valve('m8_5')
 	mechanisms['m8_6']  = new Valve('m8_6')
 	mechanisms['m8_3']  = new Valve('m8_3')
@@ -131,8 +140,29 @@ function showDlg(mech_name) {
 	getGlobalVar('dlg_status').setBindSpeaker(current.status)
 	getGlobalVar('dlg_timeout').setBindSpeaker(current.timeout)
 	getGlobalVar('dlg_state').setBindSpeaker(current.state)
-	getGlobalVar('dlg_name').setStringData(mech_name)
+	getGlobalVar('dlg_name').setStringData(current.title)
 //	getScreen('engine_dlg').showNormal();
+
+    if (current.className() == 'Valve') {
+        getGlobalVar('dlg_pusk_btn').setStringData('Открыть')
+        getGlobalVar('dlg_stop_btn').setStringData('Закрыть')
+        getGlobalVar('dlg_is_valve').setBooleanData(true)
+        getScreen('engine_dlg').getObject('lbl_state_valve').show()
+        getScreen('engine_dlg').getObject('lbl_state_eng').hide()
+    }
+	else {
+        getGlobalVar('dlg_pusk_btn').setStringData('Пуск')
+        getGlobalVar('dlg_stop_btn').setStringData('Стоп')
+        getGlobalVar('dlg_is_valve').setBooleanData(false)
+        getScreen('engine_dlg').getObject('lbl_state_valve').hide()
+        getScreen('engine_dlg').getObject('lbl_state_eng').show()
+    }
+}
+
+
+function test() {
+	getScreen('engine_dlg').getObject('pusk')
+
 }
 
 
