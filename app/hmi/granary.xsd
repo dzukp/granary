@@ -79,6 +79,7 @@
                 </Deactivate>
             </Properties>
             <XMnemoLayers>
+                <XMnemoLayer Name="arrow" Visible="1"/>
                 <XMnemoLayer Name="general" Visible="1"/>
             </XMnemoLayers>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_1" ToolTip="" MnemoLayer="general">
@@ -90,13 +91,13 @@
                     <ListenersList/>
                 </StandartProperies>
                 <Color g="128" r="128" a="255" b="128"/>
-                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="1">
+                <RectangleProperties Rounded="0" Brush="8" PenWidth="1" Frame="0">
                     <PenColor g="128" r="128" a="255" b="128"/>
                 </RectangleProperties>
                 <States/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoClock" Name="Clock_2" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1286" rect.bottom="1325" rect.left="2200" rect.right="2529"/>
+                <Geometry rect.top="1290" rect.bottom="1329" rect.left="2200" rect.right="2529"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -108,7 +109,7 @@
                 <Format Value="dd/MM/yyyy | hh:mm:ss"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_3" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1296" rect.bottom="1315" rect.left="2130" rect.right="2169"/>
+                <Geometry rect.top="1300" rect.bottom="1319" rect.left="2130" rect.right="2169"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -213,7 +214,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m1_3" ToolTip="" MnemoLayer="general" Group="Group_m1_3">
-                <Geometry rect.top="905" rect.bottom="934" rect.left="1749" rect.right="1948"/>
+                <Geometry rect.top="925" rect.bottom="954" rect.left="1749" rect.right="1948"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -272,7 +273,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m1_3_lbl" ToolTip="" MnemoLayer="general" Group="Group_m1_3">
-                <Geometry rect.top="880" rect.bottom="903" rect.left="1814" rect.right="1843"/>
+                <Geometry rect.top="900" rect.bottom="923" rect.left="1814" rect.right="1843"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -287,7 +288,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_3">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="884" rect.bottom="898" rect.left="1851" rect.right="1865"/>
+                <Geometry rect.top="904" rect.bottom="918" rect.left="1851" rect.right="1865"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -348,7 +349,7 @@
                 <Image_file Bitmap_collection="scheme" Name="бункер-13.svg"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_14" ToolTip="" MnemoLayer="general" Group="Group_Image_14">
-                <Geometry rect.top="700" rect.bottom="859" rect.left="130" rect.right="239"/>
+                <Geometry rect.top="720" rect.bottom="879" rect.left="130" rect.right="239"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -359,7 +360,7 @@
                 <Image_file Bitmap_collection="scheme" Name="бункер-13.svg"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_15" ToolTip="" MnemoLayer="general" Group="Group_Image_15">
-                <Geometry rect.top="700" rect.bottom="859" rect.left="590" rect.right="699"/>
+                <Geometry rect.top="720" rect.bottom="879" rect.left="590" rect.right="699"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -370,7 +371,7 @@
                 <Image_file Bitmap_collection="scheme" Name="бункер-13.svg"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_16" ToolTip="" MnemoLayer="general" Group="Group_Image_16">
-                <Geometry rect.top="700" rect.bottom="859" rect.left="1050" rect.right="1159"/>
+                <Geometry rect.top="720" rect.bottom="879" rect.left="1050" rect.right="1159"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -381,7 +382,7 @@
                 <Image_file Bitmap_collection="scheme" Name="бункер-13.svg"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_17" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="700" rect.bottom="859" rect.left="1550" rect.right="1659"/>
+                <Geometry rect.top="720" rect.bottom="879" rect.left="1550" rect.right="1659"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -439,7 +440,7 @@
                 <RegExp CaseSensitive="1" Pattern="*" Syntax="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoLineEdit" Name="LineEdit_22" ToolTip="" MnemoLayer="general" Group="Group_Image_14">
-                <Geometry rect.top="740" rect.bottom="763" rect.left="134" rect.right="233"/>
+                <Geometry rect.top="760" rect.bottom="783" rect.left="134" rect.right="233"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -451,7 +452,7 @@
                 <RegExp CaseSensitive="1" Pattern="*" Syntax="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoLineEdit" Name="LineEdit_23" ToolTip="" MnemoLayer="general" Group="Group_Image_15">
-                <Geometry rect.top="740" rect.bottom="763" rect.left="594" rect.right="693"/>
+                <Geometry rect.top="760" rect.bottom="783" rect.left="594" rect.right="693"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -463,7 +464,7 @@
                 <RegExp CaseSensitive="1" Pattern="*" Syntax="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoLineEdit" Name="LineEdit_24" ToolTip="" MnemoLayer="general" Group="Group_Image_16">
-                <Geometry rect.top="740" rect.bottom="763" rect.left="1054" rect.right="1153"/>
+                <Geometry rect.top="760" rect.bottom="783" rect.left="1054" rect.right="1153"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -566,7 +567,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m1_8" ToolTip="" MnemoLayer="general" Group="Group_m1_8">
-                <Geometry rect.top="905" rect.bottom="934" rect.left="1460" rect.right="1659"/>
+                <Geometry rect.top="925" rect.bottom="954" rect.left="1460" rect.right="1659"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -625,7 +626,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m1_8_lbl" ToolTip="" MnemoLayer="general" Group="Group_m1_8">
-                <Geometry rect.top="880" rect.bottom="903" rect.left="1525" rect.right="1554"/>
+                <Geometry rect.top="900" rect.bottom="923" rect.left="1525" rect.right="1554"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -640,7 +641,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_8_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_8">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="884" rect.bottom="898" rect.left="1562" rect.right="1576"/>
+                <Geometry rect.top="904" rect.bottom="918" rect.left="1562" rect.right="1576"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -839,7 +840,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m1_6" ToolTip="" MnemoLayer="general" Group="Group_m1_6">
-                <Geometry rect.top="905" rect.bottom="934" rect.left="500" rect.right="699"/>
+                <Geometry rect.top="925" rect.bottom="954" rect.left="500" rect.right="699"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -898,7 +899,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m1_6_lbl" ToolTip="" MnemoLayer="general" Group="Group_m1_6">
-                <Geometry rect.top="880" rect.bottom="903" rect.left="565" rect.right="594"/>
+                <Geometry rect.top="900" rect.bottom="923" rect.left="565" rect.right="594"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -913,7 +914,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_6">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="884" rect.bottom="898" rect.left="602" rect.right="616"/>
+                <Geometry rect.top="904" rect.bottom="918" rect.left="602" rect.right="616"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1226,7 +1227,7 @@
                 <Image_file Bitmap_collection="scheme" Name="машина 1.svg"/>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m3_4" ToolTip="" MnemoLayer="general" Group="Group_m3_4">
-                <Geometry rect.top="514" rect.bottom="1113" rect.left="366" rect.right="395"/>
+                <Geometry rect.top="534" rect.bottom="1133" rect.left="366" rect.right="395"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1285,7 +1286,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m3_4_lbl" ToolTip="" MnemoLayer="general" Group="Group_m3_4">
-                <Geometry rect.top="514" rect.bottom="537" rect.left="339" rect.right="368"/>
+                <Geometry rect.top="534" rect.bottom="557" rect.left="339" rect.right="368"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1300,7 +1301,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m3_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m3_4">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="540" rect.bottom="554" rect.left="347" rect.right="361"/>
+                <Geometry rect.top="560" rect.bottom="574" rect.left="347" rect.right="361"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1590,7 +1591,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m13_1" ToolTip="" MnemoLayer="general" Group="Group_m13_1">
-                <Geometry rect.top="828" rect.bottom="857" rect.left="240" rect.right="269"/>
+                <Geometry rect.top="848" rect.bottom="877" rect.left="240" rect.right="269"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1649,7 +1650,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m13_1_lbl" ToolTip="" MnemoLayer="general" Group="Group_m13_1">
-                <Geometry rect.top="821" rect.bottom="844" rect.left="271" rect.right="300"/>
+                <Geometry rect.top="841" rect.bottom="864" rect.left="271" rect.right="300"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1664,7 +1665,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_1_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_1">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="843" rect.bottom="857" rect.left="280" rect.right="294"/>
+                <Geometry rect.top="863" rect.bottom="877" rect.left="280" rect.right="294"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1681,7 +1682,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m13_2" ToolTip="" MnemoLayer="general" Group="Group_m13_2">
-                <Geometry rect.top="827" rect.bottom="856" rect.left="700" rect.right="729"/>
+                <Geometry rect.top="847" rect.bottom="876" rect.left="700" rect.right="729"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1740,7 +1741,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m13_2_lbl" ToolTip="" MnemoLayer="general" Group="Group_m13_2">
-                <Geometry rect.top="820" rect.bottom="843" rect.left="731" rect.right="760"/>
+                <Geometry rect.top="840" rect.bottom="863" rect.left="731" rect.right="760"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1755,7 +1756,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_2">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="842" rect.bottom="856" rect.left="740" rect.right="754"/>
+                <Geometry rect.top="862" rect.bottom="876" rect.left="740" rect.right="754"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1772,7 +1773,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m13_3" ToolTip="" MnemoLayer="general" Group="Group_m13_3">
-                <Geometry rect.top="827" rect.bottom="856" rect.left="1160" rect.right="1189"/>
+                <Geometry rect.top="847" rect.bottom="876" rect.left="1160" rect.right="1189"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1831,7 +1832,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m13_3_lbl" ToolTip="" MnemoLayer="general" Group="Group_m13_3">
-                <Geometry rect.top="820" rect.bottom="843" rect.left="1191" rect.right="1220"/>
+                <Geometry rect.top="840" rect.bottom="863" rect.left="1191" rect.right="1220"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1846,7 +1847,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_3">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="842" rect.bottom="856" rect.left="1200" rect.right="1214"/>
+                <Geometry rect.top="862" rect.bottom="876" rect.left="1200" rect.right="1214"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1863,7 +1864,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m13_4" ToolTip="" MnemoLayer="general" Group="Group_m13_4">
-                <Geometry rect.top="827" rect.bottom="856" rect.left="1659" rect.right="1688"/>
+                <Geometry rect.top="847" rect.bottom="876" rect.left="1659" rect.right="1688"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1922,7 +1923,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m13_4_lbl" ToolTip="" MnemoLayer="general" Group="Group_m13_4">
-                <Geometry rect.top="820" rect.bottom="843" rect.left="1690" rect.right="1719"/>
+                <Geometry rect.top="840" rect.bottom="863" rect.left="1690" rect.right="1719"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1937,7 +1938,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_4">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="842" rect.bottom="856" rect.left="1699" rect.right="1713"/>
+                <Geometry rect.top="862" rect.bottom="876" rect.left="1699" rect.right="1713"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2318,7 +2319,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_1" ToolTip="" MnemoLayer="general" Group="Group_m6_1">
-                <Geometry rect.top="1025" rect.bottom="1044" rect.left="1418" rect.right="1700"/>
+                <Geometry rect.top="1045" rect.bottom="1064" rect.left="1418" rect.right="1700"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -2377,7 +2378,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_1_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_1">
-                <Geometry rect.top="1000" rect.bottom="1023" rect.left="1519" rect.right="1548"/>
+                <Geometry rect.top="1020" rect.bottom="1043" rect.left="1519" rect.right="1548"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2392,7 +2393,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_1_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_1">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="1004" rect.bottom="1018" rect.left="1556" rect.right="1570"/>
+                <Geometry rect.top="1024" rect.bottom="1038" rect.left="1556" rect.right="1570"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2409,7 +2410,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_2" ToolTip="" MnemoLayer="general" Group="Group_m6_2">
-                <Geometry rect.top="1089" rect.bottom="1108" rect.left="399" rect.right="938"/>
+                <Geometry rect.top="1109" rect.bottom="1128" rect.left="399" rect.right="938"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -2468,7 +2469,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_2_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_2">
-                <Geometry rect.top="1063" rect.bottom="1086" rect.left="612" rect.right="641"/>
+                <Geometry rect.top="1083" rect.bottom="1106" rect.left="612" rect.right="641"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2483,7 +2484,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_2">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="1067" rect.bottom="1081" rect.left="649" rect.right="663"/>
+                <Geometry rect.top="1087" rect.bottom="1101" rect.left="649" rect.right="663"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2682,7 +2683,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_6" ToolTip="" MnemoLayer="general" Group="Group_m6_6">
-                <Geometry rect.top="661" rect.bottom="680" rect.left="1242" rect.right="1614"/>
+                <Geometry rect.top="681" rect.bottom="700" rect.left="1242" rect.right="1614"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -2756,7 +2757,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_6">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="640" rect.bottom="654" rect.left="1447" rect.right="1461"/>
+                <Geometry rect.top="660" rect.bottom="674" rect.left="1447" rect.right="1461"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2773,7 +2774,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_7" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
-                <Geometry rect.top="661" rect.bottom="680" rect.left="173" rect.right="1232"/>
+                <Geometry rect.top="681" rect.bottom="700" rect.left="173" rect.right="1232"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -2832,7 +2833,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_7_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
-                <Geometry rect.top="636" rect.bottom="659" rect.left="616" rect.right="645"/>
+                <Geometry rect.top="656" rect.bottom="679" rect.left="616" rect.right="645"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2847,7 +2848,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="640" rect.bottom="654" rect.left="653" rect.right="667"/>
+                <Geometry rect.top="660" rect.bottom="674" rect.left="653" rect.right="667"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3046,7 +3047,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_10" ToolTip="" MnemoLayer="general" Group="Group_m6_10">
-                <Geometry rect.top="615" rect.bottom="634" rect.left="410" rect.right="1109"/>
+                <Geometry rect.top="625" rect.bottom="644" rect.left="410" rect.right="1109"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -3105,7 +3106,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_10_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_10">
-                <Geometry rect.top="590" rect.bottom="613" rect.left="736" rect.right="765"/>
+                <Geometry rect.top="600" rect.bottom="623" rect.left="736" rect.right="765"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3120,7 +3121,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_10_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_10">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="594" rect.bottom="608" rect.left="772" rect.right="786"/>
+                <Geometry rect.top="604" rect.bottom="618" rect.left="772" rect.right="786"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3137,7 +3138,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_11" ToolTip="" MnemoLayer="general" Group="Group_m6_11">
-                <Geometry rect.top="581" rect.bottom="600" rect.left="913" rect.right="1261"/>
+                <Geometry rect.top="591" rect.bottom="610" rect.left="913" rect.right="1261"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -3196,7 +3197,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_11_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_11">
-                <Geometry rect.top="556" rect.bottom="579" rect.left="1063" rect.right="1092"/>
+                <Geometry rect.top="566" rect.bottom="589" rect.left="1063" rect.right="1092"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3211,7 +3212,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_11_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_11">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="560" rect.bottom="574" rect.left="1100" rect.right="1114"/>
+                <Geometry rect.top="570" rect.bottom="584" rect.left="1100" rect.right="1114"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3228,7 +3229,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m1_5" ToolTip="" MnemoLayer="general" Group="Group_m1_5">
-                <Geometry rect.top="905" rect.bottom="934" rect.left="130" rect.right="329"/>
+                <Geometry rect.top="925" rect.bottom="954" rect.left="130" rect.right="329"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -3287,7 +3288,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m1_5_lbl" ToolTip="" MnemoLayer="general" Group="Group_m1_5">
-                <Geometry rect.top="880" rect.bottom="903" rect.left="195" rect.right="224"/>
+                <Geometry rect.top="900" rect.bottom="923" rect.left="195" rect.right="224"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3302,7 +3303,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_5">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="884" rect.bottom="898" rect.left="232" rect.right="246"/>
+                <Geometry rect.top="904" rect.bottom="918" rect.left="232" rect.right="246"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3319,7 +3320,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m1_7" ToolTip="" MnemoLayer="general" Group="Group_m1_7">
-                <Geometry rect.top="905" rect.bottom="934" rect.left="1050" rect.right="1249"/>
+                <Geometry rect.top="925" rect.bottom="954" rect.left="1050" rect.right="1249"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -3378,7 +3379,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m1_7_lbl" ToolTip="" MnemoLayer="general" Group="Group_m1_7">
-                <Geometry rect.top="880" rect.bottom="903" rect.left="1115" rect.right="1144"/>
+                <Geometry rect.top="900" rect.bottom="923" rect.left="1115" rect.right="1144"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3393,7 +3394,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_7">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="884" rect.bottom="898" rect.left="1152" rect.right="1166"/>
+                <Geometry rect.top="904" rect.bottom="918" rect.left="1152" rect.right="1166"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3701,7 +3702,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_2" ToolTip="" MnemoLayer="general" Group="Group_m8_2">
-                <Geometry rect.top="636" rect.bottom="650" rect.left="1152" rect.right="1226"/>
+                <Geometry rect.top="652" rect.bottom="666" rect.left="1152" rect.right="1226"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -3760,7 +3761,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_2_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_2">
-                <Geometry rect.top="632" rect.bottom="655" rect.left="1081" rect.right="1110"/>
+                <Geometry rect.top="648" rect.bottom="671" rect.left="1081" rect.right="1110"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3775,7 +3776,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_2">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="636" rect.bottom="650" rect.left="1112" rect.right="1126"/>
+                <Geometry rect.top="652" rect.bottom="666" rect.left="1112" rect.right="1126"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -3793,7 +3794,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_2_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_2">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="636" rect.bottom="650" rect.left="1132" rect.right="1146"/>
+                <Geometry rect.top="652" rect.bottom="666" rect.left="1132" rect.right="1146"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4028,7 +4029,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_5" ToolTip="" MnemoLayer="general" Group="Group_m8_5">
-                <Geometry rect.top="681" rect.bottom="695" rect.left="1061" rect.right="1135"/>
+                <Geometry rect.top="701" rect.bottom="715" rect.left="1061" rect.right="1135"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -4087,7 +4088,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_5_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_5">
-                <Geometry rect.top="677" rect.bottom="700" rect.left="990" rect.right="1019"/>
+                <Geometry rect.top="697" rect.bottom="720" rect.left="990" rect.right="1019"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4102,7 +4103,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_5">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="681" rect.bottom="695" rect.left="1021" rect.right="1035"/>
+                <Geometry rect.top="701" rect.bottom="715" rect.left="1021" rect.right="1035"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4120,7 +4121,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_5_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_5">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="681" rect.bottom="695" rect.left="1041" rect.right="1055"/>
+                <Geometry rect.top="701" rect.bottom="715" rect.left="1041" rect.right="1055"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4137,7 +4138,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_6" ToolTip="" MnemoLayer="general" Group="Group_m8_6">
-                <Geometry rect.top="681" rect.bottom="695" rect.left="599" rect.right="673"/>
+                <Geometry rect.top="701" rect.bottom="715" rect.left="599" rect.right="673"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -4196,7 +4197,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_6_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_6">
-                <Geometry rect.top="677" rect.bottom="700" rect.left="528" rect.right="557"/>
+                <Geometry rect.top="697" rect.bottom="720" rect.left="528" rect.right="557"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4211,7 +4212,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_6">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="681" rect.bottom="695" rect.left="559" rect.right="573"/>
+                <Geometry rect.top="701" rect.bottom="715" rect.left="559" rect.right="573"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4229,7 +4230,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_6_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_6">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="681" rect.bottom="695" rect.left="579" rect.right="593"/>
+                <Geometry rect.top="701" rect.bottom="715" rect.left="579" rect.right="593"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4246,7 +4247,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_7" ToolTip="" MnemoLayer="general" Group="Group_m8_7">
-                <Geometry rect.top="636" rect.bottom="650" rect.left="868" rect.right="942"/>
+                <Geometry rect.top="652" rect.bottom="666" rect.left="868" rect.right="942"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -4305,7 +4306,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_7_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_7">
-                <Geometry rect.top="632" rect.bottom="655" rect.left="797" rect.right="826"/>
+                <Geometry rect.top="648" rect.bottom="671" rect.left="797" rect.right="826"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4320,7 +4321,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_7">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="636" rect.bottom="650" rect.left="828" rect.right="842"/>
+                <Geometry rect.top="652" rect.bottom="666" rect.left="828" rect.right="842"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4338,7 +4339,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_7_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_7">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="636" rect.bottom="650" rect.left="848" rect.right="862"/>
+                <Geometry rect.top="652" rect.bottom="666" rect.left="848" rect.right="862"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4355,7 +4356,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_8" ToolTip="" MnemoLayer="general" Group="Group_m8_8">
-                <Geometry rect.top="1118" rect.bottom="1132" rect.left="721" rect.right="795"/>
+                <Geometry rect.top="1138" rect.bottom="1152" rect.left="721" rect.right="795"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -4414,7 +4415,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_8_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_8">
-                <Geometry rect.top="1114" rect.bottom="1137" rect.left="650" rect.right="679"/>
+                <Geometry rect.top="1134" rect.bottom="1157" rect.left="650" rect.right="679"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4429,7 +4430,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_8_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_8">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="1118" rect.bottom="1132" rect.left="681" rect.right="695"/>
+                <Geometry rect.top="1138" rect.bottom="1152" rect.left="681" rect.right="695"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4447,7 +4448,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_8_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_8">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="1118" rect.bottom="1132" rect.left="701" rect.right="715"/>
+                <Geometry rect.top="1138" rect.bottom="1152" rect.left="701" rect.right="715"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4464,7 +4465,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_9" ToolTip="" MnemoLayer="general" Group="Group_m8_9">
-                <Geometry rect.top="1066" rect.bottom="1080" rect.left="1534" rect.right="1608"/>
+                <Geometry rect.top="1086" rect.bottom="1100" rect.left="1534" rect.right="1608"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -4523,7 +4524,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_9_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_9">
-                <Geometry rect.top="1062" rect.bottom="1085" rect.left="1463" rect.right="1492"/>
+                <Geometry rect.top="1082" rect.bottom="1105" rect.left="1463" rect.right="1492"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4538,7 +4539,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_9_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_9">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="1066" rect.bottom="1080" rect.left="1494" rect.right="1508"/>
+                <Geometry rect.top="1086" rect.bottom="1100" rect.left="1494" rect.right="1508"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4556,7 +4557,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_9_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_9">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="1066" rect.bottom="1080" rect.left="1514" rect.right="1528"/>
+                <Geometry rect.top="1086" rect.bottom="1100" rect.left="1514" rect.right="1528"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4791,7 +4792,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m8_12" ToolTip="" MnemoLayer="general" Group="Group_m8_12">
-                <Geometry rect.top="535" rect.bottom="549" rect.left="1187" rect.right="1261"/>
+                <Geometry rect.top="545" rect.bottom="559" rect.left="1187" rect.right="1261"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -4850,7 +4851,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m8_12_lbl" ToolTip="" MnemoLayer="general" Group="Group_m8_12">
-                <Geometry rect.top="531" rect.bottom="554" rect.left="1116" rect.right="1145"/>
+                <Geometry rect.top="541" rect.bottom="564" rect.left="1116" rect.right="1145"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4865,7 +4866,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_12_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_12">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="535" rect.bottom="549" rect.left="1147" rect.right="1161"/>
+                <Geometry rect.top="545" rect.bottom="559" rect.left="1147" rect.right="1161"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4883,7 +4884,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_12_sens_2" ToolTip="" MnemoLayer="general" Group="Group_m8_12">
                 <Conversion Type="1" Bit="1"/>
-                <Geometry rect.top="535" rect.bottom="549" rect.left="1167" rect.right="1181"/>
+                <Geometry rect.top="545" rect.bottom="559" rect.left="1167" rect.right="1181"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5009,7 +5010,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_181" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1162" rect.bottom="1201" rect.left="703" rect.right="802"/>
+                <Geometry rect.top="1182" rect.bottom="1221" rect.left="703" rect.right="802"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5019,6 +5020,24 @@
                 <Transparency Value="1"/>
                 <Image_file Bitmap_collection="scheme" Name="машина 2.svg"/>
             </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="Line_182" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Geometry rect.top="738" rect.bottom="815" rect.left="2301" rect.right="2303"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <States>
+                    <State g="0" r="0" a="255" b="0"/>
+                    <State g="0" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="2302" y="739"/>
+                    <Point x="2302" y="814"/>
+                </Points>
+            </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
             <Properties>
@@ -5026,7 +5045,7 @@
                 <Alignment StepSize="20" Enabled="1">
                     <AlignColor g="0" r="0" a="128" b="0"/>
                 </Alignment>
-                <Dialog Width="300" Title="" Height="400"/>
+                <Dialog Width="300" Title="" Height="460"/>
                 <HotKey key="Not assigned"/>
                 <Password CryptData="0"/>
                 <Comment Comment=""/>
@@ -5057,7 +5076,7 @@
                 <XMnemoLayer Name="general" Visible="1"/>
             </XMnemoLayers>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="pusk" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="320" rect.bottom="379" rect.left="20" rect.right="139"/>
+                <Geometry rect.top="380" rect.bottom="439" rect.left="20" rect.right="139"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5099,12 +5118,12 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string="Пуск"/>
+                <Text string="Открыть"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem AutoIconResize="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="lbl_timeout" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="140" rect.bottom="163" rect.left="20" rect.right="137"/>
+                <Geometry rect.top="220" rect.bottom="243" rect.left="20" rect.right="137"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5118,7 +5137,7 @@
                 <LabelProperties TextAlign="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="stop" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="320" rect.bottom="379" rect.left="160" rect.right="279"/>
+                <Geometry rect.top="380" rect.bottom="439" rect.left="160" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5160,12 +5179,12 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string="Стоп"/>
+                <Text string="Закрыть"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="SpinBox_4" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="140" rect.bottom="163" rect.left="220" rect.right="279"/>
+                <Geometry rect.top="220" rect.bottom="243" rect.left="220" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5194,7 +5213,7 @@
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_5" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="260" rect.bottom="299" rect.left="160" rect.right="279"/>
+                <Geometry rect.top="320" rect.bottom="359" rect.left="160" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5255,7 +5274,7 @@
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_7" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="200" rect.bottom="239" rect.left="230" rect.right="279"/>
+                <Geometry rect.top="260" rect.bottom="299" rect.left="230" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5302,7 +5321,7 @@
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_8" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="200" rect.bottom="239" rect.left="160" rect.right="209"/>
+                <Geometry rect.top="260" rect.bottom="299" rect.left="160" rect.right="209"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5349,7 +5368,7 @@
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_9" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="200" rect.bottom="239" rect.left="20" rect.right="79"/>
+                <Geometry rect.top="260" rect.bottom="299" rect.left="20" rect.right="79"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5363,8 +5382,8 @@
                 <LabelProperties TextAlign="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="Ellipse_10" ToolTip="" MnemoLayer="general">
-                <Conversion Type="1" Bit="3"/>
-                <Geometry rect.top="209" rect.bottom="230" rect.left="89" rect.right="108"/>
+                <Conversion Type="1" Bit="5"/>
+                <Geometry rect.top="269" rect.bottom="290" rect.left="100" rect.right="119"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5415,6 +5434,88 @@
                 <Transparency Value="0"/>
                 <Font size="12" family="MS Shell Dlg 2" bold="1" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_13" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="180" rect.bottom="203" rect.left="20" rect.right="99"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Готов" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_14" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="2"/>
+                <Geometry rect.top="180" rect.bottom="199" rect.left="100" rect.right="119"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="0" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_15" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="140" rect.bottom="163" rect.left="20" rect.right="79"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="-" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_16" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="0"/>
+                <Geometry rect.top="140" rect.bottom="159" rect.left="100" rect.right="119"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="128" r="128" a="255" b="128"/>
+                    <State g="128" r="0" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="di_closed" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="1"/>
+                <Geometry rect.top="140" rect.bottom="159" rect.left="140" rect.right="159"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="128" r="128" a="255" b="128"/>
+                    <State g="128" r="0" a="255" b="0"/>
+                </States>
             </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="valve_dlg">
@@ -7421,28 +7522,22 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_cmd" Units="....." Location="351" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_timeout" Units="....." Location="352" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_status" Units="....." Location="353" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m6_4_sens"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_4_state" Units="....." Location="354" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m6_4"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -7783,23 +7878,29 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_cmd" Units="....." Location="431" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_timeout" Units="....." Location="432" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_status" Units="....." Location="433" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_12_sens"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_12_sens_2"/>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_12_state" Units="....." Location="434" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m8_12"/>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -8544,34 +8645,37 @@
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
                 <ListenersList>
-                    <Listener Path="main\" Type="Output register" Name="m6_4_cmd(4-351)"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_12_cmd(4-431)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
                     <Listener Path="valve_dlg" Type="XMnemoShape" Name="Ellipse_4"/>
                     <Listener Path="engine_dlg" Type="XMnemoShape" Name="Ellipse_10"/>
-                    <Listener Path="main\" Type="Output register" Name="m6_4_status(4-353)"/>
+                    <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
+                    <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
+                    <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_12_status(4-433)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
                     <Listener Path="valve_dlg" Type="XMnemoSpinBox" Name="SpinBox_11"/>
-                    <Listener Path="main\" Type="Output register" Name="m6_4_timeout(4-352)"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_12_timeout(4-432)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
-                    <Listener Path="main\" Type="Output register" Name="m6_4_state(4-354)"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_12_state(4-434)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
                 <ListenersList>
-                    <Listener Path="engine_dlg" Type="XMnemoTextLabel" Name="TextLabel_6"/>
                     <Listener Path="valve_dlg" Type="XMnemoTextLabel" Name="TextLabel_1"/>
+                    <Listener Path="engine_dlg" Type="XMnemoTextLabel" Name="TextLabel_6"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Boolean" Marker="0" Comments="" Name="dlg_is_valve" Value="false">
@@ -8585,6 +8689,11 @@
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_pusk_btn" Value="">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoButton" Name="pusk"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_sensor_name" Value="">
+                <ListenersList>
+                    <Listener Path="engine_dlg" Type="XMnemoTextLabel" Name="TextLabel_15"/>
                 </ListenersList>
             </GlobalVariable>
         </Group>
@@ -8614,17 +8723,17 @@
                                 <DEFAULT Value=""/>
                                 <Property>
                                     <Element Key="0" Value="&lt;span style=&quot;color: blue&quot;>Стоп&lt;/span>"/>
-                                    <Element Key="1" Value="&lt;span style=&quot;color: cyan&quot;>Запуск&lt;/span>"/>
+                                    <Element Key="1" Value="&lt;span style=&quot;color: darkcyan&quot;>Запуск&lt;/span>"/>
                                     <Element Key="2" Value="&lt;span style=&quot;color: darkgreen&quot;>Работа&lt;/span>"/>
-                                    <Element Key="3" Value="&lt;span style=&quot;color: cyan&quot;>Остановка&lt;/span>"/>
+                                    <Element Key="3" Value="&lt;span style=&quot;color: darkcyan&quot;>Остановка&lt;/span>"/>
                                     <Element Key="4" Value="&lt;span style=&quot;color: darkred&quot;>Авария&lt;/span>"/>
-                                    <Element Key="5" Value="&lt;span style=&quot;color: yellow&quot;>Не готов&lt;/span>"/>
+                                    <Element Key="5" Value="&lt;span style=&quot;color: darkkhaki&quot;>Не готов&lt;/span>"/>
                                 </Property>
                             </Format>
                             <Decor>
                                 <BaseDecor/>
                             </Decor>
-                            <ValueItem Value="0"/>
+                            <ValueItem Value="6"/>
                         </Item>
                         <Item>
                             <Pos Column="1" Row="0"/>
@@ -8635,18 +8744,18 @@
                                 <DEFAULT Value=""/>
                                 <Property>
                                     <Element Key="0" Value="&lt;span style=&quot;color: black&quot;>Закрыт&lt;/span>"/>
-                                    <Element Key="1" Value="&lt;span style=&quot;color: cyan&quot;>Открывается&lt;/span>"/>
+                                    <Element Key="1" Value="&lt;span style=&quot;color: darkcyan&quot;>Открывается&lt;/span>"/>
                                     <Element Key="2" Value="&lt;span style=&quot;color: darkgreen&quot;>Открыт&lt;/span>"/>
-                                    <Element Key="3" Value="&lt;span style=&quot;color: cyan&quot;>Закрывается&lt;/span>"/>
+                                    <Element Key="3" Value="&lt;span style=&quot;color: darkcyan&quot;>Закрывается&lt;/span>"/>
                                     <Element Key="4" Value="&lt;span style=&quot;color: darkred&quot;>Авария&lt;/span>"/>
-                                    <Element Key="5" Value="&lt;span style=&quot;color: darkyellow&quot;>Не готов&lt;/span>"/>
-                                    <Element Key="6" Value="&lt;span style=&quot;color: darkyellow&quot;>Неопределён&lt;/span>"/>
+                                    <Element Key="5" Value="&lt;span style=&quot;color: darkkhaki&quot;>Не готов&lt;/span>"/>
+                                    <Element Key="6" Value="&lt;span style=&quot;color: darkkhaki&quot;>Неопределён&lt;/span>"/>
                                 </Property>
                             </Format>
                             <Decor>
                                 <BaseDecor/>
                             </Decor>
-                            <ValueItem Value="0"/>
+                            <ValueItem Value="6"/>
                         </Item>
                         <Item>
                             <Pos Column="0" Row="1"/>
