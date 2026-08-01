@@ -6,7 +6,7 @@
    version="1.1"
    id="svg74"
    sodipodi:docname="задвижка_darkcyan.svg"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -20,13 +20,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.4702524"
-     inkscape:cx="299.60842"
-     inkscape:cy="-32.987533"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="2.0792509"
+     inkscape:cx="311.41023"
+     inkscape:cy="-43.525291"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g73"
      showgrid="false" />
@@ -42,7 +42,7 @@
        style="overflow:visible">
       <path
          d="M 3,-3 -3,3 M 0,-5 V 5"
-         style="stroke:darkcyan;stroke-width:0.5"
+         style="stroke:darkgreen;stroke-width:0.5"
          id="path1" />
     </marker>
     <pattern
@@ -54,19 +54,19 @@
        y="0">
       <path
          d="M8 4 l-4,4"
-         stroke="darkcyan"
+         stroke="darkgreen"
          stroke-width="0.25"
          linecap="square"
          id="path2" />
       <path
          d="M6 2 l-4,4"
-         stroke="darkcyan"
+         stroke="darkgreen"
          stroke-width="0.25"
          linecap="square"
          id="path3" />
       <path
          d="M4 0 l-4,4"
-         stroke="darkcyan"
+         stroke="darkgreen"
          stroke-width="0.25"
          linecap="square"
          id="path4" />
@@ -80,26 +80,26 @@
     <symbol
        id="KDIMARROW_00">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path5" />
     </symbol>
     <symbol
        id="KDIMARROW_01">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 -18.8976,2.49"
          id="path6" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m -18.8976,1125.01 1.8897,-2.49"
          id="path7" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m -17.0079,1122.52 -1.8897,-2.49"
          id="path8" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M -18.8976,1120.03 0,1122.52"
          id="path9" />
       <path
@@ -107,30 +107,30 @@
          style="fill:#000000"
          id="path10" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path11" />
     </symbol>
     <symbol
        id="KDIMARROW_02">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 18.8976,2.49"
          id="path12" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 18.8976,1125.01 -1.8897,-2.49"
          id="path13" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 17.0079,1122.52 1.8897,-2.49"
          id="path14" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 18.8976,1120.03 0,1122.52"
          id="path15" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H 26.4567"
          id="path16" />
       <path
@@ -138,22 +138,22 @@
          style="fill:#000000"
          id="path17" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path18" />
     </symbol>
     <symbol
        id="KDIMARROW_03">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m -4.00819,1126.53 8.01638,-8.02"
          id="path19" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H 7.55905"
          id="path20" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path21" />
     </symbol>
@@ -161,33 +161,33 @@
        id="KDIMARROW_04">
       <path
          d="M -0.944882,1122.5197 0,1123.4646 0.944882,1122.5197 0,1121.5748 l -0.944882,0.9449 H -1.889764 L 0,1124.4094 1.889764,1122.5197 0,1120.6299 l -1.889764,1.8898 H -2.834646 L 0,1125.3543 2.834646,1122.5197 0,1119.685 l -2.834646,2.8347"
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          id="path22" />
       <path
          d="M -0.944882,1122.5197 0,1123.4646 0.944882,1122.5197 0,1121.5748 l -0.944882,0.9449 H -1.889764 L 0,1124.4094 1.889764,1122.5197 0,1120.6299 l -1.889764,1.8898 H -2.834646 L 0,1125.3543 2.834646,1122.5197 0,1119.685 l -2.834646,2.8347"
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          id="path23" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path24" />
     </symbol>
     <symbol
        id="KDIMARROW_05">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 -18.8976,2.49"
          id="path25" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m -18.8976,1125.01 v -2.49"
          id="path26" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m -18.8976,1122.52 v -2.49"
          id="path27" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M -18.8976,1120.03 0,1122.52"
          id="path28" />
       <path
@@ -195,30 +195,30 @@
          style="fill:#000000"
          id="path29" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path30" />
     </symbol>
     <symbol
        id="KDIMARROW_06">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 18.8976,2.49"
          id="path31" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 18.8976,1125.01 v -2.49"
          id="path32" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 18.8976,1122.52 v -2.49"
          id="path33" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 18.8976,1120.03 0,1122.52"
          id="path34" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H 26.4567"
          id="path35" />
       <path
@@ -226,75 +226,75 @@
          style="fill:#000000"
          id="path36" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path37" />
     </symbol>
     <symbol
        id="KDIMARROW_07">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 -18.8976,2.49"
          id="path38" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 -18.8976,-2.49"
          id="path39" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path40" />
     </symbol>
     <symbol
        id="KDIMARROW_08">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 18.8976,2.49"
          id="path41" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 18.8976,-2.49"
          id="path42" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H 26.4567"
          id="path43" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path44" />
     </symbol>
     <symbol
        id="KDIMARROW_09">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 -7.55905,7.56"
          id="path45" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 -7.55905,-7.56"
          id="path46" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path47" />
     </symbol>
     <symbol
        id="KDIMARROW_10">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 7.55905,7.56"
          id="path48" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m 0,1122.52 7.55905,-7.56"
          id="path49" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H 15.1181"
          id="path50" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path51" />
     </symbol>
@@ -302,14 +302,14 @@
        id="KDIMARROW_11">
       <path
          d="m 9.448819,1122.5197 a 9.448819,9.448819 0 0 0 -18.897638,0 9.448819,9.448819 0 0 0 18.897638,0 z"
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          id="path52" />
       <path
          d="m 9.448819,1122.5197 a 9.448819,9.448819 0 0 0 -18.897638,0 9.448819,9.448819 0 0 0 18.897638,0 z"
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          id="path53" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path54" />
     </symbol>
@@ -317,48 +317,48 @@
        id="KDIMARROW_12">
       <path
          d="m 5.669291,1122.5197 a 5.669291,5.669291 0 0 0 -11.338582,0 5.669291,5.669291 0 0 0 11.338582,0 z"
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          id="path55" />
       <path
          d="m 5.669291,1122.5197 a 5.669291,5.669291 0 0 0 -11.338582,0 5.669291,5.669291 0 0 0 11.338582,0 z"
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          id="path56" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path57" />
     </symbol>
     <symbol
        id="KDIMARROW_13">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="m -4.00819,1118.51 8.01638,8.02"
          id="path58" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H 7.55905"
          id="path59" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 H -3.77953"
          id="path60" />
     </symbol>
     <symbol
        id="U0">
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,1122.52 V 0"
          id="path61" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 0,0 H 793.701"
          id="path62" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 793.701,0 V 1122.52"
          id="path63" />
       <path
-         style="fill:none;stroke:darkcyan;stroke-linecap:round"
+         style="fill:none;stroke:darkgreen;stroke-linecap:round"
          d="M 793.701,1122.52 H 0"
          id="path64" />
     </symbol>
@@ -370,41 +370,67 @@
      transform="translate(-245.30101,-304.87193)">
     <path
        d="m 538.45447,310.67804 -220.70654,46.8637"
-       style="fill:#008080;stroke:#008080;stroke-width:4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-       id="path65" />
+       style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path65"
+       sodipodi:nodetypes="cc" />
     <path
        d="M 538.53494,357.15951 317.66746,311.06026"
-       style="fill:none;stroke:#008080;stroke-width:4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
        id="path66"
        sodipodi:nodetypes="cc" />
     <path
        d="m 301.04895,334.32984 16.65874,-0.0288"
-       style="fill:none;stroke:#009898;stroke-linecap:round"
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-width:0.3;stroke-dasharray:none"
        id="path67" />
     <path
        d="m 288.71343,347.39892 -0.0503,-23.79859 -11.62674,14.55061 -12.62418,-14.49529 0.0503,24.4304"
-       style="fill:none;stroke:#008080;stroke-width:4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:1.2;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
        id="path68" />
     <path
        d="m 301.08074,335.59143 a 25.055215,25.055215 0 0 0 -50.11043,0 25.055215,25.055215 0 0 0 50.11043,0 z"
-       style="fill:none;stroke:darkcyan;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        id="path69" />
     <path
-       style="fill:none;stroke:darkcyan;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 538.454,310.678 0.081,46.482"
        id="path70" />
     <path
-       style="fill:none;stroke:darkcyan;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 538.535,357.16 -220.787,0.382"
        id="path71" />
     <path
-       style="fill:none;stroke:darkcyan;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 317.748,357.542 317.667,311.06"
        id="path72" />
     <path
-       style="fill:none;stroke:darkcyan;stroke-width:11.3386;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:7.55905512;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 317.667,311.06 220.787,-0.382"
        id="path73" />
+    <path
+       style="fill:#00ffff;stroke:#000000;stroke-width:2.3136;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 74.477008,29.586757 V 8.5019416 l 1.870427,-0.024437 C 78.454207,8.4499788 178.32685,29.100512 177.42154,29.376462 c -2.38483,0.726932 -100.477173,21.29511 -101.559168,21.29511 -1.363922,0 -1.385364,-0.326337 -1.385364,-21.084815 z"
+       id="path74"
+       transform="translate(245.30101,304.87193)" />
+    <path
+       style="fill:#00ffff;stroke:#000000;stroke-width:2.31360006;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 135.69099,18.477934 89.780503,8.8420192 95.439482,8.3293599 C 98.551921,8.0473973 140.78062,7.8943624 189.28104,7.9892822 L 277.46361,8.1618639 230.2127,18.195175 c -25.988,5.518321 -47.55699,10.007517 -47.93107,9.975992 -0.37409,-0.03153 -21.33988,-4.39348 -46.59064,-9.693233 z"
+       id="path75"
+       transform="translate(245.30101,304.87193)" />
+    <path
+       style="fill:#00ffff;stroke:#000000;stroke-width:2.3136;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 237.71429,39.766708 C 211.34126,34.212577 189.1867,29.573426 188.48192,29.457483 187.06996,29.225204 287.45635,7.8076584 289.91621,7.8163679 l 1.53035,0.00542 V 28.906601 49.991416 l -2.89066,-0.06314 c -1.58987,-0.03473 -24.46859,-4.607434 -50.84161,-10.161565 z"
+       id="path76"
+       transform="translate(245.30101,304.87193)" />
+    <path
+       style="fill:#00ffff;stroke:#000000;stroke-width:2.3136;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="m 88.420192,50.311287 c 0.374086,-0.139089 21.765498,-4.718108 47.536468,-10.175596 l 46.85631,-9.922705 46.60522,9.719176 46.60522,9.719177 -10.82266,0.418006 C 253.71091,50.513119 87.264692,50.740918 88.420192,50.311287 Z"
+       id="path77"
+       transform="translate(245.30101,304.87193)" />
+    <path
+       style="fill:#00ffff;stroke:#000000;stroke-width:2.3136;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 27.013706,53.245773 C 19.982883,52.210676 13.319543,47.230975 10.046212,40.565489 8.4109957,37.235695 8.1618639,35.919071 8.1618639,30.60699 c 0,-5.674776 0.1691259,-6.433301 2.3180351,-10.396323 2.627939,-4.84645 5.338124,-7.482375 10.459985,-10.173379 3.100199,-1.6288302 4.314846,-1.8632538 9.667106,-1.8657243 7.082467,-0.00327 10.589887,1.2539968 15.254349,5.4680573 5.306799,4.794374 7.576485,10.042498 7.588072,17.545658 0.02104,13.62168 -12.542489,24.105893 -26.435705,22.060494 z m -6.795933,-20.409767 0.186887,-11.034013 5.441242,6.266332 c 2.992684,3.446482 5.643687,6.269299 5.891119,6.272926 0.247431,0.0036 2.69599,-2.810776 5.441242,-6.254228 l 4.991367,-6.26082 0.18731,10.68183 c 0.155628,8.875089 0.356953,10.68183 1.190272,10.68183 0.849556,0 1.002962,-2.028614 1.002962,-13.263029 0,-7.294666 -0.229553,-13.24797 -0.510117,-13.229565 -0.280564,0.01841 -3.16519,3.396356 -6.41028,7.506558 l -5.900164,7.473095 -6.572482,-7.506558 c -3.614865,-4.128607 -6.698602,-7.506559 -6.852749,-7.506559 -0.154146,0 -0.280266,6.121398 -0.280266,13.603107 0,11.536695 0.152422,13.603107 1.003385,13.603107 0.835495,0 1.034655,-1.84624 1.190272,-11.034013 z"
+       id="path78"
+       transform="translate(245.30101,304.87193)" />
   </g>
   <g
      inkscape:groupmode="layer"
