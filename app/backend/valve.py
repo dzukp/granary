@@ -234,6 +234,7 @@ class Valve(Mechanism, ModbusDataObject):
                 + int(self.do_close.val) * (1 << 4)
                 + int(self.disabled_di) * (1 << 5)
                 + int(self.enabled) * (1 << 6)
+                + int(self.state == self.OPENED) * (1 << 7)
             )
             return {
                 self.mb_cells_idx - start_addr + 0: 0,

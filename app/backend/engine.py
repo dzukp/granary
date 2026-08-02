@@ -194,6 +194,7 @@ class Engine(Mechanism, ModbusDataObject):
                 + int(self.do_start.val) * (1 << 3)
                 + int(self.disabled_di) * (1 << 5)
                 + int(self.enabled) * (1 << 6)
+                + int(self.state == self.RUNNING) * (1 << 7)
             )
             return {
                 self.mb_cells_idx + 0: 0,
