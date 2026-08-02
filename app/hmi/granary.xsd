@@ -81,6 +81,7 @@
             <XMnemoLayers>
                 <XMnemoLayer Name="arrow" Visible="1"/>
                 <XMnemoLayer Name="general" Visible="1"/>
+                <XMnemoLayer Name="sens" Visible="1"/>
             </XMnemoLayers>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_1" ToolTip="" MnemoLayer="general">
                 <Geometry rect.top="1271" rect.bottom="1350" rect.left="0" rect.right="2560"/>
@@ -192,7 +193,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.2" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_2">
@@ -283,7 +284,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.3" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_3">
@@ -545,7 +546,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.4" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_4">
@@ -636,7 +637,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.8" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_8_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_8">
@@ -727,7 +728,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.12" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_12_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_12">
@@ -818,7 +819,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.10" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_10_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_10">
@@ -909,7 +910,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.6" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_6">
@@ -931,8 +932,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_40" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1029" rect.bottom="1108" rect.left="2237" rect.right="2336"/>
-                <Angle Value="180"/>
+                <Geometry rect.top="1010" rect.bottom="1180" rect.left="2237" rect.right="2336"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -940,7 +940,7 @@
                     <ListenersList/>
                 </StandartProperies>
                 <Transparency Value="1"/>
-                <Image_file Bitmap_collection="scheme" Name="бункер-13.svg"/>
+                <Image_file Bitmap_collection="scheme" Name="Б 17.3.svg"/>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m15_3" ToolTip="" MnemoLayer="general" Group="Group_m15_3">
                 <Geometry rect.top="1035" rect.bottom="1094" rect.left="2336" rect.right="2365"/>
@@ -1012,7 +1012,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="15.3" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m15_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m15_3">
@@ -1034,7 +1034,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m16_3" ToolTip="" MnemoLayer="general" Group="Group_m16_3">
-                <Geometry rect.top="968" rect.bottom="1022" rect.left="2266" rect.right="2300"/>
+                <Geometry rect.top="968" rect.bottom="1022" rect.left="2270" rect.right="2304"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1093,7 +1093,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m16_3_lbl" ToolTip="" MnemoLayer="general" Group="Group_m16_3">
-                <Geometry rect.top="944" rect.bottom="967" rect.left="2257" rect.right="2286"/>
+                <Geometry rect.top="944" rect.bottom="967" rect.left="2261" rect.right="2290"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1103,12 +1103,12 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="16.3" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m16_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m16_3">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="948" rect.bottom="962" rect.left="2294" rect.right="2308"/>
+                <Geometry rect.top="948" rect.bottom="962" rect.left="2298" rect.right="2312"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1194,7 +1194,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="3.3" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m3_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m3_3">
@@ -1296,7 +1296,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="3.4" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m3_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m3_4">
@@ -1387,7 +1387,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="3.5" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m3_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m3_5">
@@ -1478,7 +1478,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="3.6" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m3_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m3_6">
@@ -1569,7 +1569,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="14" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m14_sens" ToolTip="" MnemoLayer="general" Group="Group_m14">
@@ -1660,7 +1660,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.1" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_1_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_1">
@@ -1751,7 +1751,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.2" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_2">
@@ -1842,7 +1842,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.3" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_3">
@@ -1933,7 +1933,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.4" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_4">
@@ -2024,7 +2024,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.5" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_5">
@@ -2115,7 +2115,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.6" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_6">
@@ -2206,7 +2206,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.7" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_7">
@@ -2297,7 +2297,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="13.8" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_8_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_8">
@@ -2388,7 +2388,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.1" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_1_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_1">
@@ -2479,7 +2479,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.2" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_2">
@@ -2570,7 +2570,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.4" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_4">
@@ -2661,7 +2661,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.5" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_5">
@@ -2752,7 +2752,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.6" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_6">
@@ -2843,7 +2843,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.7" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
@@ -2934,7 +2934,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.8" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_8_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_8_lbl">
@@ -3025,7 +3025,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.9" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_9_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_9">
@@ -3116,7 +3116,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.10" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_10_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_10">
@@ -3207,7 +3207,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="6.11" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_11_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_11">
@@ -3298,7 +3298,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.5" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_5">
@@ -3389,7 +3389,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.7" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_7">
@@ -3480,7 +3480,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.9" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_9_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_9">
@@ -3571,7 +3571,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="1.11" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m1_11_sens" ToolTip="" MnemoLayer="general" Group="Group_m1_11">
@@ -3662,7 +3662,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.1" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_1_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_1">
@@ -3771,7 +3771,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.2" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_2_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_2">
@@ -3880,7 +3880,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.3" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_3_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_3">
@@ -3989,7 +3989,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.4" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_4_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_4">
@@ -4098,7 +4098,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.5" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_5_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_5">
@@ -4207,7 +4207,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.6" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_6_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_6">
@@ -4316,7 +4316,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.7" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_7">
@@ -4425,7 +4425,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.8" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_8_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_8">
@@ -4534,7 +4534,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.9" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_9_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_9">
@@ -4643,7 +4643,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.10" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_10_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_10">
@@ -4752,7 +4752,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.11" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_11_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_11">
@@ -4861,7 +4861,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.12" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_12_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_12">
@@ -4970,7 +4970,7 @@
                 <HTML html="0"/>
                 <Text Angle="0" string="8.13" format=""/>
                 <Transparency Value="1"/>
-                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m8_13_sens" ToolTip="" MnemoLayer="general" Group="Group_m8_13">
@@ -5037,6 +5037,48 @@
                     <Point x="2302" y="739"/>
                     <Point x="2302" y="814"/>
                 </Points>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_183" ToolTip="" MnemoLayer="arrow" Group="Group_Rectangle_183">
+                <Geometry rect.top="318" rect.bottom="717" rect.left="1769" rect.right="1948"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="0" a="255" b="0"/>
+                <RectangleProperties Rounded="0" Brush="8" PenWidth="2" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_184" ToolTip="" MnemoLayer="arrow" Group="Group_Rectangle_183">
+                <Geometry rect.top="335" rect.bottom="358" rect.left="1769" rect.right="1948"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Существующий комплекс" format=""/>
+                <Transparency Value="1"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_185" ToolTip="" MnemoLayer="arrow" Group="Group_Rectangle_183">
+                <Geometry rect.top="362" rect.bottom="385" rect.left="1769" rect.right="1948"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="сушилки зерна" format=""/>
+                <Transparency Value="1"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
@@ -5993,6 +6035,7 @@
             <ResBitmap Bitmap_collection="scheme" Name="15.3.svg"/>
             <ResBitmap Bitmap_collection="scheme" Name="15.3_darkcyan.svg"/>
             <ResBitmap Bitmap_collection="scheme" Name="КШ 1.9.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="Б 17.3.svg"/>
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
@@ -8644,9 +8687,7 @@
         <Group Marker="0" Name="mechanisms"/>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
-                <ListenersList>
-                    <Listener Path="main\" Type="Output register" Name="m8_12_cmd(4-431)"/>
-                </ListenersList>
+                <ListenersList/>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
@@ -8655,21 +8696,18 @@
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_12_status(4-433)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
                     <Listener Path="valve_dlg" Type="XMnemoSpinBox" Name="SpinBox_11"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_12_timeout(4-432)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_12_state(4-434)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
