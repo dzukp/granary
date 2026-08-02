@@ -14,7 +14,7 @@ class BaseM110Module(BaseOwenMx210):
 
     def init(self):
         if self.serial_port:
-            self.mb = modbus_rtu.RtuMaster(serial=self.serial_port.serial)
+            self.mb = modbus_rtu.RtuMaster(serial=self.serial_port)
             self.mb.set_timeout(min(0.02, self.timeout))
         else:
             super().init()
