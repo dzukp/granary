@@ -2,10 +2,23 @@ from time import time
 
 import modbus_tk
 import modbus_tk.defines as cst
+from modbus_tk import modbus_rtu
+
 from pylogic.tagsrv.owen_mx210 import BaseOwenMx210
 
 
-class BaseM110TcpModule(BaseOwenMx210):
+class BaseM110Module(BaseOwenMx210):
+    def __init__(self, tags, serial=None, *args, **kwargs):
+        self.serial_port = serial
+        super().__init__(tags, *args, **kwargs)
+
+    def init(self):
+        if self.serial_port:
+            self.mb = modbus_rtu.RtuMaster(serial=self.serial_port.serial)
+            self.mb.set_timeout(min(0.02, self.timeout))
+        else:
+            super().init()
+
     def process(self):
         try:
             self.do_request()
@@ -27,11 +40,11 @@ class BaseM110TcpModule(BaseOwenMx210):
         raise NotImplementedError
 
 
-class OwenM110DiTcpModule(BaseM110TcpModule):
+class OwenM110DiModule(BaseM110Module):
     """Дискретный ввод"""
 
-    def __init__(self, tags, ip, port=502, slave=1, timeout=0.05, **kwargs):
-        super().__init__(tags, ip, port, slave, timeout)
+    def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
+        super().__init__(tags, serial, ip, port, slave, timeout)
         self.name = kwargs.get('name') or self.name
         sorted_tags = sorted(tags, key=lambda x: x.addr)
         self.quantity = 2 if sorted_tags[-1].addr - sorted_tags[0].addr > 16 else 1
@@ -60,10 +73,10 @@ class OwenM110DiTcpModule(BaseM110TcpModule):
         return str(int(value)) if value is not None else '-'
 
 
-class OwenM110DoTcpModule(BaseM110TcpModule):
+class OwenM110DoModule(BaseM110Module):
     """Дискретный вывод"""
 
-    def __init__(self, tags, ip, port=502, slave=1, timeout=0.05, **kwargs):
+    def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
         super().__init__(tags=tags, ip=ip, port=port, slave=slave, timeout=timeout)
         self.name = kwargs.get('name') or self.name
 

@@ -8,6 +8,18 @@ from .tagsrv_logger import logger
 class DummyPort(object):
     """Затычка, чтобы не падало, когда нет такого COM-орта"""
 
+    class serial:
+        name = 'Dummy.serial'
+        opened = True
+        is_open = True
+        timeout = 0
+        baudrate = 9600
+        bytesize = 8
+        parity = 'N'
+        stopbits = 1
+        xonxoff = False
+        rtscts = False
+
     def write(self, data):
         return len(data)
 
