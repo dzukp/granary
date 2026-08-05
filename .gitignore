@@ -1,3 +1,4 @@
 /app/backend/logs/*
 /app/backend/saves/*
 /.idea
+/app/backend/__pacache__

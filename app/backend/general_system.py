@@ -1,5 +1,5 @@
 from engine import Engine
-from mechanism import Mechanism, MechManager
+from mechanism import MechManager
 from pylogic.channel import InChannel
 from pylogic.io_object import IoObject
 from pylogic.modbus_supervisor import ModbusDataObject
@@ -8,7 +8,12 @@ from valve import Valve
 
 
 class GeneralSystem(IoObject, MechManager, ModbusDataObject):
-    _save_attrs = ('silos_ready_enabled', 'socket_1_enabled', 'socket_2_enabled', 'socket_3_enabled')
+    _save_attrs = (
+        'silos_ready_enabled',
+        'socket_1_enabled',
+        'socket_2_enabled',
+        'socket_3_enabled',
+    )
 
     def __init__(self, name, parent):
         super().__init__(name, parent)
@@ -33,3 +38,31 @@ class GeneralSystem(IoObject, MechManager, ModbusDataObject):
     def process(self):
         for silo in self.silos:
             silo.set_ready(not self.silos_ready_enabled or self.di_silos_ready.val)
+
+    def mb_input(self, start_addr, data):
+        if self.mb_cells_idx is not None:
+            zero_addr = self.mb_cells_idx - start_addr
+            cmd = data[zero_addr]
+            if cmd & 0x0001:
+                self.silos_ready_enabled = True
+            if cmd & 0x0002:
+                self.silos_ready_enabled = False
+
+    def mb_output(self, start_addr):
+        if self.mb_cells_idx is not None:
+            status = (
+                int(self.di_silos_ready.val) * (1 << 0)
+                + int(self.silos_ready_enabled) * (1 << 0)
+                + int(self.di_socket_1.val) * (1 << 2)
+                + int(self.socket_1_enabled) * (1 << 3)
+                + int(self.di_socket_2.val) * (1 << 4)
+                + int(self.socket_2_enabled) * (1 << 5)
+                + int(self.di_socket_3.val) * (1 << 6)
+                + int(self.socket_3_enabled) * (1 << 7)
+            )
+            return {
+                self.mb_cells_idx: 0,
+                self.mb_cells_idx + 1: status,
+            }
+        else:
+            return {}

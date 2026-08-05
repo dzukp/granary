@@ -2,6 +2,7 @@ from aspiration import Aspiration
 from engine import Engine
 from general_system import GeneralSystem
 from silo import Silo
+from siren import Siren
 from top import Top
 from valve import Valve
 
@@ -477,6 +478,15 @@ objects = {
                 'class': GeneralSystem,
                 'mb_cells_idx': 20,
                 'children': mechanisms,
+                'di_silos_ready': '',
+                'di_socket_1': 'di_9_1',
+                'di_socket_2': 'di_9_2',
+                'di_socket_3': 'di_9_3',
+            },
+            'siren': {
+                'class': Siren,
+                'mb_cells_idx': 585,
+                'do_start': 'do_30_5',
             },
         },
     },
