@@ -94,7 +94,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -178,7 +178,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -197,7 +197,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -218,7 +218,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -260,7 +260,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -279,7 +279,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3857,7 +3857,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3879,7 +3879,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3900,7 +3900,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3919,7 +3919,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3940,7 +3940,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3961,7 +3961,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -3981,7 +3981,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4000,7 +4000,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4021,7 +4021,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4041,7 +4041,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4061,7 +4061,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4081,7 +4081,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4102,7 +4102,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4123,7 +4123,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4146,7 +4146,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4167,7 +4167,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4190,7 +4190,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4212,7 +4212,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4235,7 +4235,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4258,7 +4258,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4278,7 +4278,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4300,7 +4300,7 @@
                 </StandartProperies>
                 <Color g="0" r="128" a="255" b="0"/>
                 <States>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
@@ -4497,7 +4497,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_1" ToolTip="" MnemoLayer="arrow">
@@ -4515,7 +4515,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_2" ToolTip="" MnemoLayer="arrow" Group="Group_11_2">
@@ -4533,7 +4533,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_3" ToolTip="" MnemoLayer="arrow" Group="Group_11_3">
@@ -4551,7 +4551,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_4" ToolTip="" MnemoLayer="arrow" Group="Group_11_4">
@@ -4569,7 +4569,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_6" ToolTip="" MnemoLayer="arrow" Group="Group_silo_11_6">
@@ -4587,7 +4587,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_7" ToolTip="" MnemoLayer="arrow" Group="Group_11_6">
@@ -4605,7 +4605,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_up_11_8" ToolTip="" MnemoLayer="arrow" Group="Group_11_7">
@@ -4623,7 +4623,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="sens_bottom_11_5" ToolTip="" MnemoLayer="arrow" Group="Group_silo_11_5">
@@ -4940,7 +4940,7 @@
                 </Properties>
                 <States>
                     <State g="128" r="128" a="255" b="128"/>
-                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="0" r="128" a="255" b="0"/>
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="socket_1" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
