@@ -6,7 +6,7 @@
    version="1.1"
    id="svg118"
    sodipodi:docname="15.3_darkgreen.svg"
-   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,12 +21,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.4142136"
-     inkscape:cx="102.88404"
-     inkscape:cy="267.63992"
-     inkscape:window-width="2560"
-     inkscape:window-height="1369"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:cx="102.88403"
+     inkscape:cy="269.05412"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g117"
      showgrid="false" />
@@ -709,12 +709,6 @@
        d="M 127.50986,435.31303 V 416.3158 h 19.05735 19.05734 v 3.25715 c 0,3.23272 -0.002,3.25879 -0.27053,3.47621 l -0.27053,0.21906 v 11.98946 11.98946 l 0.27053,0.17962 c 0.26979,0.17913 0.27053,0.18886 0.27053,3.53156 v 3.35193 h -19.05734 -19.05735 z m 36.52758,17.53035 c 0.20971,-0.20971 0.20971,-34.97123 0,-35.18094 -0.11089,-0.11089 -4.17724,-0.14428 -17.5712,-0.14428 -16.45606,0 -17.43582,0.0117 -17.58665,0.21041 -0.13105,0.17264 -0.16041,3.31448 -0.16355,17.50218 -0.003,11.69688 0.0365,17.36703 0.12065,17.52434 0.12218,0.2283 0.4454,0.23257 17.59047,0.23257 13.42435,0 17.49939,-0.0334 17.61028,-0.14428 z"
        id="path167"
        transform="translate(286.85471,244.81571)" />
-    <path
-       style="fill:#00ff00;stroke:#000000;stroke-width:3.77953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M 97.029247,410.96531 C 0,0 0,0 97.029247,410.96531 Z"
-       id="path169"
-       transform="translate(286.85471,244.81571)"
-       sodipodi:nodetypes="ss" />
     <path
        style="fill:#00ff00;stroke:#000000;stroke-width:1.88976;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
        d="m 106.73804,340.51201 4.71829,-4.73799 4.27184,4.08872 c 2.34951,2.24879 4.60129,4.38089 5.00397,4.73799 0.60352,0.5352 -0.97592,0.64927 -8.99012,0.64927 h -9.72227 z"
