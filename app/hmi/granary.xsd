@@ -79,10 +79,168 @@
                 </Deactivate>
             </Properties>
             <XMnemoLayers>
-                <XMnemoLayer Name="arrow" Visible="1"/>
                 <XMnemoLayer Name="general" Visible="1"/>
-                <XMnemoLayer Name="sens" Visible="0"/>
+                <XMnemoLayer Name="sens" Visible="1"/>
+                <XMnemoLayer Name="arrow" Visible="1"/>
             </XMnemoLayers>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="Line_220" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Geometry rect.top="144" rect.bottom="302" rect.left="1995" rect.right="2243"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <Points>
+                    <Point x="1996" y="145"/>
+                    <Point x="2242" y="146"/>
+                    <Point x="2242" y="301"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_3_m6_1" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="953" rect.bottom="1044" rect.left="1683" rect.right="1759"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="1758" y="954"/>
+                    <Point x="1758" y="988"/>
+                    <Point x="1684" y="989"/>
+                    <Point x="1685" y="1043"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m8_10_m6_4" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="75" rect.bottom="100" rect.left="1196" rect.right="1199"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="1198" y="76"/>
+                    <Point x="1197" y="99"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_5_m8_13" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="501" rect.bottom="544" rect.left="1398" rect.right="1582"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="1399" y="502"/>
+                    <Point x="1399" y="511"/>
+                    <Point x="1581" y="514"/>
+                    <Point x="1581" y="543"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_12_m3_5" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="394" rect.bottom="1054" rect.left="1303" rect.right="1470"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="1469" y="395"/>
+                    <Point x="1468" y="415"/>
+                    <Point x="1304" y="414"/>
+                    <Point x="1304" y="945"/>
+                    <Point x="1329" y="947"/>
+                    <Point x="1330" y="1053"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_8_8" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="1149" rect.bottom="1195" rect.left="763" rect.right="766"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="765" y="1150"/>
+                    <Point x="764" y="1194"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_11_m6_2" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="610" rect.bottom="1100" rect.left="918" rect.right="922"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="919" y="611"/>
+                    <Point x="921" y="1099"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_10_m3_4" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="402" rect.bottom="1082" rect.left="348" rect.right="504"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="255" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="503" y="403"/>
+                    <Point x="503" y="428"/>
+                    <Point x="354" y="428"/>
+                    <Point x="349" y="1081"/>
+                </Points>
+            </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_1" ToolTip="" MnemoLayer="general">
                 <Geometry rect.top="1271" rect.bottom="1350" rect.left="0" rect.right="2560"/>
                 <StandartProperies Freeze="0">
@@ -1748,7 +1906,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m13_1" ToolTip="" MnemoLayer="general" Group="Group_m13_1_sens">
-                <Geometry rect.top="863" rect.bottom="892" rect.left="242" rect.right="271"/>
+                <Geometry rect.top="850" rect.bottom="879" rect.left="242" rect.right="271"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -1807,7 +1965,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m13_1_lbl" ToolTip="" MnemoLayer="general" Group="Group_m13_1_sens">
-                <Geometry rect.top="846" rect.bottom="869" rect.left="274" rect.right="303"/>
+                <Geometry rect.top="833" rect.bottom="856" rect.left="274" rect.right="303"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1822,7 +1980,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m13_1_sens" ToolTip="" MnemoLayer="general" Group="Group_m13_1_sens">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="878" rect.bottom="892" rect.left="282" rect.right="296"/>
+                <Geometry rect.top="865" rect.bottom="879" rect.left="282" rect.right="296"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2930,7 +3088,7 @@
                     <State g="128" r="0" a="255" b="0"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_7" ToolTip="" MnemoLayer="general" Group="Group_m6_7_lbl">
+            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_7" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
                 <Geometry rect.top="698" rect.bottom="717" rect.left="178" rect.right="1237"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
@@ -2989,7 +3147,7 @@
                     <State Bitmap_collection="scheme" Name="к 6.9_darkyellow.svg"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_7_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_7_lbl">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_7_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
                 <Geometry rect.top="657" rect.bottom="680" rect.left="178" rect.right="207"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
@@ -3003,7 +3161,7 @@
                 <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_7_lbl">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_7_sens" ToolTip="" MnemoLayer="general" Group="Group_m6_7">
                 <Conversion Type="1" Bit="0"/>
                 <Geometry rect.top="662" rect.bottom="676" rect.left="217" rect.right="231"/>
                 <StandartProperies Freeze="0">
@@ -5153,7 +5311,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_181" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1182" rect.bottom="1231" rect.left="693" rect.right="822"/>
+                <Geometry rect.top="1192" rect.bottom="1241" rect.left="693" rect.right="822"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5347,25 +5505,6 @@
                     <Point x="1221" y="167"/>
                 </Points>
             </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m8_10_m6_4" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="75" rect.bottom="100" rect.left="1196" rect.right="1199"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <States>
-                    <State g="0" r="255" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="1198" y="76"/>
-                    <Point x="1197" y="99"/>
-                </Points>
-            </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_6_m8_10" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
                 <Geometry rect.top="31" rect.bottom="56" rect.left="1194" rect.right="1411"/>
@@ -5387,9 +5526,9 @@
                     <Point x="1195" y="56"/>
                 </Points>
             </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_2_m8_8" ToolTip="" MnemoLayer="arrow" Style="1">
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_2" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="1148" rect.bottom="1179" rect.left="766" rect.right="769"/>
+                <Geometry rect.top="1129" rect.bottom="1206" rect.left="309" rect.right="419"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5402,28 +5541,9 @@
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
-                    <Point x="767" y="1149"/>
-                    <Point x="768" y="1155"/>
-                    <Point x="768" y="1178"/>
-                </Points>
-            </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_11_m6_2" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="610" rect.bottom="1100" rect.left="918" rect.right="922"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <States>
-                    <State g="0" r="255" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="919" y="611"/>
-                    <Point x="921" y="1099"/>
+                    <Point x="418" y="1130"/>
+                    <Point x="416" y="1205"/>
+                    <Point x="310" y="1204"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m8_7_m6_2" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -5490,7 +5610,7 @@
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_10_m3_6" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="532" rect.bottom="661" rect.left="1097" rect.right="1486"/>
+                <Geometry rect.top="551" rect.bottom="662" rect.left="1097" rect.right="1487"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5506,9 +5626,9 @@
                     <Point x="1098" y="647"/>
                     <Point x="1098" y="661"/>
                     <Point x="1486" y="659"/>
-                    <Point x="1485" y="533"/>
-                    <Point x="1457" y="533"/>
-                    <Point x="1457" y="557"/>
+                    <Point x="1485" y="552"/>
+                    <Point x="1472" y="552"/>
+                    <Point x="1471" y="580"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_4_m6_10" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -5534,7 +5654,7 @@
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m8_13_m3_6" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="523" rect.bottom="575" rect.left="1444" rect.right="1583"/>
+                <Geometry rect.top="523" rect.bottom="581" rect.left="1444" rect.right="1583"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5552,28 +5672,7 @@
                     <Point x="1521" y="574"/>
                     <Point x="1521" y="524"/>
                     <Point x="1445" y="524"/>
-                    <Point x="1445" y="557"/>
-                </Points>
-            </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_5_m8_13" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="501" rect.bottom="544" rect.left="1398" rect.right="1582"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <States>
-                    <State g="0" r="255" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="1399" y="502"/>
-                    <Point x="1399" y="511"/>
-                    <Point x="1581" y="514"/>
-                    <Point x="1581" y="543"/>
+                    <Point x="1445" y="580"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_1_m3_5" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -5667,50 +5766,6 @@
                     <Point x="1318" y="1053"/>
                 </Points>
             </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_12_m3_5" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="394" rect.bottom="1054" rect.left="1303" rect.right="1470"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <States>
-                    <State g="0" r="255" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="1469" y="395"/>
-                    <Point x="1468" y="415"/>
-                    <Point x="1304" y="414"/>
-                    <Point x="1304" y="945"/>
-                    <Point x="1329" y="947"/>
-                    <Point x="1330" y="1053"/>
-                </Points>
-            </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_3_m6_1" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="953" rect.bottom="1044" rect.left="1683" rect.right="1759"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <States>
-                    <State g="0" r="128" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="1758" y="954"/>
-                    <Point x="1758" y="988"/>
-                    <Point x="1684" y="989"/>
-                    <Point x="1685" y="1043"/>
-                </Points>
-            </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_5_m3_4" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
                 <Geometry rect.top="935" rect.bottom="1080" rect.left="321" rect.right="324"/>
@@ -5772,27 +5827,6 @@
                     <Point x="313" y="466"/>
                     <Point x="339" y="466"/>
                     <Point x="335" y="1079"/>
-                </Points>
-            </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_10_m3_4" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="402" rect.bottom="1082" rect.left="348" rect.right="504"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <States>
-                    <State g="0" r="255" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="503" y="403"/>
-                    <Point x="503" y="428"/>
-                    <Point x="354" y="428"/>
-                    <Point x="349" y="1081"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_183" ToolTip="" MnemoLayer="general" Group="Group_Rectangle_183">
@@ -5865,21 +5899,6 @@
                 <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="Line_218" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Geometry rect.top="1129" rect.bottom="1208" rect.left="318" rect.right="411"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <Points>
-                    <Point x="410" y="1130"/>
-                    <Point x="409" y="1204"/>
-                    <Point x="319" y="1207"/>
-                </Points>
-            </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="Line_219" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Geometry rect.top="96" rect.bottom="310" rect.left="1883" rect.right="1997"/>
                 <StandartProperies Freeze="0">
@@ -5894,21 +5913,6 @@
                     <Point x="1996" y="145"/>
                     <Point x="1884" y="145"/>
                     <Point x="1884" y="309"/>
-                </Points>
-            </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="Line_220" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Geometry rect.top="144" rect.bottom="302" rect.left="1995" rect.right="2243"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="128" a="255" b="0"/>
-                <Points>
-                    <Point x="1996" y="145"/>
-                    <Point x="2242" y="146"/>
-                    <Point x="2242" y="301"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="Line_221" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -6397,30 +6401,6 @@
                 <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Width="2" Cursor="0" Comment="" Type="XMnemoLine" Name="arrow_m8_9_m3_6" ToolTip="" MnemoLayer="arrow" Style="1">
-                <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="572" rect.bottom="1113" rect.left="1446" rect.right="1638"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="0" r="0" a="255" b="0"/>
-                <States>
-                    <State g="0" r="255" a="255" b="0"/>
-                    <State g="255" r="0" a="255" b="0"/>
-                </States>
-                <Points>
-                    <Point x="1638" y="1113"/>
-                    <Point x="1638" y="1113"/>
-                    <Point x="1638" y="1113"/>
-                    <Point x="1638" y="1113"/>
-                    <Point x="1638" y="1113"/>
-                    <Point x="1638" y="1113"/>
-                    <Point x="1638" y="1113"/>
-                </Points>
-            </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoImage" Name="Image_253" ToolTip="" MnemoLayer="arrow" Group="Group_Image_253">
                 <Geometry rect.top="313" rect.bottom="472" rect.left="2189" rect.right="2298"/>
                 <StandartProperies Freeze="0">
@@ -6484,7 +6464,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="socket_1" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
                 <Conversion Type="1" Bit="2"/>
-                <Geometry rect.top="552" rect.bottom="566" rect.left="162" rect.right="176"/>
+                <Geometry rect.top="580" rect.bottom="594" rect.left="144" rect.right="158"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -6516,7 +6496,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_257" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
                 <Conversion Type="1" Bit="4"/>
-                <Geometry rect.top="552" rect.bottom="566" rect.left="184" rect.right="198"/>
+                <Geometry rect.top="580" rect.bottom="594" rect.left="166" rect.right="180"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -6534,7 +6514,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_258" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
                 <Conversion Type="1" Bit="6"/>
-                <Geometry rect.top="552" rect.bottom="566" rect.left="206" rect.right="220"/>
+                <Geometry rect.top="580" rect.bottom="594" rect.left="188" rect.right="202"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -6549,20 +6529,6 @@
                     <State g="128" r="128" a="255" b="128"/>
                     <State g="128" r="0" a="255" b="0"/>
                 </States>
-            </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_259" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
-                <Geometry rect.top="546" rect.bottom="569" rect.left="74" rect.right="149"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <HTML html="0"/>
-                <Text Angle="0" string="Разетки" format=""/>
-                <Transparency Value="1"/>
-                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
-                <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="MultiState_260" ToolTip="" MnemoLayer="general">
                 <Conversion Type="1" Bit="0"/>
@@ -6605,6 +6571,87 @@
                     <State Bitmap_collection="scheme" Name="siren_off.svg"/>
                     <State Bitmap_collection="scheme" Name="siren_on.svg"/>
                 </States>
+            </MnemoObject>
+            <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m8_9_m36" ToolTip="" MnemoLayer="arrow" Style="1">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="539" rect.bottom="1109" rect.left="1452" rect.right="1641"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="0" r="128" a="255" b="0"/>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="255" r="0" a="255" b="0"/>
+                </States>
+                <Points>
+                    <Point x="1639" y="1090"/>
+                    <Point x="1640" y="1108"/>
+                    <Point x="1455" y="1108"/>
+                    <Point x="1453" y="821"/>
+                    <Point x="1501" y="820"/>
+                    <Point x="1500" y="540"/>
+                    <Point x="1459" y="540"/>
+                    <Point x="1459" y="580"/>
+                </Points>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_259" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
+                <Geometry rect.top="530" rect.bottom="553" rect.left="90" rect.right="257"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Розетки силовые" format=""/>
+                <Transparency Value="1"/>
+                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_261" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
+                <Geometry rect.top="556" rect.bottom="579" rect.left="144" rect.right="158"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="1" format=""/>
+                <Transparency Value="1"/>
+                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_262" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
+                <Geometry rect.top="556" rect.bottom="579" rect.left="166" rect.right="180"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="2" format=""/>
+                <Transparency Value="1"/>
+                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_263" ToolTip="" MnemoLayer="general" Group="Group_socket_1">
+                <Geometry rect.top="556" rect.bottom="579" rect.left="188" rect.right="202"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="3" format=""/>
+                <Transparency Value="1"/>
+                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
@@ -6686,7 +6733,7 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string=""/>
+                <Text string="Пуск"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem AutoIconResize="1"/>
             </MnemoObject>
@@ -6747,7 +6794,7 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string=""/>
+                <Text string="Стоп"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
@@ -6823,7 +6870,7 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string="Сброс"/>
+                <Text string="Сброс аварии"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
@@ -7762,11 +7809,15 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_cmd" Units="....." Location="91" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_timeout" Units="....." Location="92" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_status" Units="....." Location="93" IsReadTag="0">
@@ -7774,12 +7825,14 @@
                         <Listener Path="main" Type="XMnemoRectangle" Name="m3_5_sens"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_m3_5_m8_12"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_m3_5_m8_13"/>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_5_state" Units="....." Location="94" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m3_5"/>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -8395,6 +8448,7 @@
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m6_1_sens"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_m6_1_m3_5"/>
+                        <Listener Path="" Type="XMnemoLine" Name="Line_261"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -8529,7 +8583,7 @@
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_2_status" Units="....." Location="263" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m6_2_sens"/>
-                        <Listener Path="main" Type="XMnemoLine" Name="arrow_m6_2_m8_8"/>
+                        <Listener Path="main" Type="XMnemoLine" Name="arrow_m6_2"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -9114,7 +9168,8 @@
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_9_sens"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_9_sens_2"/>
-                        <Listener Path="main" Type="XMnemoLine" Name="arrow_m8_9_m3_6"/>
+                        <Listener Path="" Type="XMnemoLine" Name="arrow_m8_9_m3_6"/>
+                        <Listener Path="main" Type="XMnemoLine" Name="arrow_m8_9_m36"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -9160,6 +9215,7 @@
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_8_sens"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_8_sens_2"/>
+                        <Listener Path="main" Type="XMnemoLine" Name="arrow_8_8"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -9252,6 +9308,7 @@
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_7_sens"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m8_7_sens_2"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_m8_7_m6_2"/>
+                        <Listener Path="" Type="XMnemoLine" Name="Line_260"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -9951,8 +10008,6 @@
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoShape" Name="sens_up_11_8"/>
                         <Listener Path="main" Type="XMnemoShape" Name="sens_bottom_11_8"/>
-                        <Listener Path="" Type="XMnemoShape" Name="sens_bottom_11_8"/>
-                        <Listener Path="" Type="XMnemoShape" Name="sens_up_11_8"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -10083,7 +10138,9 @@
         <Group Marker="0" Name="mechanisms"/>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
-                <ListenersList/>
+                <ListenersList>
+                    <Listener Path="main\" Type="Output register" Name="m3_5_cmd(4-91)"/>
+                </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
@@ -10091,18 +10148,20 @@
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
-                    <Listener Path="" Type="XMnemoShape" Name="Ellipse_4"/>
+                    <Listener Path="main\" Type="Output register" Name="m3_5_status(4-93)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
+                    <Listener Path="main\" Type="Output register" Name="m3_5_timeout(4-92)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
+                    <Listener Path="main\" Type="Output register" Name="m3_5_state(4-94)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
@@ -10131,9 +10190,7 @@
         </Group>
         <Group Marker="0" Name="silos">
             <GlobalVariable Retained="1" Type="String" Marker="0" Comments="" Name="silo_12_content" Value="">
-                <ListenersList>
-                    <Listener Path="" Type="XMnemoLineEdit" Name="LineEdit_255"/>
-                </ListenersList>
+                <ListenersList/>
             </GlobalVariable>
             <GlobalVariable Retained="1" Type="String" Marker="0" Comments="" Name="silo_11_1_content" Value="">
                 <ListenersList>
@@ -10173,7 +10230,6 @@
             <GlobalVariable Retained="1" Type="String" Marker="0" Comments="" Name="silo_11_8_content" Value="">
                 <ListenersList>
                     <Listener Path="main" Type="XMnemoLineEdit" Name="edit_11_8"/>
-                    <Listener Path="" Type="XMnemoLineEdit" Name="edit_11_8"/>
                 </ListenersList>
             </GlobalVariable>
         </Group>
