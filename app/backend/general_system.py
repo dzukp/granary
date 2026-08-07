@@ -35,10 +35,6 @@ class GeneralSystem(IoObject, MechManager, ModbusDataObject):
         self.valves = [mech for mech in self.children if isinstance(mech, Valve)]
         self.engines = [mech for mech in self.children if isinstance(mech, Engine)]
 
-    def process(self):
-        for silo in self.silos:
-            silo.set_ready(not self.silos_ready_enabled or self.di_silos_ready.val)
-
     def mb_input(self, start_addr, data):
         if self.mb_cells_idx is not None:
             zero_addr = self.mb_cells_idx - start_addr

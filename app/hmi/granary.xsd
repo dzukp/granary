@@ -12,6 +12,7 @@
         <Screen Name="main"/>
         <Screen Name="engine_dlg"/>
         <Screen Name="siren_dlg"/>
+        <Screen Name="releaser_dlg"/>
     </Screens>
     <PopupMessage Name="Popup message"/>
     <Databases Name="Databases"/>
@@ -82,6 +83,7 @@
                 <XMnemoLayer Name="general" Visible="1"/>
                 <XMnemoLayer Name="sens" Visible="1"/>
                 <XMnemoLayer Name="arrow" Visible="1"/>
+                <XMnemoLayer Name="expotion" Visible="1"/>
             </XMnemoLayers>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m8_13_m3_6" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
@@ -5013,7 +5015,7 @@
             </MnemoObject>
             <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="MultiState_260" ToolTip="" MnemoLayer="general">
                 <Conversion Type="1" Bit="0"/>
-                <Geometry rect.top="36" rect.bottom="95" rect.left="63" rect.right="122"/>
+                <Geometry rect.top="40" rect.bottom="99" rect.left="60" rect.right="119"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -5536,6 +5538,129 @@
                     <State Bitmap_collection="scheme" Name="задвижка_darkyellow.svg"/>
                 </States>
             </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_202" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="36" rect.bottom="65" rect.left="2326" rect.right="2445"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="releaser_dlg"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Защита"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem AutoIconResize="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_203" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="1"/>
+                <Geometry rect.top="40" rect.bottom="99" rect.left="160" rect.right="219"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="releaser_dlg"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Transparency Value="1"/>
+                <States>
+                    <State Bitmap_collection="scheme" Name="explosion_black.svg"/>
+                    <State Bitmap_collection="scheme" Name="explosion_red.svg"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_204" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="2"/>
+                <Geometry rect.top="50" rect.bottom="94" rect.left="260" rect.right="309"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="releaser_dlg"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Transparency Value="1"/>
+                <States>
+                    <State Bitmap_collection="scheme" Name="connector.svg"/>
+                    <State Bitmap_collection="scheme" Name="connector_red.svg"/>
+                </States>
+            </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
             <Properties>
@@ -5616,7 +5741,7 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string="Открыть"/>
+                <Text string=""/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem AutoIconResize="1"/>
             </MnemoObject>
@@ -5677,7 +5802,7 @@
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Text string="Закрыть"/>
+                <Text string=""/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
@@ -6204,6 +6329,479 @@
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
             </MnemoObject>
         </MnemoScreen>
+        <MnemoScreen FullName="releaser_dlg">
+            <Properties>
+                <Color g="192" r="192" a="255" b="192"/>
+                <Alignment StepSize="20" Enabled="1">
+                    <AlignColor g="0" r="0" a="128" b="0"/>
+                </Alignment>
+                <Dialog Width="360" Title="" Height="300"/>
+                <HotKey key="Not assigned"/>
+                <Password CryptData="0"/>
+                <Comment Comment=""/>
+                <Activate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Activate>
+                <Deactivate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Deactivate>
+            </Properties>
+            <XMnemoLayers>
+                <XMnemoLayer Name="general" Visible="1"/>
+            </XMnemoLayers>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_1" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="59" rect.left="20" rect.right="339"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Защита" format=""/>
+                <Transparency Value="1"/>
+                <Font size="20" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_2" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="88" rect.bottom="111" rect.left="20" rect.right="137"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Контроль взрыва" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_4" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="80" rect.bottom="119" rect.left="220" rect.right="269"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="4"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Controller tag">
+                                            <Tag Type="Source Tag" TagName="main\releaser_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Вкл"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_5" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="80" rect.bottom="119" rect.left="280" rect.right="329"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="5"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Controller tag">
+                                            <Tag Type="Source Tag" TagName="main\releaser_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Откл"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="Ellipse_6" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="4"/>
+                <Geometry rect.top="89" rect.bottom="110" rect.left="160" rect.right="179"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <Properties StarFactor="9.820512950165921e-309" BezierRadius="1" Brush="0" ShapeType="Free editable" VertexCount="331692" FirstPointAngle="0" PenWidth="1">
+                    <PenColor g="255" r="255" a="255" b="255"/>
+                </Properties>
+                <Points>
+                    <Point x="2" y="1"/>
+                    <Point x="10" y="-10"/>
+                    <Point x="6" y="11"/>
+                    <Point x="-9" y="-3"/>
+                </Points>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="0" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_6" ToolTip="Использовать или нет расцепитель" MnemoLayer="general">
+                <Geometry rect.top="190" rect.bottom="213" rect.left="20" rect.right="159"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Расцепитель использ" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="Ellipse_7" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="3"/>
+                <Geometry rect.top="190" rect.bottom="211" rect.left="160" rect.right="179"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <Properties StarFactor="0" BezierRadius="1" Brush="0" ShapeType="Free editable" VertexCount="0" FirstPointAngle="0" PenWidth="1">
+                    <PenColor g="255" r="255" a="255" b="255"/>
+                </Properties>
+                <Points>
+                    <Point x="2" y="1"/>
+                    <Point x="10" y="-10"/>
+                    <Point x="6" y="11"/>
+                    <Point x="-9" y="-3"/>
+                </Points>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="0" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_8" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="180" rect.bottom="219" rect.left="220" rect.right="269"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="2"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Controller tag">
+                                            <Tag Type="Source Tag" TagName="main\releaser_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Вкл"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_9" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="180" rect.bottom="219" rect.left="280" rect.right="329"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="3"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Controller tag">
+                                            <Tag Type="Source Tag" TagName="main\releaser_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Откл"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_10" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="248" rect.bottom="271" rect.left="20" rect.right="104"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Расцепитель" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_11" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="240" rect.bottom="279" rect.left="220" rect.right="269"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="1"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Controller tag">
+                                            <Tag Type="Source Tag" TagName="main\releaser_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Сброс"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_12" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="2"/>
+                <Geometry rect.top="251" rect.bottom="270" rect.left="160" rect.right="179"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="128" r="128" a="255" b="128"/>
+                    <State g="0" r="128" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_13" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="140" rect.bottom="163" rect.left="20" rect.right="104"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Взрыв" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_14" ToolTip="" MnemoLayer="general">
+                <Conversion Type="1" Bit="1"/>
+                <Geometry rect.top="140" rect.bottom="159" rect.left="160" rect.right="179"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="128" r="128" a="255" b="128"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="128" r="128" a="255" b="128"/>
+                    <State g="0" r="128" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_15" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="240" rect.bottom="279" rect.left="280" rect.right="329"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="1"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="истина"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Включить расцепитель?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="SET BIT"/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="0"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Controller tag">
+                                            <Tag Type="Source Tag" TagName="main\releaser_cmd"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Тест"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+        </MnemoScreen>
     </MnemoScreenList>
     <ResourceScreens>
         <ResBitmapLibScreen Name="scheme">
@@ -6300,10 +6898,15 @@
             <ResBitmap Bitmap_collection="scheme" Name="Б 17.3.svg"/>
             <ResBitmap Bitmap_collection="scheme" Name="siren_off.svg"/>
             <ResBitmap Bitmap_collection="scheme" Name="siren_on.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="explosion_black.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="explosion_red.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="empty.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="connector.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="connector_red.svg"/>
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
-        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="main_tcp_sock" IsTestConnect="0" TestLocation="">
+        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="TcpSocket 1" IsTestConnect="0" TestLocation="">
             <ListenersList/>
             <TagsList>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_1" Units="....." Location="1" IsReadTag="0">
@@ -8421,27 +9024,20 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_cmd" Units="....." Location="491" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_timeout" Units="....." Location="492" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_status" Units="....." Location="493" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_6_state" Units="....." Location="494" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m8_6"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -8868,12 +9464,21 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_591" Units="....." Location="591" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="releaser_cmd" Units="....." Location="591" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_592" Units="....." Location="592" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="releaser_status" Units="....." Location="592" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="releaser_dlg" Type="XMnemoShape" Name="Ellipse_6"/>
+                        <Listener Path="" Type="XMnemoRectangle" Name="Rectangle_3"/>
+                        <Listener Path="releaser_dlg" Type="XMnemoShape" Name="Ellipse_7"/>
+                        <Listener Path="releaser_dlg" Type="XMnemoRectangle" Name="Rectangle_12"/>
+                        <Listener Path="releaser_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
+                        <Listener Path="main" Type="XMnemoMultiState" Name="MultiState_203"/>
+                        <Listener Path="" Type="XMnemoMultiState" Name="MultiState_203"/>
+                        <Listener Path="main" Type="XMnemoMultiState" Name="MultiState_204"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_593" Units="....." Location="593" IsReadTag="0">
@@ -8888,11 +9493,11 @@
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_596" Units="....." Location="596" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="sound_cmd" Units="....." Location="596" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_597" Units="....." Location="597" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="sound_status" Units="....." Location="597" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -8905,6 +9510,46 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_600" Units="....." Location="600" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_601" Units="....." Location="601" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_602" Units="....." Location="602" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_603" Units="....." Location="603" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_604" Units="....." Location="604" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_605" Units="....." Location="605" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_606" Units="....." Location="606" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_607" Units="....." Location="607" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_608" Units="....." Location="608" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_609" Units="....." Location="609" IsReadTag="0">
+                    <ListenersList/>
+                    <FilterList/>
+                </Tag>
+                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_610" Units="....." Location="610" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
@@ -8936,9 +9581,7 @@
         <Group Marker="0" Name="mechanisms"/>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
-                <ListenersList>
-                    <Listener Path="main\" Type="Output register" Name="m8_6_cmd(4-491)"/>
-                </ListenersList>
+                <ListenersList/>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
@@ -8946,20 +9589,17 @@
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_6_status(4-493)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_6_timeout(4-492)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_6_state(4-494)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
@@ -9135,6 +9775,9 @@
         <TcpSocket AutoReconnect="0" Host="127.0.0.1" Marker="0" Comments="" Name="main_tcp_sock" Reconnect_delay="1000" MaxTimeoutCount="1" Port="1502">
             <ListenersList/>
         </TcpSocket>
+        <TcpSocket AutoReconnect="0" Host="192.168.0.11" Marker="0" Comments="" Name="TcpSocket 1" Reconnect_delay="100" MaxTimeoutCount="1" Port="1502">
+            <ListenersList/>
+        </TcpSocket>
     </TcpSocketList>
     <ComPortList/>
     <PopumMsgList/>
@@ -9173,7 +9816,9 @@
             <UserRight Number="30" Name="&lt;30>"/>
             <UserRight Number="31" Name="&lt;31>"/>
         </UserRights>
-        <UserRoles/>
+        <UserRoles>
+            <UserRole Rights="1" Name="master"/>
+        </UserRoles>
         <Queries useDb="0"/>
     </UserManagerList>
 </Project_file>

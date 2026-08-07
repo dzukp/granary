@@ -1,8 +1,10 @@
 from aspiration import Aspiration
 from engine import Engine
 from general_system import GeneralSystem
+from releaser import Releaser
 from silo import Silo
 from siren import Siren
+from sound import Sound
 from top import Top
 from valve import Valve
 
@@ -478,7 +480,7 @@ objects = {
                 'class': GeneralSystem,
                 'mb_cells_idx': 20,
                 'children': mechanisms,
-                'di_silos_ready': '',
+                'di_silos_ready': 'di_16_4',
                 'di_socket_1': 'di_9_1',
                 'di_socket_2': 'di_9_2',
                 'di_socket_3': 'di_9_3',
@@ -487,6 +489,17 @@ objects = {
                 'class': Siren,
                 'mb_cells_idx': 585,
                 'do_start': 'do_30_5',
+            },
+            'releaser': {
+                'class': Releaser,
+                'mb_cells_idx': 590,
+                'do_release': 'do_23_2',
+                'do_control_on': 'do_30_8',
+                'di_explosion': 'di_18_8',
+            },
+            'sound': {
+                'class': Sound,
+                'mb_cells_idx': 595,
             },
         },
     },
