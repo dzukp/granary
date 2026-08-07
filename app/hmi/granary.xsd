@@ -6906,7 +6906,7 @@
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
-        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="TcpSocket 1" IsTestConnect="0" TestLocation="">
+        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="main_tcp_sock" IsTestConnect="0" TestLocation="">
             <ListenersList/>
             <TagsList>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_1" Units="....." Location="1" IsReadTag="0">
