@@ -500,6 +500,7 @@ objects = {
             'sound': {
                 'class': Sound,
                 'mb_cells_idx': 595,
+                'file_path': '../res/alarm.wav',
             },
         },
     },

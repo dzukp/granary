@@ -103,6 +103,9 @@ class Engine(Mechanism, ModbusDataObject):
     def is_running(self):
         return self.state in (self.STARTING, self.RUNNING)
 
+    def is_fault(self):
+        return self.state == self.FAULT
+
     def enable(self):
         if not self.enabled:
             self.enabled = True

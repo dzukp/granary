@@ -129,6 +129,9 @@ class Valve(Mechanism, ModbusDataObject):
             return False
         return self.state in (self.OPENING, self.CLOSING)
 
+    def is_fault(self):
+        return self.state == self.FAULT
+
     def enable(self):
         if not self.enabled:
             self.enabled = True

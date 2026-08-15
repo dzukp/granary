@@ -18,6 +18,9 @@ class Mechanism(IoObject):
     def is_running(self):
         raise NotImplementedError
 
+    def is_fault(self):
+        return False
+
     def check_next_mechanisms(self):
         if not self.next_mechanisms:
             return True

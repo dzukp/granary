@@ -1,4 +1,4 @@
-from mechanism import MechManager
+from mechanism import Mechanism, MechManager
 from pylogic.channel import InChannel, OutChannel
 from pylogic.io_object import IoObject
 from pylogic.modbus_supervisor import ModbusDataObject
@@ -15,6 +15,7 @@ class Top(IoObject, MechManager, ModbusDataObject):
         self.explosion_control_enabled = False
         self.aspiration = None
         self.general_system = None
+        self.sound = None
         self.counter = 0
         self.counter_ton = Ton()
         self.mb_cells_idx = None
@@ -37,6 +38,17 @@ class Top(IoObject, MechManager, ModbusDataObject):
         if self.counter_ton.process(True, 0.5):
             self.counter = (self.counter + 1) % 2**16
             self.counter_ton.process(False)
+
+        if self.sound is not None:
+            self.sound.set_current_errors(self._collect_faults(self))
+
+    def _collect_faults(self, obj):
+        faults = set()
+        for child in obj.children:
+            if isinstance(child, Mechanism) and child.is_fault():
+                faults.add(child.full_name)
+            faults |= self._collect_faults(child)
+        return faults
 
     def mb_cells(self):
         return [0, self.mb_cells_idx + len(self.mb_output(self.mb_cells_idx))]
