@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from aspiration import Aspiration
 from engine import Engine
 from general_system import GeneralSystem
@@ -500,7 +502,9 @@ objects = {
             'sound': {
                 'class': Sound,
                 'mb_cells_idx': 595,
-                'file_path': '../res/alarm.wav',
+                'file_path': str(
+                    Path(__file__).resolve().parent.parent / 'res/alarm.wav'
+                ),
             },
         },
     },

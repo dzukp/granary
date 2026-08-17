@@ -11,6 +11,7 @@ class AudioPlayer:
         self._thread = None
         self._stop_event = threading.Event()
         self._use_winsound = self._winsound_available()
+        self._winsound_playing = False
 
     @staticmethod
     def _winsound_available():
@@ -24,15 +25,20 @@ class AudioPlayer:
     def play(self):
         if self._thread is not None:
             return
+        # self.played = True
+        # if self.played:
+        #     return
         self._stop_event.clear()
         try:
             if self._use_winsound:
                 import winsound
 
-                winsound.PlaySound(
-                    self.file_path,
-                    winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP,
-                )
+                if not self._winsound_playing:
+                    winsound.PlaySound(
+                        self.file_path,
+                        winsound.SND_FILENAME | winsound.SND_ASYNC | winsound.SND_LOOP,
+                    )
+                    self._winsound_playing = True
             else:
                 self._thread = threading.Thread(
                     target=self._play_loop,
@@ -46,10 +52,12 @@ class AudioPlayer:
 
     def stop(self):
         try:
+            # self.played = False
             if self._use_winsound:
                 import winsound
 
                 winsound.PlaySound(None, winsound.SND_PURGE)
+                self._winsound_playing = False
             elif self._thread is not None:
                 self._stop_event.set()
                 self._thread = None
@@ -59,6 +67,7 @@ class AudioPlayer:
     def _init_player(self):
         if self._player is not None:
             return
+        self._winsound_playing = False
         for player in ('paplay', 'aplay', 'ffplay'):
             if shutil.which(player):
                 self._player = player
@@ -83,3 +92,9 @@ class AudioPlayer:
                     return
         finally:
             self._thread = None
+
+
+# import logging
+
+# a = AudioPlayer(logging.getLogger(), 'C:\Users\pav\granary-main\app\res\alarm.wav')
+# a.play()
