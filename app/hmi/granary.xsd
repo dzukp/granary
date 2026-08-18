@@ -209,7 +209,7 @@
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_5_m8_13" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="502" rect.bottom="543" rect.left="1399" rect.right="1581"/>
+                <Geometry rect.top="501" rect.bottom="542" rect.left="1399" rect.right="1581"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -222,10 +222,10 @@
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
-                    <Point x="1399" y="502"/>
-                    <Point x="1399" y="511"/>
-                    <Point x="1581" y="511"/>
-                    <Point x="1581" y="543"/>
+                    <Point x="1399" y="501"/>
+                    <Point x="1399" y="510"/>
+                    <Point x="1581" y="510"/>
+                    <Point x="1581" y="542"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_12_m3_5" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -4708,7 +4708,7 @@
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_6_m8_11" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="32" rect.bottom="57" rect.left="1360" rect.right="1388"/>
+                <Geometry rect.top="26" rect.bottom="51" rect.left="1360" rect.right="1388"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4721,9 +4721,9 @@
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
-                    <Point x="1388" y="32"/>
-                    <Point x="1360" y="32"/>
-                    <Point x="1360" y="57"/>
+                    <Point x="1388" y="26"/>
+                    <Point x="1360" y="26"/>
+                    <Point x="1360" y="51"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_4_m8_1" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -4768,7 +4768,7 @@
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m3_6_m8_10" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="26" rect.bottom="56" rect.left="1195" rect.right="1397"/>
+                <Geometry rect.top="21" rect.bottom="51" rect.left="1195" rect.right="1397"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -4781,9 +4781,9 @@
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
-                    <Point x="1397" y="26"/>
-                    <Point x="1195" y="26"/>
-                    <Point x="1195" y="56"/>
+                    <Point x="1397" y="21"/>
+                    <Point x="1195" y="21"/>
+                    <Point x="1195" y="51"/>
                 </Points>
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m6_2" ToolTip="" MnemoLayer="arrow" Style="1">
@@ -5001,7 +5001,7 @@
             </MnemoObject>
             <MnemoObject Width="2" Cursor="0" EndTipStyle="1" Comment="" Type="XMnemoLine" Name="arrow_m1_5_m3_4" ToolTip="" MnemoLayer="arrow" Style="1">
                 <Conversion Type="1" Bit="7"/>
-                <Geometry rect.top="964" rect.bottom="1079" rect.left="323" rect.right="323"/>
+                <Geometry rect.top="935" rect.bottom="1079" rect.left="323" rect.right="323"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -5014,7 +5014,7 @@
                     <State g="255" r="0" a="255" b="0"/>
                 </States>
                 <Points>
-                    <Point x="323" y="964"/>
+                    <Point x="323" y="935"/>
                     <Point x="323" y="1079"/>
                 </Points>
             </MnemoObject>
@@ -6413,7 +6413,7 @@
                     <State Bitmap_collection="scheme" Name="задвижка_darkyellow.svg"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_203" ToolTip="" MnemoLayer="general" Group="Group_MultiState_203">
+            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="MultiState_203" ToolTip="" MnemoLayer="general" Group="Group_MultiState_203">
                 <Conversion Type="1" Bit="1"/>
                 <Geometry rect.top="51" rect.bottom="95" rect.left="181" rect.right="230"/>
                 <StandartProperies Freeze="0">
@@ -6455,7 +6455,7 @@
                     <State Bitmap_collection="scheme" Name="explosion_red.svg"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_204" ToolTip="" MnemoLayer="general" Group="Group_MultiState_204">
+            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="MultiState_204" ToolTip="" MnemoLayer="general" Group="Group_MultiState_204">
                 <Conversion Type="1" Bit="2"/>
                 <Geometry rect.top="51" rect.bottom="95" rect.left="301" rect.right="350"/>
                 <StandartProperies Freeze="0">
@@ -8076,7 +8076,7 @@
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
-        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="TcpSocket 1" IsTestConnect="0" TestLocation="">
+        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="main_tcp_sock" IsTestConnect="0" TestLocation="">
             <ListenersList/>
             <TagsList>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_1" Units="....." Location="1" IsReadTag="0">
