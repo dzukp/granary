@@ -51,7 +51,7 @@
         <MnemoScreen FullName="main">
             <Properties>
                 <Color g="160" r="160" a="255" b="164"/>
-                <Alignment StepSize="10" Enabled="0">
+                <Alignment StepSize="10" Enabled="1">
                     <AlignColor g="0" r="0" a="255" b="128"/>
                 </Alignment>
                 <HotKey key="Not assigned"/>
@@ -85,7 +85,36 @@
                 <XMnemoLayer Name="sens" Visible="1"/>
                 <XMnemoLayer Name="arrow" Visible="1"/>
                 <XMnemoLayer Name="expotion" Visible="1"/>
+                <XMnemoLayer Name="modules" Visible="1"/>
             </XMnemoLayers>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_314" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="350" rect.bottom="549" rect.left="2450" rect.right="2469"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="270" string="Модули вводв-вывода" format=""/>
+                <Transparency Value="1"/>
+                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_315" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="40" rect.bottom="889" rect.left="2440" rect.right="2539"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="8" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States/>
+            </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="m13_5_nosens" ToolTip="" MnemoLayer="general" Group="Group_m13_5_nosens">
                 <Conversion Type="1" Bit="5"/>
                 <Geometry rect.top="347" rect.bottom="366" rect.left="277" rect.right="296"/>
@@ -6595,6 +6624,902 @@
                 <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_1" ToolTip="" MnemoLayer="modules" Group="Group_m_di_1">
+                <Conversion Type="1" Bit="0"/>
+                <Geometry rect.top="50" rect.bottom="69" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_1_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_1">
+                <Geometry rect.top="50" rect.bottom="69" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A1" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_2" ToolTip="" MnemoLayer="modules" Group="Group_m_di_2">
+                <Conversion Type="1" Bit="1"/>
+                <Geometry rect.top="80" rect.bottom="99" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_2_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_2">
+                <Geometry rect.top="80" rect.bottom="99" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A2" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_3" ToolTip="" MnemoLayer="modules" Group="Group_m_di_3">
+                <Conversion Type="1" Bit="2"/>
+                <Geometry rect.top="110" rect.bottom="129" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_3_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_3">
+                <Geometry rect.top="110" rect.bottom="129" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A3" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_4" ToolTip="" MnemoLayer="modules" Group="Group_m_di_4">
+                <Conversion Type="1" Bit="3"/>
+                <Geometry rect.top="140" rect.bottom="159" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_4_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_4">
+                <Geometry rect.top="140" rect.bottom="159" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A4" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_5" ToolTip="" MnemoLayer="modules" Group="Group_m_di_5">
+                <Conversion Type="1" Bit="4"/>
+                <Geometry rect.top="170" rect.bottom="189" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_5_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_5">
+                <Geometry rect.top="170" rect.bottom="189" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A5" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_6" ToolTip="" MnemoLayer="modules" Group="Group_m_di_6">
+                <Conversion Type="1" Bit="5"/>
+                <Geometry rect.top="200" rect.bottom="219" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_6_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_6">
+                <Geometry rect.top="200" rect.bottom="219" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A6" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_7" ToolTip="" MnemoLayer="modules" Group="Group_m_di_7">
+                <Conversion Type="1" Bit="6"/>
+                <Geometry rect.top="230" rect.bottom="249" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_7_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_7">
+                <Geometry rect.top="230" rect.bottom="249" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A7" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_8" ToolTip="" MnemoLayer="modules" Group="Group_m_di_8">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="260" rect.bottom="279" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_8_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_8">
+                <Geometry rect.top="260" rect.bottom="279" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A8" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_9" ToolTip="" MnemoLayer="modules" Group="Group_m_di_9">
+                <Conversion Type="1" Bit="8"/>
+                <Geometry rect.top="290" rect.bottom="309" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_9_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_9">
+                <Geometry rect.top="290" rect.bottom="309" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A9" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_10" ToolTip="" MnemoLayer="modules" Group="Group_m_di_10">
+                <Conversion Type="1" Bit="9"/>
+                <Geometry rect.top="320" rect.bottom="339" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_10_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_10">
+                <Geometry rect.top="320" rect.bottom="339" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A10" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_11" ToolTip="" MnemoLayer="modules" Group="Group_m_di_11">
+                <Conversion Type="1" Bit="10"/>
+                <Geometry rect.top="350" rect.bottom="369" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_11_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_11">
+                <Geometry rect.top="350" rect.bottom="369" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A11" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_12" ToolTip="" MnemoLayer="modules" Group="Group_m_di_12">
+                <Conversion Type="1" Bit="11"/>
+                <Geometry rect.top="380" rect.bottom="399" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_12_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_12">
+                <Geometry rect.top="380" rect.bottom="399" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A12" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_13" ToolTip="" MnemoLayer="modules" Group="Group_m_di_13">
+                <Conversion Type="1" Bit="12"/>
+                <Geometry rect.top="410" rect.bottom="429" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_13_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_13">
+                <Geometry rect.top="410" rect.bottom="429" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A13" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_14" ToolTip="" MnemoLayer="modules" Group="Group_m_di_14">
+                <Conversion Type="1" Bit="13"/>
+                <Geometry rect.top="440" rect.bottom="459" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_14_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_14">
+                <Geometry rect.top="440" rect.bottom="459" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A14" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_15" ToolTip="" MnemoLayer="modules" Group="Group_m_di_15">
+                <Conversion Type="1" Bit="14"/>
+                <Geometry rect.top="470" rect.bottom="489" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_15_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_15">
+                <Geometry rect.top="470" rect.bottom="489" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A15" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_16" ToolTip="" MnemoLayer="modules" Group="Group_m_di_16">
+                <Conversion Type="1" Bit="15"/>
+                <Geometry rect.top="500" rect.bottom="519" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_16_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_16">
+                <Geometry rect.top="500" rect.bottom="519" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A16" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_17" ToolTip="" MnemoLayer="modules" Group="Group_m_di_17">
+                <Conversion Type="1" Bit="0"/>
+                <Geometry rect.top="530" rect.bottom="549" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_17_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_17">
+                <Geometry rect.top="530" rect.bottom="549" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A17" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_18" ToolTip="" MnemoLayer="modules" Group="Group_m_di_18">
+                <Conversion Type="1" Bit="1"/>
+                <Geometry rect.top="560" rect.bottom="579" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_18_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_18">
+                <Geometry rect.top="560" rect.bottom="579" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A18" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_21" ToolTip="" MnemoLayer="modules" Group="Group_m_di_21">
+                <Conversion Type="1" Bit="2"/>
+                <Geometry rect.top="590" rect.bottom="609" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_21_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_21">
+                <Geometry rect.top="590" rect.bottom="609" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A21" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_22" ToolTip="" MnemoLayer="modules" Group="Group_m_di_22">
+                <Conversion Type="1" Bit="3"/>
+                <Geometry rect.top="620" rect.bottom="639" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_22_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_22">
+                <Geometry rect.top="620" rect.bottom="639" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A22" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_23" ToolTip="" MnemoLayer="modules" Group="Group_m_di_23">
+                <Conversion Type="1" Bit="4"/>
+                <Geometry rect.top="650" rect.bottom="669" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_23_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_23">
+                <Geometry rect.top="650" rect.bottom="669" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A23" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_24" ToolTip="" MnemoLayer="modules" Group="Group_m_di_24">
+                <Conversion Type="1" Bit="5"/>
+                <Geometry rect.top="680" rect.bottom="699" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_24_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_24">
+                <Geometry rect.top="680" rect.bottom="699" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A24" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_25" ToolTip="" MnemoLayer="modules" Group="Group_m_di_25">
+                <Conversion Type="1" Bit="6"/>
+                <Geometry rect.top="710" rect.bottom="729" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_25_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_25">
+                <Geometry rect.top="710" rect.bottom="729" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A25" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_26" ToolTip="" MnemoLayer="modules" Group="Group_m_di_26">
+                <Conversion Type="1" Bit="7"/>
+                <Geometry rect.top="740" rect.bottom="759" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_26_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_26">
+                <Geometry rect.top="740" rect.bottom="759" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A26" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_27" ToolTip="" MnemoLayer="modules" Group="Group_m_di_27">
+                <Conversion Type="1" Bit="8"/>
+                <Geometry rect.top="770" rect.bottom="789" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_27_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_27">
+                <Geometry rect.top="770" rect.bottom="789" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A27" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_28" ToolTip="" MnemoLayer="modules" Group="Group_m_di_28">
+                <Conversion Type="1" Bit="9"/>
+                <Geometry rect.top="800" rect.bottom="819" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_28_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_28">
+                <Geometry rect.top="800" rect.bottom="819" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A28" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_29" ToolTip="" MnemoLayer="modules" Group="Group_m_di_29">
+                <Conversion Type="1" Bit="10"/>
+                <Geometry rect.top="830" rect.bottom="849" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_29_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_29">
+                <Geometry rect.top="830" rect.bottom="849" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A29" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_30" ToolTip="" MnemoLayer="modules" Group="Group_m_di_30">
+                <Conversion Type="1" Bit="11"/>
+                <Geometry rect.top="860" rect.bottom="879" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_30_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_30">
+                <Geometry rect.top="860" rect.bottom="879" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A30" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
             <Properties>
@@ -8076,7 +9001,7 @@
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
-        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="main_tcp_sock" IsTestConnect="0" TestLocation="">
+        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="TcpSocket 1" IsTestConnect="0" TestLocation="">
             <ListenersList/>
             <TagsList>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_1" Units="....." Location="1" IsReadTag="0">
@@ -8101,19 +9026,49 @@
                     </ListenersList>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_6" Units="....." Location="6" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="top_status" Units="....." Location="6" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_7" Units="....." Location="7" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="top_modules_1" Units="....." Location="7" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_2"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_3"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_4"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_5"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_6"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_7"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_8"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_9"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_10"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_11"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_12"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_13"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_14"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_15"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_16"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_1"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_8" Units="....." Location="8" IsReadTag="0">
-                    <ListenersList/>
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="top_modules_2" Units="....." Location="8" IsReadTag="0">
+                    <ListenersList>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_21"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_22"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_23"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_24"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_25"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_26"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_27"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_28"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_29"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_30"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_17"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="m_di_18"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
-                <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_9" Units="....." Location="9" IsReadTag="0">
+                <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_9" Units="....." Location="9" IsReadTag="0">
                     <ListenersList/>
                     <FilterList/>
                 </Tag>

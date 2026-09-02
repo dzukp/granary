@@ -1,8 +1,6 @@
-
-
 class Channel:
     def __init__(self, value=0):
-        if type(self) == Channel:
+        if type(self) is Channel:
             raise Exception('Channel is an abstact class, use inherited class')
         self._name = ''
         self.trans = None
@@ -23,9 +21,8 @@ class Channel:
 
 
 class InChannel(Channel):
-
     def set_value(self, value):
-        ''' For TagSrv using only '''
+        """For TagSrv using only"""
         if self.trans:
             self._value = self.trans(value)
         else:
@@ -37,9 +34,8 @@ class InChannel(Channel):
 
 
 class OutChannel(Channel):
-
     def get_value(self):
-        ''' For TagSrv using only '''
+        """For TagSrv using only"""
         if self.trans:
             return self.trans(self._value)
         return self._value
@@ -54,16 +50,15 @@ class OutChannel(Channel):
 
 
 class InOutChannel(Channel):
-
     def set_value(self, value):
-        ''' For TagSrv using only '''
+        """For TagSrv using only"""
         if self.trans:
             self._value = self.trans(value)
         else:
             self._value = value
 
     def get_value(self):
-        ''' For TagSrv using only '''
+        """For TagSrv using only"""
         if self.trans:
             return self.trans(self._value)
         return self._value
@@ -75,3 +70,16 @@ class InOutChannel(Channel):
     @val.setter
     def val(self, value):
         self._value = value
+
+
+class ModuleStateChannel(Channel):
+    """Отражает состояние связи с модулем (BaseModule.ok).
+    Привязывается по имени модуля (BaseModule.name), а не по имени тега."""
+
+    def set_value(self, value):
+        """For TagSrv using only"""
+        self._value = value
+
+    @property
+    def online(self):
+        return self._value

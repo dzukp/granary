@@ -10,6 +10,7 @@ from sound import Sound
 from top import Top
 from valve import Valve
 
+
 mechanisms = {
     'conveyer_1_2': {
         'class': Engine,
@@ -470,6 +471,34 @@ objects = {
     'top': {
         'class': Top,
         'mb_cells_idx': 1,
+        'm_di_01': 'DI_01',
+        'm_di_02': 'DI_02',
+        'm_di_03': 'DI_03',
+        'm_di_04': 'DI_04',
+        'm_di_05': 'DI_05',
+        'm_di_06': 'DI_06',
+        'm_di_07': 'DI_07',
+        'm_di_08': 'DI_08',
+        'm_di_09': 'DI_09',
+        'm_di_10': 'DI_10',
+        'm_di_11': 'DI_11',
+        'm_di_12': 'DI_12',
+        'm_di_13': 'DI_13',
+        'm_di_14': 'DI_14',
+        'm_di_15': 'DI_15',
+        'm_di_16': 'DI_16',
+        'm_di_17': 'DI_17',
+        'm_di_18': 'DI_18',
+        'm_do_21': 'DO_21',
+        'm_do_22': 'DO_22',
+        'm_do_23': 'DO_23',
+        'm_do_24': 'DO_24',
+        'm_do_25': 'DO_25',
+        'm_do_26': 'DO_26',
+        'm_do_27': 'DO_27',
+        'm_do_28': 'DO_28',
+        'm_do_29': 'DO_29',
+        'm_do_30': 'DO_30',
         'children': {
             'aspiration': {
                 'class': Aspiration,

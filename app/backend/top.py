@@ -1,5 +1,5 @@
 from mechanism import Mechanism, MechManager
-from pylogic.channel import InChannel, OutChannel
+from pylogic.channel import InChannel, OutChannel, ModuleStateChannel
 from pylogic.io_object import IoObject
 from pylogic.modbus_supervisor import ModbusDataObject
 from pylogic.timer import Ton
@@ -19,6 +19,15 @@ class Top(IoObject, MechManager, ModbusDataObject):
         self.counter = 0
         self.counter_ton = Ton()
         self.mb_cells_idx = None
+        self.modules: list[ModuleStateChannel] = []
+        for i in range(1, 19):
+            variable = f'm_di_{i:02}'
+            self.__dict__[variable] = ModuleStateChannel()
+            self.modules.append(self.__dict__[variable])
+        for i in range(21, 31):
+            variable = f'm_do_{i:02}'
+            self.__dict__[variable] = ModuleStateChannel()
+            self.modules.append(self.__dict__[variable])
 
     def process(self):
         if self.explosion_control_enabled:
@@ -57,6 +66,14 @@ class Top(IoObject, MechManager, ModbusDataObject):
         if self.mb_cells_idx is not None:
             pass
 
+    def _pack_word(self, modules):
+        """Состояния модулей: каждый модуль = бит (1 = не отвечает)."""
+        word = 0
+        for j, module in enumerate(modules):
+            if module.online:
+                word |= 1 << j
+        return word
+
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
             status = (
@@ -64,11 +81,17 @@ class Top(IoObject, MechManager, ModbusDataObject):
                 + int(self.di_explosion.val) * (1 << 1)
                 + 0
             )
-            return {
+            modules = self.modules
+            modules_word_1 = self._pack_word(modules[0:16])
+            modules_word_2 = self._pack_word(modules[16:32])
+            out = {
                 self.mb_cells_idx - start_addr + 0: 1111,
                 self.mb_cells_idx - start_addr + 1: 2222,
                 self.mb_cells_idx - start_addr + 2: 3333,
                 self.mb_cells_idx - start_addr + 3: self.counter,
                 self.mb_cells_idx - start_addr + 4: status,
+                self.mb_cells_idx - start_addr + 5: modules_word_1,
+                self.mb_cells_idx - start_addr + 6: modules_word_2,
             }
+            return out
         return {}

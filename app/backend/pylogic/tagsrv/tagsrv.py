@@ -1,3 +1,4 @@
+from ..channel import ModuleStateChannel
 from .simulator import SimulatorDispatcher
 from .tagsrv_logger import logger
 
@@ -26,6 +27,7 @@ class TagSrv(object):
         self.dispatchers = {}
         self.logger = logger  # logging.getLogger('tag_srv')
         self.sim_dispatchers = None
+        self.module_channels = []
 
     def init(self, setting, channels, sim_channels=()):
         self.in_tags = (
@@ -39,7 +41,9 @@ class TagSrv(object):
             disp.set_logger(self.logger.getChild(name))
         self.channels = channels
         for ch in self.channels:
-            if 'in' in setting['tags'] and ch.name in setting['tags']['in']:
+            if isinstance(ch, ModuleStateChannel):
+                self._bind_module_state_channel(ch)
+            elif 'in' in setting['tags'] and ch.name in setting['tags']['in']:
                 setting['tags']['in'][ch.name].channels.append(ch)
             elif 'out' in setting['tags'] and ch.name in setting['tags']['out']:
                 setting['tags']['out'][ch.name].channel = ch
@@ -61,11 +65,29 @@ class TagSrv(object):
     def process(self):
         pass
 
+    def _bind_module_state_channel(self, ch):
+        modules = [
+            m
+            for disp in self.dispatchers.values()
+            for m in disp.modules
+            if m.name == ch.name
+        ]
+        if not modules:
+            self.logger.error(f'No module found for module-state channel `{ch.name}`')
+        elif len(modules) > 1:
+            self.logger.error(
+                f'Multiple modules found for module-state channel `{ch.name}`'
+            )
+        else:
+            self.module_channels.append((ch, modules[0]))
+
     def read_all(self):
         for t in self.in_tags:
             if t.value is not None:
                 for ch in t.channels:
                     ch.set_value(t.value)
+        for ch, module in self.module_channels:
+            ch.set_value(module.ok)
         # self.logger.debug('read all %s' % [[f'{ch.name}={t.value}' for ch in t.channels] for t in self.in_tags if t.channels])
 
     def write_all(self):
