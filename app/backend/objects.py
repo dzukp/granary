@@ -14,22 +14,23 @@ from valve import Valve
 mechanisms = {
     'conveyer_1_2': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.2',
         'mb_cells_idx': 50,
         'do_start': 'do_21_1',
         'di_ready': 'di_1_1',
         'di_started': 'di_1_2',
-        'next_mechanisms': ['noria_3_3'],
     },
     'conveyer_1_3': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.3',
         'mb_cells_idx': 60,
         'do_start': 'do_21_2',
         'di_ready': 'di_1_3',
         'di_started': 'di_1_4',
-        'next_mechanisms': ['conveyer_6_1'],
     },
     'noria_3_4': {
         'class': Engine,
+        'human_name': 'Нория ковшовая 3.4',
         'mb_cells_idx': 70,
         'do_start': 'do_21_3',
         'di_ready': 'di_19_1',
@@ -37,6 +38,7 @@ mechanisms = {
     },
     'fan_13_1': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.1',
         'mb_cells_idx': 80,
         'do_start': 'do_21_4',
         'di_ready': 'di_1_7',
@@ -45,6 +47,7 @@ mechanisms = {
     # А1 (DI) / А21 (DO) - noria_3.5 использует последние входы А1
     'noria_3_5': {
         'class': Engine,
+        'human_name': 'Нория ковшовая 3.5',
         'mb_cells_idx': 90,
         'do_start': 'do_21_5',
         'di_ready': 'di_1_7',
@@ -53,6 +56,7 @@ mechanisms = {
     # А2 (DI) / А21 (DO)
     'noria_3_6': {
         'class': Engine,
+        'human_name': 'Нория ковшовая 3.6',
         'mb_cells_idx': 100,
         'do_start': 'do_21_6',
         'di_ready': 'di_2_1',
@@ -60,6 +64,7 @@ mechanisms = {
     },
     'conveyer_6_10': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.10',
         'mb_cells_idx': 110,
         'do_start': 'do_21_7',
         'di_ready': 'di_2_3',
@@ -67,6 +72,7 @@ mechanisms = {
     },
     'conveyer_6_9': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.9',
         'mb_cells_idx': 120,
         'do_start': 'do_21_8',
         'di_ready': 'di_2_5',
@@ -75,6 +81,7 @@ mechanisms = {
     # А2 (DI) / А22 (DO)
     'noria_3_3': {
         'class': Engine,
+        'human_name': 'Нория ковшовая 3.3',
         'mb_cells_idx': 130,
         'do_start': 'do_22_1',
         'di_ready': 'di_2_7',
@@ -83,6 +90,7 @@ mechanisms = {
     # А3 (DI) / А22 (DO)
     'fan_14': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 14',
         'mb_cells_idx': 140,
         'do_start': 'do_22_2',
         'di_ready': 'di_3_1',
@@ -90,6 +98,7 @@ mechanisms = {
     },
     'fan_13_2': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.2',
         'mb_cells_idx': 150,
         'do_start': 'do_22_3',
         'di_ready': 'di_3_3',
@@ -97,6 +106,7 @@ mechanisms = {
     },
     'fan_13_3': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.3',
         'mb_cells_idx': 160,
         'do_start': 'do_22_4',
         'di_ready': 'di_3_5',
@@ -104,6 +114,7 @@ mechanisms = {
     },
     'fan_13_4': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.4',
         'mb_cells_idx': 170,
         'do_start': 'do_22_5',
         'di_ready': 'di_3_7',
@@ -112,6 +123,7 @@ mechanisms = {
     # А4 (DI) / А22 (DO)
     'fan_13_5': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.5',
         'mb_cells_idx': 180,
         'do_start': 'do_22_6',
         'di_ready': 'di_4_1',
@@ -119,6 +131,7 @@ mechanisms = {
     },
     'fan_13_6': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.6',
         'mb_cells_idx': 190,
         'do_start': 'do_22_7',
         'di_ready': 'di_4_3',
@@ -126,6 +139,7 @@ mechanisms = {
     },
     'fan_13_7': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.7',
         'mb_cells_idx': 200,
         'do_start': 'do_22_8',
         'di_ready': 'di_4_5',
@@ -134,6 +148,7 @@ mechanisms = {
     # А4 (DI) / А23 (DO)
     'fan_13_8': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 13.8',
         'mb_cells_idx': 210,
         'do_start': 'do_23_1',
         'di_ready': 'di_4_7',
@@ -143,6 +158,7 @@ mechanisms = {
     # А5 (DI) / А24 (DO)
     'conveyer_1_4': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.4',
         'mb_cells_idx': 220,
         'do_start': 'do_24_1',
         'di_ready': 'di_5_1',
@@ -150,6 +166,7 @@ mechanisms = {
     },
     'conveyer_6_1': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.1',
         'mb_cells_idx': 230,
         'do_start': 'do_24_2',
         'di_ready': 'di_5_3',
@@ -157,6 +174,7 @@ mechanisms = {
     },
     'conveyer_1_8': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.8',
         'mb_cells_idx': 240,
         'do_start': 'do_24_3',
         'di_ready': 'di_5_5',
@@ -164,6 +182,7 @@ mechanisms = {
     },
     'conveyer_1_7': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.7',
         'mb_cells_idx': 250,
         'do_start': 'do_24_4',
         'di_ready': 'di_5_7',
@@ -172,6 +191,7 @@ mechanisms = {
     # А6 (DI) / А24 (DO)
     'conveyer_6_2': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.2',
         'mb_cells_idx': 260,
         'do_start': 'do_24_5',
         'di_ready': 'di_6_1',
@@ -179,6 +199,7 @@ mechanisms = {
     },
     'conveyer_1_6': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.6',
         'mb_cells_idx': 270,
         'do_start': 'do_24_6',
         'di_ready': 'di_6_3',
@@ -186,6 +207,7 @@ mechanisms = {
     },
     'conveyer_1_5': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.5',
         'mb_cells_idx': 280,
         'do_start': 'do_24_7',
         'di_ready': 'di_6_5',
@@ -193,6 +215,7 @@ mechanisms = {
     },
     'conveyer_1_9': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.9',
         'mb_cells_idx': 290,
         'do_start': 'do_24_8',
         'di_ready': 'di_6_7',
@@ -201,6 +224,7 @@ mechanisms = {
     # А7 (DI) / А25 (DO)
     'conveyer_1_10': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.10',
         'mb_cells_idx': 300,
         'do_start': 'do_25_1',
         'di_ready': 'di_7_1',
@@ -208,6 +232,7 @@ mechanisms = {
     },
     'conveyer_1_11': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.11',
         'mb_cells_idx': 310,
         'do_start': 'do_25_2',
         'di_ready': 'di_7_3',
@@ -215,6 +240,7 @@ mechanisms = {
     },
     'conveyer_1_12': {
         'class': Engine,
+        'human_name': 'Конвейер шнековый 1.12',
         'mb_cells_idx': 320,
         'do_start': 'do_25_3',
         'di_ready': 'di_7_5',
@@ -222,6 +248,7 @@ mechanisms = {
     },
     'conveyer_6_5': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.5',
         'mb_cells_idx': 330,
         'do_start': 'do_25_4',
         'di_ready': 'di_7_7',
@@ -230,6 +257,7 @@ mechanisms = {
     # А8 (DI) / А25 (DO)
     'conveyer_6_11': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.11',
         'mb_cells_idx': 340,
         'do_start': 'do_25_5',
         'di_ready': 'di_8_1',
@@ -237,6 +265,7 @@ mechanisms = {
     },
     'conveyer_6_4': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.4',
         'mb_cells_idx': 350,
         'do_start': 'do_25_6',
         'di_ready': 'di_8_3',
@@ -244,6 +273,7 @@ mechanisms = {
     },
     'conveyer_6_6': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.6',
         'mb_cells_idx': 360,
         'do_start': 'do_25_7',
         'di_ready': 'di_8_5',
@@ -251,6 +281,7 @@ mechanisms = {
     },
     'conveyer_6_8': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.8',
         'mb_cells_idx': 370,
         'do_start': 'do_25_8',
         'di_ready': 'di_8_7',
@@ -258,6 +289,7 @@ mechanisms = {
     },
     'sluice_16_3': {
         'class': Engine,
+        'human_name': 'Шлюзовой Затвор 16.3',
         'mb_cells_idx': 380,
         'do_start': 'do_26_1',
         'di_ready': 'di_10_1',
@@ -265,6 +297,7 @@ mechanisms = {
     },
     'valve_8_9': {
         'class': Valve,
+        'human_name': 'Задвижка 8.9',
         'mb_cells_idx': 390,
         'do_open': 'do_26_2',
         'do_close': 'do_26_3',
@@ -274,6 +307,7 @@ mechanisms = {
     },
     'valve_8_8': {
         'class': Valve,
+        'human_name': 'Задвижка 8.8',
         'mb_cells_idx': 400,
         'do_open': 'do_26_4',
         'do_close': 'do_26_5',
@@ -284,6 +318,7 @@ mechanisms = {
     # А11 (DI) / А26-А27 (DO)
     'valve_8_2': {
         'class': Valve,
+        'human_name': 'Задвижка 8.2',
         'mb_cells_idx': 410,
         'do_open': 'do_26_6',
         'do_close': 'do_26_7',
@@ -293,6 +328,7 @@ mechanisms = {
     },
     'valve_8_7': {
         'class': Valve,
+        'human_name': 'Задвижка 8.7',
         'mb_cells_idx': 420,
         'do_open': 'do_27_1',
         'do_close': 'do_27_2',
@@ -303,6 +339,7 @@ mechanisms = {
     # А12 (DI) / А27 (DO)
     'valve_8_12': {
         'class': Valve,
+        'human_name': 'Задвижка 8.12',
         'mb_cells_idx': 430,
         'do_open': 'do_27_3',
         'do_close': 'do_27_4',
@@ -312,6 +349,7 @@ mechanisms = {
     },
     'valve_8_13': {
         'class': Valve,
+        'human_name': 'Задвижка 8.13',
         'mb_cells_idx': 440,
         'do_open': 'do_27_5',
         'do_close': 'do_27_6',
@@ -322,6 +360,7 @@ mechanisms = {
     # А27 (DI) / А27 (DO)
     'fan_15_3': {
         'class': Engine,
+        'human_name': 'Вентилятор осевой 15.3',
         'mb_cells_idx': 520,
         'do_start': 'do_27_7',
         'di_ready': 'di_27_7',
@@ -330,6 +369,7 @@ mechanisms = {
     # А13 (DI) / А28 (DO)
     'valve_8_10': {
         'class': Valve,
+        'human_name': 'Задвижка 8.10',
         'mb_cells_idx': 450,
         'do_open': 'do_28_1',
         'do_close': 'do_28_2',
@@ -339,6 +379,7 @@ mechanisms = {
     },
     'conveyer_6_7': {
         'class': Engine,
+        'human_name': 'Конвейер скребковый 6.7',
         'mb_cells_idx': 530,
         'do_start': 'do_28_3',
         'di_ready': 'di_13_4',
@@ -348,6 +389,7 @@ mechanisms = {
     # А14 (DI) / А29 (DO)
     'valve_8_11': {
         'class': Valve,
+        'human_name': 'Задвижка 8.11',
         'mb_cells_idx': 460,
         'do_open': 'do_29_1',
         'do_close': 'do_29_2',
@@ -357,6 +399,7 @@ mechanisms = {
     },
     'valve_8_1': {
         'class': Valve,
+        'human_name': 'Задвижка 8.1',
         'mb_cells_idx': 470,
         'do_open': 'do_29_3',
         'do_close': 'do_29_4',
@@ -367,6 +410,7 @@ mechanisms = {
     # А14-А15 (DI) / А29 (DO)
     'valve_8_5': {
         'class': Valve,
+        'human_name': 'Задвижка 8.5',
         'mb_cells_idx': 480,
         'do_open': 'do_29_5',
         'do_close': 'do_29_6',
@@ -377,6 +421,7 @@ mechanisms = {
     # А15 (DI) / А29-А30 (DO)
     'valve_8_6': {
         'class': Valve,
+        'human_name': 'Задвижка 8.6',
         'mb_cells_idx': 490,
         'do_open': 'do_29_7',
         'do_close': 'do_29_8',
@@ -386,6 +431,7 @@ mechanisms = {
     },
     'valve_8_3': {
         'class': Valve,
+        'human_name': 'Задвижка 8.3',
         'mb_cells_idx': 500,
         'do_open': 'do_30_1',
         'do_close': 'do_30_2',
@@ -396,6 +442,7 @@ mechanisms = {
     # А16 (DI) / А30 (DO)
     'valve_8_4': {
         'class': Valve,
+        'human_name': 'Задвижка 8.4',
         'mb_cells_idx': 510,
         'do_open': 'do_30_3',
         'do_close': 'do_30_4',
@@ -407,48 +454,56 @@ mechanisms = {
     # А16-А18 (DI)
     'silo_11_1': {
         'class': Silo,
+        'human_name': 'Силос 11.1',
         'mb_cells_idx': 540,
         'di_bottom_level': 'di_16_5',
         'di_top_level': 'di_16_6',
     },
     'silo_11_2': {
         'class': Silo,
+        'human_name': 'Силос 11.2',
         'mb_cells_idx': 545,
         'di_bottom_level': 'di_16_7',
         'di_top_level': 'di_16_8',
     },
     'silo_11_3': {
         'class': Silo,
+        'human_name': 'Силос 11.3',
         'mb_cells_idx': 550,
         'di_bottom_level': 'di_17_1',
         'di_top_level': 'di_17_2',
     },
     'silo_11_4': {
         'class': Silo,
+        'human_name': 'Силос 11.4',
         'mb_cells_idx': 555,
         'di_bottom_level': 'di_17_3',
         'di_top_level': 'di_17_4',
     },
     'silo_11_5': {
         'class': Silo,
+        'human_name': 'Силос 11.5',
         'mb_cells_idx': 560,
         'di_bottom_level': 'di_17_5',
         'di_top_level': 'di_17_6',
     },
     'silo_11_6': {
         'class': Silo,
+        'human_name': 'Силос 11.6',
         'mb_cells_idx': 565,
         'di_bottom_level': 'di_17_7',
         'di_top_level': 'di_17_8',
     },
     'silo_11_7': {
         'class': Silo,
+        'human_name': 'Силос 11.7',
         'mb_cells_idx': 570,
         'di_bottom_level': 'di_18_1',
         'di_top_level': 'di_18_2',
     },
     'silo_11_8': {
         'class': Silo,
+        'human_name': 'Силос 11.8',
         'mb_cells_idx': 575,
         'di_bottom_level': 'di_18_3',
         'di_top_level': 'di_18_4',
@@ -458,6 +513,7 @@ mechanisms = {
         'mb_cells_idx': 580,
         'di_bottom_level': 'di_18_5',
         'di_top_level': 'di_18_6',
+        'human_name': 'Силос 12',
     },
 }
 
@@ -506,6 +562,7 @@ objects = {
                 'children': {
                     **pop_mechanisms('sluice_16_3', 'fan_15_3'),
                 },
+                'human_name': 'Аспирация',
             },
             'general_system': {
                 'class': GeneralSystem,
@@ -515,11 +572,13 @@ objects = {
                 'di_socket_1': 'di_9_1',
                 'di_socket_2': 'di_9_2',
                 'di_socket_3': 'di_9_3',
+                'human_name': 'Основной контур',
             },
             'siren': {
                 'class': Siren,
                 'mb_cells_idx': 585,
                 'do_start': 'do_30_5',
+                'human_name': 'Сирена',
             },
             'releaser': {
                 'class': Releaser,
@@ -527,6 +586,7 @@ objects = {
                 'do_release': 'do_23_2',
                 'do_control_on': 'do_30_8',
                 'di_explosion': 'di_18_8',
+                'human_name': 'Расцепитель',
             },
             'sound': {
                 'class': Sound,

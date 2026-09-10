@@ -24,6 +24,7 @@ class Valve(Mechanism, ModbusDataObject):
         self.di_ready = InChannel(False)
         self.di_opened = InChannel(False)
         self.di_closed = InChannel(False)
+        self.human_name = ''
         self.disabled_di = False
         self.enabled = True
         self.state = self.UNDEFINED
@@ -37,11 +38,13 @@ class Valve(Mechanism, ModbusDataObject):
             if self.state not in (self.FAULT, self.NOT_READY):
                 self._set_state(self.NOT_READY)
                 self.logger.warning(f'{self.name}: not ready')
+                self.error('не готов')
 
         elif self.state == self.NOT_READY:
             # Готовность восстановилась - переходим в UNDEFINED
             self._set_state(self.UNDEFINED)
             self.logger.info(f'{self.name}: ready, state -> UNDEFINED')
+            self.info('готов')
 
         if self.state == self.CLOSED:
             self.do_open.val = False
@@ -67,9 +70,11 @@ class Valve(Mechanism, ModbusDataObject):
                         self.logger.error(
                             f'{self.name}: open timeout -> FAULT',
                         )
+                        self.error('авария открытия')
                 if opened:
                     self._set_state(self.OPENED)
                     self.logger.info(f'{self.name}: opened')
+                    self.info('открыта')
 
         elif self.state == self.OPENED:
             self.do_open.val = False
@@ -92,9 +97,11 @@ class Valve(Mechanism, ModbusDataObject):
                 elif not closed:
                     self._set_state(self.FAULT)
                     self.logger.error(f'{self.name}: close timeout -> FAULT')
+                    self.error('авария закрытия')
             if closed:
                 self._set_state(self.CLOSED)
                 self.logger.info(f'{self.name}: closed')
+                self.info('закрыта')
 
         elif self.state == self.FAULT:
             self.do_open.val = False
@@ -116,11 +123,13 @@ class Valve(Mechanism, ModbusDataObject):
                     self.logger.info(
                         f'{self.name}: undefined -> CLOSED (di_closed)',
                     )
+                    self.info('готова, закрыта')
                 elif self.di_opened.val:
                     self._set_state(self.OPENED)
                     self.logger.info(
                         f'{self.name}: undefined -> OPENED (di_opened)',
                     )
+                    self.info('готова, открыта')
         else:
             raise LogicException(f'{self.name}: invalid state: {self.state}')
 
@@ -160,6 +169,7 @@ class Valve(Mechanism, ModbusDataObject):
         if self.state != self.OPENING:
             self._set_state(self.OPENING)
             self.logger.info(f'{self.name}: open command')
+            self.info('команда "Открытие"')
 
     def close(self):
         if not self.enabled:
@@ -178,23 +188,27 @@ class Valve(Mechanism, ModbusDataObject):
         if self.state != self.CLOSING:
             self._set_state(self.CLOSING)
             self.logger.info(f'{self.name}: close command')
+            self.info('команда "Закрытие"')
 
     def reset(self):
         if self.state == self.FAULT:
             self._set_state(self.UNDEFINED)
             self.logger.info(f'{self.name}: reset -> UNDEFINED')
+            self.info('команда "Сброс аварии"')
 
     def disable_di(self):
         if not self.disabled_di:
             self.disabled_di = True
             self.save()
             self.logger.info(f'{self.name}: disable DI')
+            self.info('команда "Маскирование датчиков"')
 
     def enable_di(self):
         if self.disabled_di:
             self.disabled_di = False
             self.save()
             self.logger.info(f'{self.name}: enable DI')
+            self.info('команда "Отключение маскирования датчиков"')
 
     def set_timeout(self, timeout_sec: int):
         if self.timeout != timeout_sec:

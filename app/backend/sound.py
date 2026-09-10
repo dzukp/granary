@@ -8,6 +8,7 @@ class Sound(Mechanism, ModbusDataObject):
 
     def __init__(self, name, parent):
         super().__init__(name, parent)
+        self.human_name = ''
         self.state = False
         self.manual_start = False
         self.mb_cells_idx = None

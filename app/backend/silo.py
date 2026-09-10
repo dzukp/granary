@@ -11,6 +11,7 @@ class Silo(Mechanism, ModbusDataObject):
         self.di_top_level = InChannel(False)
         self.di_bottom_level = InChannel(False)
         self.disabled_di = False
+        self.human_name = ''
         self.enabled = True
         self.ready = False
         self.mb_cells_idx = None
@@ -49,12 +50,14 @@ class Silo(Mechanism, ModbusDataObject):
             self.disabled_di = True
             self.save()
             self.logger.info(f'{self.name}: disable DI')
+            self.info('команда "Маскирование датчиков"')
 
     def enable_di(self):
         if self.disabled_di:
             self.disabled_di = False
             self.save()
             self.logger.info(f'{self.name}: enable DI')
+            self.info('команда "Отключение маскирования датчиков"')
 
     def mb_input(self, start_addr, data):
         if self.mb_cells_idx is not None:

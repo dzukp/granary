@@ -9,6 +9,7 @@ class Aspiration(IoObject, MechManager, ModbusDataObject):
     def __init__(self, name, parent):
         super().__init__(name, parent)
         self.mb_cells_idx = None
+        self.human_name = ''
         self.aspiration_enabled = False
         self.sluice_16_3 = None
         self.fan_15_3 = None

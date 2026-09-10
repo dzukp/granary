@@ -7,16 +7,21 @@
     <Scripts Name="Scripts">
         <Script Name="mechanisms"/>
     </Scripts>
-    <Documents Name="Documents"/>
+    <Documents Name="Documents">
+        <Document Name="Document 0"/>
+    </Documents>
     <Screens Name="Screens">
         <Screen Name="main"/>
         <Screen Name="engine_dlg"/>
         <Screen Name="siren_dlg"/>
         <Screen Name="releaser_dlg"/>
         <Screen Name="alarm_dlg"/>
+        <Screen Name="messages"/>
     </Screens>
     <PopupMessage Name="Popup message"/>
-    <Databases Name="Databases"/>
+    <Databases Name="Databases">
+        <Database Name="Database 0"/>
+    </Databases>
     <Sources Name="Sources">
         <ModbusTCP Name="main"/>
     </Sources>
@@ -25,6 +30,8 @@
     <Condition Name="Condition"/>
     <DataModel Name="Data model">
         <CustomModel Name="Custom model 0"/>
+        <CustomModel Name="all_msg"/>
+        <CustomModel Name="all_msg_100"/>
     </DataModel>
     <Devices Name="Devices">
         <TCPsocket Name="TCP socket"/>
@@ -51,7 +58,7 @@
         <MnemoScreen FullName="main">
             <Properties>
                 <Color g="160" r="160" a="255" b="164"/>
-                <Alignment StepSize="10" Enabled="1">
+                <Alignment StepSize="10" Enabled="0">
                     <AlignColor g="0" r="0" a="255" b="128"/>
                 </Alignment>
                 <HotKey key="Not assigned"/>
@@ -7520,6 +7527,79 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTable" Name="Table_316" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="1120" rect.bottom="1249" rect.left="1000" rect.right="2099"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="messages"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                            <Action Name="Set value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="="/>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="1"/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\all_msg_page"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                            <Action Name="Execute query">
+                                <Expanded Value="1"/>
+                                <Property Name="Query">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Query="all_messages" Database="Database 0" Type="Query"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <DataModel ModelColumn="-1" ModelName="all_msg_100"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <AlternatingRowColor Value="1"/>
+                <HorizontalHeaderVisible Value="1"/>
+                <VerticalHeaderVisible Value="1"/>
+                <Editable Value="0"/>
+                <SelectionBehavior Value="1"/>
+                <SelectionMode Value="1"/>
+                <FieldList>
+                    <Field Num="0" Width="188" Visible="1"/>
+                </FieldList>
+            </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
             <Properties>
@@ -8893,6 +8973,146 @@
                 <Text string="Стоп тест"/>
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+        </MnemoScreen>
+        <MnemoScreen FullName="messages">
+            <Properties>
+                <Color g="192" r="192" a="255" b="192"/>
+                <Alignment StepSize="20" Enabled="1">
+                    <AlignColor g="0" r="0" a="128" b="0"/>
+                </Alignment>
+                <Dialog Width="1000" Title="" Height="900"/>
+                <HotKey key="Not assigned"/>
+                <Password CryptData="0"/>
+                <Comment Comment=""/>
+                <Activate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Activate>
+                <Deactivate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Deactivate>
+            </Properties>
+            <XMnemoLayers>
+                <XMnemoLayer Name="general" Visible="1"/>
+            </XMnemoLayers>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTable" Name="Table_1" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="60" rect.bottom="859" rect.left="40" rect.right="959"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <DataModel ModelColumn="-1" ModelName="all_msg"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <AlternatingRowColor Value="1"/>
+                <HorizontalHeaderVisible Value="1"/>
+                <VerticalHeaderVisible Value="1"/>
+                <Editable Value="0"/>
+                <SelectionBehavior Value="1"/>
+                <SelectionMode Value="1"/>
+                <FieldList>
+                    <Field Num="0" Width="168" Visible="1"/>
+                    <Field Num="1" Width="709" Visible="1"/>
+                </FieldList>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="SpinBox_2" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="43" rect.left="120" rect.right="200"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnEditingFinished">
+                            <Expanded Value="1"/>
+                            <Action Name="Set cur.value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="="/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\all_msg_page"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <SpinBoxProperties Step="1" Decimals="0" Min="1" Max="10000"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_3" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="43" rect.left="220" rect.right="249"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Execute query">
+                                <Expanded Value="1"/>
+                                <Property Name="Query">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Query="all_messages" Database="Database 0" Type="Query"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string=">"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem AutoIconResize="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_4" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="43" rect.left="40" rect.right="110"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Страница" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
     </MnemoScreenList>
@@ -10806,23 +11026,29 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_cmd" Units="....." Location="401" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_timeout" Units="....." Location="402" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_status" Units="....." Location="403" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoShape" Name="m8_8_nosens"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_8_8"/>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_state" Units="....." Location="404" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m8_8"/>
+                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -11777,7 +12003,9 @@
         <Group Marker="0" Name="mechanisms"/>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
-                <ListenersList/>
+                <ListenersList>
+                    <Listener Path="main\" Type="Output register" Name="m8_8_cmd(4-401)"/>
+                </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
@@ -11785,17 +12013,20 @@
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_8_status(4-403)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_8_timeout(4-402)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
+                    <Listener Path="main\" Type="Output register" Name="m8_8_state(4-404)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
@@ -11867,14 +12098,89 @@
                 </ListenersList>
             </GlobalVariable>
         </Group>
+        <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="all_msg_page" Value="1">
+            <ListenersList>
+                <Listener Path="messages" Type="XMnemoSpinBox" Name="SpinBox_2"/>
+            </ListenersList>
+        </GlobalVariable>
     </GlobalVariablesList>
-    <TimersList/>
-    <DatabseList/>
+    <TimersList>
+        <Timer Interval="3000" Marker="0" Comments="" Name="db" RunByStart="1">
+            <ListenersList/>
+            <EventList>
+                <Event Name="OnTimerTimeout">
+                    <Expanded Value="1"/>
+                    <Confirm>
+                        <Action Name="Confirm">
+                            <Expanded Value="0"/>
+                            <Property Name="Confirm">
+                                <Data Value="false"/>
+                            </Property>
+                            <Property Name="Title">
+                                <Data Value="STA-SCADA"/>
+                            </Property>
+                            <Property Name="Message">
+                                <Data Value="Perform a task ?"/>
+                            </Property>
+                        </Action>
+                    </Confirm>
+                    <Action Name="Execute query">
+                        <Expanded Value="1"/>
+                        <Property Name="Query">
+                            <Data Value=""/>
+                            <UserData>
+                                <Object Query="all_messages_100" Database="Database 0" Type="Query"/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Event>
+            </EventList>
+        </Timer>
+    </TimersList>
+    <DatabseList>
+        <Database FullName="Database 0"/>
+        <Settings>
+            <Driver Value="QSQLITE"/>
+            <Databasename Value="main.db"/>
+            <Username Value=""/>
+            <Hostname Value=""/>
+            <Password Data="" Value="0"/>
+            <Port Value="0"/>
+            <Comment Value=""/>
+        </Settings>
+        <ListQuery>
+            <Query>
+                <Name Value="all_messages"/>
+                <SQL Value="select dtime, message &#xa;from messages &#xa;order by id desc &#xa;limit 25 &#xa;offset (%1 - 1) * 25"/>
+                <ExecuteByRun Value="1"/>
+                <Comment Value=""/>
+                <ListTag>
+                    <Tag FullName="GlobalVariable\all_msg_page" Type="Global Variable"/>
+                </ListTag>
+            </Query>
+            <Query>
+                <Name Value="all_messages_100"/>
+                <SQL Value="select dtime, message &#xa;from messages &#xa;order by id desc &#xa;limit 100;"/>
+                <ExecuteByRun Value="1"/>
+                <Comment Value=""/>
+                <ListTag/>
+            </Query>
+        </ListQuery>
+    </DatabseList>
     <ArchiveList/>
     <ScriptsList>
         <Script FullName="mechanisms" Prior="150" Name="mechanisms"/>
     </ScriptsList>
-    <DocumentsList/>
+    <DocumentsList>
+        <Document FullName="Document 0" Comment="" IsHead2="2" Name="Document 0" IsFoot2="2">
+            <ListenersList/>
+            <Head/>
+            <Head2/>
+            <Table Model="all_msg" Row="20" Row1="20"/>
+            <Foot/>
+            <Foot2/>
+        </Document>
+    </DocumentsList>
     <ConditionsList/>
     <ModelList>
         <DataModel FullName="Custom model 0">
@@ -11903,7 +12209,7 @@
                             <Decor>
                                 <BaseDecor/>
                             </Decor>
-                            <ValueItem Value="0"/>
+                            <ValueItem Value="2"/>
                         </Item>
                         <Item>
                             <Pos Column="1" Row="0"/>
@@ -11925,7 +12231,7 @@
                             <Decor>
                                 <BaseDecor/>
                             </Decor>
-                            <ValueItem Value="0"/>
+                            <ValueItem Value="2"/>
                         </Item>
                         <Item>
                             <Pos Column="0" Row="1"/>
@@ -11962,6 +12268,90 @@
                 </Header>
                 <Header>
                     <ValueItem Value="Column 2"/>
+                </Header>
+            </HeaderList>
+            <ActiveArea AreaName="area1"/>
+        </DataModel>
+        <DataModel FullName="all_msg">
+            <ColumnCount Value="2"/>
+            <AreasList>
+                <Area TypeArea="Query">
+                    <Query Database="Database 0" QueryName="all_messages"/>
+                    <Name Value="area1"/>
+                    <DecorList>
+                        <Decor>
+                            <BaseDecor/>
+                        </Decor>
+                        <Decor>
+                            <BaseDecor/>
+                        </Decor>
+                    </DecorList>
+                    <FielsList>
+                        <Field Num="0" Name="dtime">
+                            <Format>
+                                <Type Value="Base"/>
+                                <Editable Value="1"/>
+                                <Property LENGTH="0" MASK=""/>
+                            </Format>
+                        </Field>
+                        <Field Num="1" Name="message">
+                            <Format>
+                                <Type Value="Base"/>
+                                <Editable Value="1"/>
+                                <Property LENGTH="0" MASK=""/>
+                            </Format>
+                        </Field>
+                    </FielsList>
+                </Area>
+            </AreasList>
+            <HeaderList>
+                <Header>
+                    <ValueItem Value="Время"/>
+                </Header>
+                <Header>
+                    <ValueItem Value="Событие"/>
+                </Header>
+            </HeaderList>
+            <ActiveArea AreaName="area1"/>
+        </DataModel>
+        <DataModel FullName="all_msg_100">
+            <ColumnCount Value="2"/>
+            <AreasList>
+                <Area TypeArea="Query">
+                    <Query Database="Database 0" QueryName="all_messages_100"/>
+                    <Name Value="area1"/>
+                    <DecorList>
+                        <Decor>
+                            <BaseDecor/>
+                        </Decor>
+                        <Decor>
+                            <BaseDecor/>
+                        </Decor>
+                    </DecorList>
+                    <FielsList>
+                        <Field Num="0" Name="dtime">
+                            <Format>
+                                <Type Value="Base"/>
+                                <Editable Value="1"/>
+                                <Property LENGTH="0" MASK=""/>
+                            </Format>
+                        </Field>
+                        <Field Num="1" Name="message">
+                            <Format>
+                                <Type Value="Base"/>
+                                <Editable Value="1"/>
+                                <Property LENGTH="0" MASK=""/>
+                            </Format>
+                        </Field>
+                    </FielsList>
+                </Area>
+            </AreasList>
+            <HeaderList>
+                <Header>
+                    <ValueItem Value="Время"/>
+                </Header>
+                <Header>
+                    <ValueItem Value="Событие"/>
                 </Header>
             </HeaderList>
             <ActiveArea AreaName="area1"/>

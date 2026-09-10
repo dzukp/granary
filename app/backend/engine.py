@@ -22,6 +22,7 @@ class Engine(Mechanism, ModbusDataObject):
         self.di_started = InChannel(False)
         self.di_ready = InChannel(False)
         self.disabled_di = False
+        self.human_name = ''
         self.enabled = True
         self.state = self.STOPPED
         self.ton = Ton()
@@ -34,11 +35,13 @@ class Engine(Mechanism, ModbusDataObject):
             if self.state not in (self.FAULT, self.NOT_READY):
                 self._set_state(self.NOT_READY)
                 self.logger.warning(f'{self.name}: not ready')
+                self.error('не готов')
 
         elif self.state == self.NOT_READY:
             # Готовность восстановилась - возвращаемся в STOPPED
             self._set_state(self.STOPPED)
             self.logger.info(f'{self.name}: ready, state -> STOPPED')
+            self.info('готов')
 
         if self.state == self.STOPPED:
             self.do_start.val = False
@@ -60,9 +63,11 @@ class Engine(Mechanism, ModbusDataObject):
                         self.logger.error(
                             f'{self.name}: start timeout -> FAULT',
                         )
+                        self.error('авария запуска')
                 elif started:
                     self._set_state(self.RUNNING)
                     self.logger.info(f'{self.name}: running')
+                    self.info('запущен')
 
         elif self.state == self.RUNNING:
             self.do_start.val = True
@@ -71,6 +76,7 @@ class Engine(Mechanism, ModbusDataObject):
             if not self.disabled_di and not self.di_started.val:
                 self._set_state(self.FAULT)
                 self.logger.error(f'{self.name}: di_started lost -> FAULT')
+                self.error('авария работы')
             elif not self.check_next_mechanisms():
                 self._set_state(self.STOPPING)
                 self.logger.warning(
@@ -85,9 +91,11 @@ class Engine(Mechanism, ModbusDataObject):
                 if started:
                     self._set_state(self.FAULT)
                     self.logger.error(f'{self.name}: stop timeout -> FAULT')
+                    self.error('авария остановки')
             elif not started:
                 self._set_state(self.STOPPED)
                 self.logger.info(f'{self.name}: stopped')
+                self.info('остановлен')
 
         elif self.state == self.FAULT:
             self.do_start.val = False
@@ -132,6 +140,7 @@ class Engine(Mechanism, ModbusDataObject):
         if self.state != self.STARTING:
             self._set_state(self.STARTING)
             self.logger.info(f'{self.name}: start command')
+            self.info('команда "Пуск"')
 
     def stop(self):
         if self.state == self.FAULT:
@@ -140,23 +149,27 @@ class Engine(Mechanism, ModbusDataObject):
         if self.state != self.STOPPING:
             self._set_state(self.STOPPING)
             self.logger.info(f'{self.name}: stop command')
+            self.info('команда "Стоп"')
 
     def reset(self):
         if self.state == self.FAULT:
             self._set_state(self.STOPPED)
             self.logger.info(f'{self.name}: reset -> STOPPED')
+            self.info('команда "Сброс аварии"')
 
     def disable_di(self):
         if not self.disabled_di:
             self.disabled_di = True
             self.save()
             self.logger.info(f'{self.name}: disable DI')
+            self.info('команда "Маскирование датчиков"')
 
     def enable_di(self):
         if self.disabled_di:
             self.disabled_di = False
             self.save()
             self.logger.info(f'{self.name}: enable DI')
+            self.info('команда "Отключение маскирования датчиков"')
 
     def set_timeout(self, timeout_sec: int):
         if self.timeout != timeout_sec:

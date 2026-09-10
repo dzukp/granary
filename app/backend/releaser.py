@@ -11,20 +11,22 @@ class Releaser(Mechanism, ModbusDataObject):
         self.do_release = OutChannel(False)
         self.do_control_on = OutChannel(True)
         self.di_explosion = InChannel(False)
+        self.human_name = ''
         self.enabled = True
         self.released = False
         self.control_on = True
         self.mb_cells_idx = None
 
     def process(self):
-        if self.di_explosion.val and not self.released:
-            self.released = True
-            self.logger.warning(f'{self.name}: explosion signal - RELEASED')
+        self.do_control_on.val = self.control_on
         if not self.enabled:
             self.do_release.val = False
             return
+        if self.di_explosion.val and not self.released:
+            self.released = True
+            self.logger.warning(f'{self.name}: explosion signal - RELEASED')
+            self.error('Взрыв, включение')
         self.do_release.val = self.released
-        self.do_control_on.val = self.control_on
 
     def is_running(self):
         return self.released
@@ -33,17 +35,20 @@ class Releaser(Mechanism, ModbusDataObject):
         if not self.released:
             self.released = True
             self.logger.info(f'{self.name}: start - simulate explosion')
+            self.info('команда "Пуск"')
 
     def stop(self):
         if self.released:
             self.released = False
             self.logger.info(f'{self.name}: stop - reset')
+            self.info('команда "Стоп"')
 
     def enable(self):
         if not self.enabled:
             self.enabled = True
             self.save()
             self.logger.info(f'{self.name}: enabled')
+            self.info('включение')
 
     def disable(self):
         if self.enabled:
@@ -51,18 +56,21 @@ class Releaser(Mechanism, ModbusDataObject):
             self.released = False
             self.save()
             self.logger.info(f'{self.name}: disabled')
+            self.info('отключение')
 
     def set_control_on(self):
         if not self.control_on:
             self.control_on = True
             self.save()
             self.logger.info(f'{self.name}: control on')
+            self.info('контроль взрыва включен')
 
     def set_control_off(self):
         if self.control_on:
             self.control_on = False
             self.save()
             self.logger.info(f'{self.name}: control off')
+            self.info('контроль взрыва отключен')
 
     def mb_input(self, start_addr, data):
         if self.mb_cells_idx is not None:

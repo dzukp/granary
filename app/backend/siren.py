@@ -10,6 +10,7 @@ class Siren(Mechanism, ModbusDataObject):
     def __init__(self, name, parent):
         super().__init__(name, parent)
         self.do_start = OutChannel(False)
+        self.human_name = ''
         self.state = False
         self.ton = Ton()
         self.timeout = 5.0

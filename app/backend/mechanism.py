@@ -1,7 +1,22 @@
+from db_logger import db_logger
 from pylogic.io_object import IoObject
 
 
-class Mechanism(IoObject):
+class DBLoggerMixin:
+    def info(self, txt):
+        prefix = f'{self.human_name}: ' if self.human_name else ''
+        db_logger.info(f'{prefix}{txt}')
+
+    def warning(self, txt):
+        prefix = f'{self.human_name}: ' if self.human_name else ''
+        db_logger.warning(f'{prefix}{txt}')
+
+    def error(self, txt):
+        prefix = f'{self.human_name}: ' if self.human_name else ''
+        db_logger.error(f'{prefix}{txt}')
+
+
+class Mechanism(IoObject, DBLoggerMixin):
     def __init__(self, name, parent):
         super().__init__(name, parent)
         self.next_mechanisms: list[Mechanism] = []
@@ -36,7 +51,7 @@ class Mechanism(IoObject):
         raise NotImplementedError
 
 
-class MechManager:
+class MechManager(DBLoggerMixin):
     def disable(self):
         for child in self.children:
             if isinstance(child, Mechanism):

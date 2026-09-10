@@ -22,6 +22,7 @@ class GeneralSystem(IoObject, MechManager, ModbusDataObject):
         self.di_socket_1 = InChannel(False)
         self.di_socket_2 = InChannel(False)
         self.di_socket_3 = InChannel(False)
+        self.human_name = ''
         self.silos_ready_enabled = False
         self.socket_1_enabled = False
         self.socket_2_enabled = False
