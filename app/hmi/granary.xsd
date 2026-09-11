@@ -346,20 +346,6 @@
                     <Point x="349" y="1080"/>
                 </Points>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_1" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1271" rect.bottom="1350" rect.left="0" rect.right="2560"/>
-                <StandartProperies Freeze="0">
-                    <Palette SystemPalette="1"/>
-                    <EventList/>
-                    <ActionList/>
-                    <ListenersList/>
-                </StandartProperies>
-                <Color g="128" r="128" a="255" b="128"/>
-                <RectangleProperties Rounded="0" Brush="8" PenWidth="1" Frame="0">
-                    <PenColor g="128" r="128" a="255" b="128"/>
-                </RectangleProperties>
-                <States/>
-            </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoClock" Name="Clock_2" ToolTip="" MnemoLayer="general">
                 <Geometry rect.top="1290" rect.bottom="1329" rect.left="2200" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -6491,39 +6477,12 @@
                     <State Bitmap_collection="scheme" Name="explosion_red.svg"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="MultiState_204" ToolTip="" MnemoLayer="general" Group="Group_MultiState_204">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_204" ToolTip="" MnemoLayer="general" Group="Group_MultiState_204">
                 <Conversion Type="1" Bit="2"/>
                 <Geometry rect.top="51" rect.bottom="95" rect.left="301" rect.right="350"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
-                    <EventList>
-                        <Event Name="OnMousePress">
-                            <Expanded Value="1"/>
-                            <Confirm>
-                                <Action Name="Confirm">
-                                    <Expanded Value="0"/>
-                                    <Property Name="Confirm">
-                                        <Data Value="false"/>
-                                    </Property>
-                                    <Property Name="Title">
-                                        <Data Value="STA-SCADA"/>
-                                    </Property>
-                                    <Property Name="Message">
-                                        <Data Value="Perform a task ?"/>
-                                    </Property>
-                                </Action>
-                            </Confirm>
-                            <Action Name="Jump to screen">
-                                <Expanded Value="1"/>
-                                <Property Name="Screen">
-                                    <Data Value=""/>
-                                    <UserData>
-                                        <Object Type="Screen" Value="releaser_dlg"/>
-                                    </UserData>
-                                </Property>
-                            </Action>
-                        </Event>
-                    </EventList>
+                    <EventList/>
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
@@ -7528,7 +7487,7 @@
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTable" Name="Table_316" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1120" rect.bottom="1249" rect.left="1000" rect.right="2099"/>
+                <Geometry rect.top="1120" rect.bottom="1339" rect.left="1000" rect.right="2099"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -7597,7 +7556,8 @@
                 <SelectionBehavior Value="1"/>
                 <SelectionMode Value="1"/>
                 <FieldList>
-                    <Field Num="0" Width="188" Visible="1"/>
+                    <Field Num="0" Width="255" Visible="1"/>
+                    <Field Num="1" Width="786" Visible="1"/>
                 </FieldList>
             </MnemoObject>
         </MnemoScreen>
@@ -9033,7 +8993,7 @@
                 </FieldList>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="SpinBox_2" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="20" rect.bottom="43" rect.left="120" rect.right="200"/>
+                <Geometry rect.top="20" rect.bottom="43" rect.left="360" rect.right="440"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -9062,7 +9022,7 @@
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_3" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="20" rect.bottom="43" rect.left="220" rect.right="249"/>
+                <Geometry rect.top="20" rect.bottom="43" rect.left="460" rect.right="489"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -9101,7 +9061,7 @@
                 <IconSizeElem AutoIconResize="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_4" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="20" rect.bottom="43" rect.left="40" rect.right="110"/>
+                <Geometry rect.top="20" rect.bottom="43" rect.left="280" rect.right="350"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -9110,6 +9070,49 @@
                 </StandartProperies>
                 <HTML html="0"/>
                 <Text Angle="0" string="Страница" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="SpinBox_5" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="43" rect.left="180" rect.right="260"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnEditingFinished">
+                            <Expanded Value="1"/>
+                            <Action Name="Set cur.value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="="/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\all_msg_per_page"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <SpinBoxProperties Step="1" Decimals="0" Min="0" Max="30000"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_6" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="20" rect.bottom="43" rect.left="40" rect.right="179"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Записей на странице" format=""/>
                 <Transparency Value="1"/>
                 <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
@@ -11026,29 +11029,23 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_cmd" Units="....." Location="401" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_timeout" Units="....." Location="402" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_status" Units="....." Location="403" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoShape" Name="m8_8_nosens"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_8_8"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m8_8_state" Units="....." Location="404" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m8_8"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -12003,9 +12000,7 @@
         <Group Marker="0" Name="mechanisms"/>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
-                <ListenersList>
-                    <Listener Path="main\" Type="Output register" Name="m8_8_cmd(4-401)"/>
-                </ListenersList>
+                <ListenersList/>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
@@ -12013,20 +12008,17 @@
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_8_status(4-403)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_8_timeout(4-402)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
-                    <Listener Path="main\" Type="Output register" Name="m8_8_state(4-404)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
@@ -12098,11 +12090,18 @@
                 </ListenersList>
             </GlobalVariable>
         </Group>
-        <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="all_msg_page" Value="1">
-            <ListenersList>
-                <Listener Path="messages" Type="XMnemoSpinBox" Name="SpinBox_2"/>
-            </ListenersList>
-        </GlobalVariable>
+        <Group Marker="0" Name="all_msg">
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="all_msg_page" Value="1">
+                <ListenersList>
+                    <Listener Path="messages" Type="XMnemoSpinBox" Name="SpinBox_2"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="all_msg_per_page" Value="25">
+                <ListenersList>
+                    <Listener Path="messages" Type="XMnemoSpinBox" Name="SpinBox_5"/>
+                </ListenersList>
+            </GlobalVariable>
+        </Group>
     </GlobalVariablesList>
     <TimersList>
         <Timer Interval="3000" Marker="0" Comments="" Name="db" RunByStart="1">
@@ -12151,11 +12150,12 @@
         <ListQuery>
             <Query>
                 <Name Value="all_messages"/>
-                <SQL Value="select dtime, message &#xa;from messages &#xa;order by id desc &#xa;limit 25 &#xa;offset (%1 - 1) * 25"/>
+                <SQL Value="select dtime, message &#xa;from messages &#xa;order by id desc &#xa;limit %2 &#xa;offset (%1 - 1) * %2"/>
                 <ExecuteByRun Value="1"/>
                 <Comment Value=""/>
                 <ListTag>
                     <Tag FullName="GlobalVariable\all_msg_page" Type="Global Variable"/>
+                    <Tag FullName="GlobalVariable\all_msg_per_page" Type="Global Variable"/>
                 </ListTag>
             </Query>
             <Query>
@@ -12209,7 +12209,7 @@
                             <Decor>
                                 <BaseDecor/>
                             </Decor>
-                            <ValueItem Value="2"/>
+                            <ValueItem Value="0"/>
                         </Item>
                         <Item>
                             <Pos Column="1" Row="0"/>
@@ -12231,7 +12231,7 @@
                             <Decor>
                                 <BaseDecor/>
                             </Decor>
-                            <ValueItem Value="2"/>
+                            <ValueItem Value="0"/>
                         </Item>
                         <Item>
                             <Pos Column="0" Row="1"/>
