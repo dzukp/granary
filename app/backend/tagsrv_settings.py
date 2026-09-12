@@ -2,6 +2,7 @@ from pylogic.tagsrv.module_dispatcher import SerialDispatcher
 from pylogic.tagsrv.owen_m110 import OwenM110DiModule, OwenM110DoModule
 from pylogic.tagsrv.tagsrv import InTag, OutTag
 from pylogic.tagsrv.serialsource import SerialSource
+import settings
 
 tags = {
     'in': {},
@@ -11,8 +12,8 @@ modules = []
 
 
 serial_source = SerialSource(
-    port='COM3',
-    baudrate=9600,
+    port=settings.COMPORT,
+    baudrate=settings.BAUDRATE,
 )
 
 
