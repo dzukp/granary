@@ -1,4 +1,4 @@
-exclude: "^(docs/|app/hmi/|app/backend/logs)"
+exclude: "^(docs/|app/hmi/|app/backend/logs|distribs/)"
 default_stages: [pre-commit]
 
 default_language_version:
