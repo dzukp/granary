@@ -6,6 +6,7 @@
     <GlobalVariable Name="Global variable"/>
     <Scripts Name="Scripts">
         <Script Name="mechanisms"/>
+        <Script Name="update"/>
     </Scripts>
     <Documents Name="Documents">
         <Document Name="Document 0"/>
@@ -347,7 +348,7 @@
                 </Points>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoClock" Name="Clock_2" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1290" rect.bottom="1329" rect.left="2200" rect.right="2529"/>
+                <Geometry rect.top="1290" rect.bottom="1329" rect.left="2230" rect.right="2529"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7486,8 +7487,8 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTable" Name="Table_316" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="1120" rect.bottom="1339" rect.left="1000" rect.right="2099"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_315" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="60" rect.bottom="89" rect.left="540" rect.right="659"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -7507,15 +7508,6 @@
                                     </Property>
                                 </Action>
                             </Confirm>
-                            <Action Name="Jump to screen">
-                                <Expanded Value="1"/>
-                                <Property Name="Screen">
-                                    <Data Value=""/>
-                                    <UserData>
-                                        <Object Type="Screen" Value="messages"/>
-                                    </UserData>
-                                </Property>
-                            </Action>
                             <Action Name="Set value">
                                 <Expanded Value="1"/>
                                 <Property Name="Type">
@@ -7542,23 +7534,121 @@
                                     </UserData>
                                 </Property>
                             </Action>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="messages"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
                         </Event>
                     </EventList>
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <DataModel ModelColumn="-1" ModelName="all_msg_100"/>
-                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
-                <AlternatingRowColor Value="1"/>
-                <HorizontalHeaderVisible Value="1"/>
-                <VerticalHeaderVisible Value="1"/>
-                <Editable Value="0"/>
-                <SelectionBehavior Value="1"/>
-                <SelectionMode Value="1"/>
-                <FieldList>
-                    <Field Num="0" Width="255" Visible="1"/>
-                    <Field Num="1" Width="786" Visible="1"/>
-                </FieldList>
+                <Text string="Журнал"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem AutoIconResize="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoMultiState" Name="MultiState_316" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="1300" rect.bottom="1319" rect.left="2064" rect.right="2083"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Transparency Value="1"/>
+                <States>
+                    <State Bitmap_collection="scheme" Name="applicationsinternet_red.svg"/>
+                    <State Bitmap_collection="scheme" Name="applicationsinternet_black.svg"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_317" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="1200" rect.bottom="1247" rect.left="940" rect.right="1618"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="0">
+                        <Active>
+                            <Window g="239" r="239" a="255" b="239"/>
+                            <WindowText g="0" r="255" a="255" b="0"/>
+                            <Button g="223" r="221" a="255" b="228"/>
+                            <ButtonText g="0" r="0" a="255" b="0"/>
+                            <Text g="0" r="255" a="255" b="0"/>
+                            <BrightText g="255" r="255" a="255" b="255"/>
+                            <AlternateBase g="232" r="232" a="255" b="232"/>
+                            <Base g="255" r="255" a="255" b="255"/>
+                            <Light g="255" r="255" a="255" b="255"/>
+                            <Midlight g="255" r="255" a="255" b="255"/>
+                            <Dark g="85" r="85" a="255" b="85"/>
+                            <Mid g="199" r="199" a="255" b="199"/>
+                            <Shadow g="0" r="0" a="255" b="0"/>
+                            <Highlight g="141" r="103" a="255" b="178"/>
+                            <HighlightedText g="255" r="255" a="255" b="255"/>
+                        </Active>
+                        <Inactive>
+                            <Window g="239" r="239" a="255" b="239"/>
+                            <WindowText g="0" r="255" a="255" b="0"/>
+                            <Button g="223" r="221" a="255" b="228"/>
+                            <ButtonText g="0" r="0" a="255" b="0"/>
+                            <Text g="0" r="255" a="255" b="0"/>
+                            <BrightText g="255" r="255" a="255" b="255"/>
+                            <AlternateBase g="232" r="232" a="255" b="232"/>
+                            <Base g="255" r="255" a="255" b="255"/>
+                            <Light g="255" r="255" a="255" b="255"/>
+                            <Midlight g="255" r="255" a="255" b="255"/>
+                            <Dark g="85" r="85" a="255" b="85"/>
+                            <Mid g="199" r="199" a="255" b="199"/>
+                            <Shadow g="0" r="0" a="255" b="0"/>
+                            <Highlight g="141" r="103" a="255" b="178"/>
+                            <HighlightedText g="255" r="255" a="255" b="255"/>
+                        </Inactive>
+                        <Disabled>
+                            <Window g="239" r="239" a="255" b="239"/>
+                            <WindowText g="128" r="128" a="255" b="128"/>
+                            <Button g="223" r="221" a="255" b="228"/>
+                            <ButtonText g="128" r="128" a="255" b="128"/>
+                            <Text g="199" r="199" a="255" b="199"/>
+                            <BrightText g="255" r="255" a="255" b="255"/>
+                            <AlternateBase g="218" r="218" a="255" b="218"/>
+                            <Base g="239" r="239" a="255" b="239"/>
+                            <Light g="255" r="255" a="255" b="255"/>
+                            <Midlight g="255" r="255" a="255" b="255"/>
+                            <Dark g="85" r="85" a="255" b="85"/>
+                            <Mid g="199" r="199" a="255" b="199"/>
+                            <Shadow g="0" r="0" a="255" b="0"/>
+                            <Highlight g="117" r="86" a="255" b="148"/>
+                            <HighlightedText g="255" r="255" a="255" b="255"/>
+                        </Disabled>
+                    </Palette>
+                    <EventList/>
+                    <ActionList>
+                        <Event Name="Show">
+                            <Expanded Value="1"/>
+                            <Action Name="Condition">
+                                <Expanded Value="1"/>
+                                <Property Name="Condition">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\python_connected"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                                <Property Name="Value">
+                                    <Data Value="0"/>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </ActionList>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Нет связи с управляющей программой" format=""/>
+                <Transparency Value="1"/>
+                <Font size="28" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
@@ -8989,7 +9079,8 @@
                 <SelectionMode Value="1"/>
                 <FieldList>
                     <Field Num="0" Width="168" Visible="1"/>
-                    <Field Num="1" Width="709" Visible="1"/>
+                    <Field Num="1" Width="650" Visible="1"/>
+                    <Field Num="2" Width="57" Visible="1"/>
                 </FieldList>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="SpinBox_2" ToolTip="" MnemoLayer="general">
@@ -9221,6 +9312,8 @@
             <ResBitmap Bitmap_collection="scheme" Name="connector_red.svg"/>
             <ResBitmap Bitmap_collection="scheme" Name="speaker.svg"/>
             <ResBitmap Bitmap_collection="scheme" Name="speaker_red.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="applicationsinternet_black.svg"/>
+            <ResBitmap Bitmap_collection="scheme" Name="applicationsinternet_red.svg"/>
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
@@ -11997,7 +12090,6 @@
         </SourceController>
     </SourcesList>
     <GlobalVariablesList>
-        <Group Marker="0" Name="mechanisms"/>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
                 <ListenersList/>
@@ -12102,6 +12194,12 @@
                 </ListenersList>
             </GlobalVariable>
         </Group>
+        <GlobalVariable Retained="0" Type="Boolean" Marker="0" Comments="" Name="python_connected" Value="true">
+            <ListenersList>
+                <Listener Path="" Type="XMnemoImage" Name="Image_316"/>
+                <Listener Path="main" Type="XMnemoMultiState" Name="MultiState_316"/>
+            </ListenersList>
+        </GlobalVariable>
     </GlobalVariablesList>
     <TimersList>
         <Timer Interval="3000" Marker="0" Comments="" Name="db" RunByStart="1">
@@ -12135,6 +12233,40 @@
                 </Event>
             </EventList>
         </Timer>
+        <Timer Interval="4000" Marker="0" Comments="" Name="check_python_connection" RunByStart="1">
+            <ListenersList/>
+            <EventList>
+                <Event Name="OnTimerTimeout">
+                    <Expanded Value="1"/>
+                    <Confirm>
+                        <Action Name="Confirm">
+                            <Expanded Value="0"/>
+                            <Property Name="Confirm">
+                                <Data Value="false"/>
+                            </Property>
+                            <Property Name="Title">
+                                <Data Value="STA-SCADA"/>
+                            </Property>
+                            <Property Name="Message">
+                                <Data Value="Perform a task ?"/>
+                            </Property>
+                        </Action>
+                    </Confirm>
+                    <Action Name="Execute script">
+                        <Expanded Value="1"/>
+                        <Property Name="Script">
+                            <Data Value=""/>
+                            <UserData>
+                                <ExecScript Value="update">
+                                    <Function Name="checkPythonConnect"/>
+                                    <ListArgument/>
+                                </ExecScript>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Event>
+            </EventList>
+        </Timer>
     </TimersList>
     <DatabseList>
         <Database FullName="Database 0"/>
@@ -12150,7 +12282,7 @@
         <ListQuery>
             <Query>
                 <Name Value="all_messages"/>
-                <SQL Value="select dtime, message &#xa;from messages &#xa;order by id desc &#xa;limit %2 &#xa;offset (%1 - 1) * %2"/>
+                <SQL Value="select &#xa;  dtime, &#xa;  message, &#xa;  case when lvl = 'error' then cast(x'E29C96' as text) else '' end as error&#xa;from messages &#xa;order by id desc &#xa;limit %2 &#xa;offset (%1 - 1) * %2"/>
                 <ExecuteByRun Value="1"/>
                 <Comment Value=""/>
                 <ListTag>
@@ -12170,6 +12302,7 @@
     <ArchiveList/>
     <ScriptsList>
         <Script FullName="mechanisms" Prior="150" Name="mechanisms"/>
+        <Script FullName="update" Prior="150" Name="update"/>
     </ScriptsList>
     <DocumentsList>
         <Document FullName="Document 0" Comment="" IsHead2="2" Name="Document 0" IsFoot2="2">
@@ -12273,12 +12406,15 @@
             <ActiveArea AreaName="area1"/>
         </DataModel>
         <DataModel FullName="all_msg">
-            <ColumnCount Value="2"/>
+            <ColumnCount Value="3"/>
             <AreasList>
                 <Area TypeArea="Query">
                     <Query Database="Database 0" QueryName="all_messages"/>
                     <Name Value="area1"/>
                     <DecorList>
+                        <Decor>
+                            <BaseDecor/>
+                        </Decor>
                         <Decor>
                             <BaseDecor/>
                         </Decor>
@@ -12301,6 +12437,13 @@
                                 <Property LENGTH="0" MASK=""/>
                             </Format>
                         </Field>
+                        <Field Num="2" Name="error">
+                            <Format>
+                                <Type Value="Base"/>
+                                <Editable Value="1"/>
+                                <Property LENGTH="0" MASK=""/>
+                            </Format>
+                        </Field>
                     </FielsList>
                 </Area>
             </AreasList>
@@ -12310,6 +12453,9 @@
                 </Header>
                 <Header>
                     <ValueItem Value="Событие"/>
+                </Header>
+                <Header>
+                    <ValueItem Value="Авария"/>
                 </Header>
             </HeaderList>
             <ActiveArea AreaName="area1"/>
