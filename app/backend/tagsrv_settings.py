@@ -1,5 +1,9 @@
 from pylogic.tagsrv.module_dispatcher import SerialDispatcher
-from pylogic.tagsrv.owen_m110 import OwenM110DiModule, OwenM110DoModule
+from pylogic.tagsrv.owen_m110 import (
+    OwenM110DiModule,
+    OwenM110DoModule,
+    OwenM110AiModule,
+)
 from pylogic.tagsrv.tagsrv import InTag, OutTag
 from pylogic.tagsrv.serialsource import SerialSource
 import settings
@@ -47,6 +51,19 @@ for i in range(21, 31):
         ),
     )
     tags['out'].update({f'do_{i}_{tag.addr}': tag for tag in module_tags})
+
+for i in (31, 32):
+    module_tags = [InTag(j) for j in range(1, 9)]
+    modules.append(
+        OwenM110AiModule(
+            serial=serial_source.serial,
+            slave=i,
+            timeout=0.1,
+            tags=module_tags,
+            name=f'AI_{i:02}',
+        )
+    )
+    tags['in'].update({f'ai_{i}_{tag.addr}': tag for tag in module_tags})
 
 
 tagsrv_config = {

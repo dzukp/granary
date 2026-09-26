@@ -35,6 +35,8 @@ mechanisms = {
         'do_start': 'do_21_3',
         'di_ready': 'di_19_1',
         'di_started': 'di_19_2',
+        'ai_current': 'ai_31_1',
+        'warning_current_limit': 20,
     },
     'fan_13_1': {
         'class': Engine,
@@ -52,6 +54,7 @@ mechanisms = {
         'do_start': 'do_21_5',
         'di_ready': 'di_1_7',
         'di_started': 'di_1_8',
+        'ai_current': 'ai_31_2',
     },
     # А2 (DI) / А21 (DO)
     'noria_3_6': {
@@ -61,6 +64,7 @@ mechanisms = {
         'do_start': 'do_21_6',
         'di_ready': 'di_2_1',
         'di_started': 'di_2_2',
+        'ai_current': 'ai_31_3',
     },
     'conveyer_6_10': {
         'class': Engine,
@@ -69,6 +73,7 @@ mechanisms = {
         'do_start': 'do_21_7',
         'di_ready': 'di_2_3',
         'di_started': 'di_2_4',
+        'ai_current': 'ai_31_4',
     },
     'conveyer_6_9': {
         'class': Engine,
@@ -77,6 +82,7 @@ mechanisms = {
         'do_start': 'do_21_8',
         'di_ready': 'di_2_5',
         'di_started': 'di_2_6',
+        'ai_current': 'ai_31_5',
     },
     # А2 (DI) / А22 (DO)
     'noria_3_3': {
@@ -86,6 +92,7 @@ mechanisms = {
         'do_start': 'do_22_1',
         'di_ready': 'di_2_7',
         'di_started': 'di_2_8',
+        'ai_current': 'ai_31_6',
     },
     # А3 (DI) / А22 (DO)
     'fan_14': {
@@ -171,6 +178,7 @@ mechanisms = {
         'do_start': 'do_24_2',
         'di_ready': 'di_5_3',
         'di_started': 'di_5_4',
+        'ai_current': 'ai_31_7',
     },
     'conveyer_1_8': {
         'class': Engine,
@@ -196,6 +204,7 @@ mechanisms = {
         'do_start': 'do_24_5',
         'di_ready': 'di_6_1',
         'di_started': 'di_6_2',
+        'ai_current': 'ai_31_8',
     },
     'conveyer_1_6': {
         'class': Engine,
@@ -253,6 +262,7 @@ mechanisms = {
         'do_start': 'do_25_4',
         'di_ready': 'di_7_7',
         'di_started': 'di_7_8',
+        'ai_current': 'ai_32_1',
     },
     # А8 (DI) / А25 (DO)
     'conveyer_6_11': {
@@ -262,6 +272,7 @@ mechanisms = {
         'do_start': 'do_25_5',
         'di_ready': 'di_8_1',
         'di_started': 'di_8_2',
+        'ai_current': 'ai_32_2',
     },
     'conveyer_6_4': {
         'class': Engine,
@@ -270,6 +281,7 @@ mechanisms = {
         'do_start': 'do_25_6',
         'di_ready': 'di_8_3',
         'di_started': 'di_8_4',
+        'ai_current': 'ai_32_3',
     },
     'conveyer_6_6': {
         'class': Engine,
@@ -278,6 +290,7 @@ mechanisms = {
         'do_start': 'do_25_7',
         'di_ready': 'di_8_5',
         'di_started': 'di_8_6',
+        'ai_current': 'ai_32_4',
     },
     'conveyer_6_8': {
         'class': Engine,
@@ -286,6 +299,7 @@ mechanisms = {
         'do_start': 'do_25_8',
         'di_ready': 'di_8_7',
         'di_started': 'di_8_8',
+        'ai_current': 'ai_32_5',
     },
     'sluice_16_3': {
         'class': Engine,
@@ -384,6 +398,7 @@ mechanisms = {
         'do_start': 'do_28_3',
         'di_ready': 'di_13_4',
         'di_started': 'di_13_5',
+        'ai_current': 'ai_32_6',
     },
     # --- Панель 4 ---
     # А14 (DI) / А29 (DO)
@@ -555,6 +570,8 @@ objects = {
         'm_do_28': 'DO_28',
         'm_do_29': 'DO_29',
         'm_do_30': 'DO_30',
+        'm_ai_31': 'AI_31',
+        'm_ai_32': 'AI_32',
         'children': {
             'aspiration': {
                 'class': Aspiration,

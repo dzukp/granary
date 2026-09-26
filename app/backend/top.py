@@ -23,14 +23,24 @@ class Top(IoObject, MechManager, ModbusDataObject):
         self.counter_ton = Ton()
         self.mb_cells_idx = None
         self.modules: list[ModuleStateChannel] = []
+        self.last_module_states: list[bool | None] = []
+        self.module_names = {}
         for i in range(1, 19):
             variable = f'm_di_{i:02}'
             self.__dict__[variable] = ModuleStateChannel()
             self.modules.append(self.__dict__[variable])
+            self.module_names[self.__dict__[variable]] = f'А{i}'
         for i in range(21, 31):
             variable = f'm_do_{i:02}'
             self.__dict__[variable] = ModuleStateChannel()
             self.modules.append(self.__dict__[variable])
+            self.module_names[self.__dict__[variable]] = f'А{i}'
+        for i in range(31, 33):
+            variable = f'm_ai_{i:02}'
+            self.__dict__[variable] = ModuleStateChannel()
+            self.modules.append(self.__dict__[variable])
+            self.module_names[self.__dict__[variable]] = f'А{i}'
+        self.last_module_states = [None for _ in self.modules]
         self.start_time = time.time()
 
     def init(self):
@@ -41,6 +51,7 @@ class Top(IoObject, MechManager, ModbusDataObject):
             super().process_all()
 
     def process(self):
+        self.check_module_states()
         if self.explosion_control_enabled:
             if self.di_explosion.val:
                 if not self.do_releaser.val:
@@ -62,6 +73,24 @@ class Top(IoObject, MechManager, ModbusDataObject):
 
         if self.sound is not None:
             self.sound.set_current_errors(self._collect_faults(self))
+
+    def check_module_states(self):
+        for module, last in zip(self.modules, self.last_module_states):
+            if module.online != last:
+                idx = self.modules.index(module)
+                if self.last_module_states[idx] is not None:
+                    if not module.online:
+                        self.error(
+                            f'Модуль ввода-вывода {self.module_names[module]} не отвечает'
+                        )
+                    else:
+                        self.info(
+                            f'Модуль ввода-вывода {self.module_names[module]} на связи'
+                        )
+                    self.logger.warning(
+                        f'{self.module_names[module]}: {"online" if module.online else "offline"}'
+                    )
+                self.last_module_states[idx] = module.online
 
     def _collect_faults(self, obj):
         faults = set()

@@ -64,14 +64,14 @@ class ModbusSupervisor(BaseSupervisor):
         for mb_object in self.mb_objects:
             mb_object.mb_input(self.start_addr, data)
 
-    def _clamp(self, value: int, lo: int = 0, hi: int = 65535):
+    def _clamp(self, value: int, lo: int = -32767, hi: int = 65535):
         if value < lo or value > hi:
             self.logger.error(
                 f'Value {value} out of range [{lo}, {hi}], clamping to {max(lo, min(hi, value))}',
             )
-            return max(lo, min(hi, value))
+            return int(max(lo, min(hi, value)))
         else:
-            return value
+            return int(value)
 
     def send_data(self):
         data = list(

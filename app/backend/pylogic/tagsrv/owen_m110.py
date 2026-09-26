@@ -4,6 +4,8 @@ import modbus_tk
 import modbus_tk.defines as cst
 from modbus_tk import modbus_rtu
 
+import struct
+
 from pylogic.tagsrv.owen_mx210 import BaseOwenMx210
 
 
@@ -71,6 +73,39 @@ class OwenM110DiModule(BaseM110Module):
 
     def _value_to_str(self, value):
         return str(int(value)) if value is not None else '-'
+
+
+class OwenM110AiModule(BaseM110Module):
+    """Аналоговый ввод МВ110 (8 входов)"""
+
+    def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
+        super().__init__(tags, serial, ip, port, slave, timeout)
+        self.name = kwargs.get('name') or self.name
+
+    def do_request(self):
+        res = self.mb.execute(
+            slave=self.slave,
+            function_code=cst.READ_HOLDING_REGISTERS,
+            starting_address=1,
+            quantity_of_x=48,
+            data_format='>' + 'H' * 48,
+        )
+        self.logger.debug(f'data readed {[x for x in res]}')
+        f_data = [
+            struct.unpack('>f', struct.pack('>HH', res[i * 6 + 5], res[i * 6 + 4]))[0]
+            for i in range(0, 8)
+        ]
+        statuses = [res[i * 6 + 1] for i in range(0, 8)]  #  noqa
+        for tag in self.tags:
+            tag.value = (
+                tag.filter.apply(f_data[tag.addr - 1])
+                if tag.filter
+                else f_data[tag.addr - 1]
+            )
+        self.logger.debug(f'values readed {[tag.value for tag in self.tags]}')
+
+    def _value_to_str(self, value):
+        return f'{value:.3f}' if value is not None else '-'
 
 
 class OwenM110DoModule(BaseM110Module):

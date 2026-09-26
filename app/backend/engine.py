@@ -14,13 +14,16 @@ class Engine(Mechanism, ModbusDataObject):
     FAULT = 4
     NOT_READY = 5
 
-    _save_attrs = ('timeout', 'disabled_di')
+    _save_attrs = ('timeout', 'disabled_di', 'warning_current_limit')
 
     def __init__(self, name, parent):
         super().__init__(name, parent)
         self.do_start = OutChannel(False)
         self.di_started = InChannel(False)
         self.di_ready = InChannel(False)
+        self.ai_current = InChannel(0.0)
+        self.warning_current_limit = 10
+        self.hi_current = False
         self.disabled_di = False
         self.human_name = ''
         self.enabled = True
@@ -30,6 +33,16 @@ class Engine(Mechanism, ModbusDataObject):
         self.mb_cells_idx = None
 
     def process(self):
+        if self.ai_current.val > self.warning_current_limit and not self.hi_current:
+            self.hi_current = True
+            self.logger.warning(
+                f'{self.name}: high current {self.ai_current.val:.1f} > {self.warning_current_limit}'
+            )
+            self.warning(f'превышен лимит по току {self.ai_current.val:.1f}А')
+        elif self.ai_current.val <= self.warning_current_limit and self.hi_current:
+            self.hi_current = False
+            self.logger.info(f'{self.name}: normal current')
+            self.info('ток в норме')
         # Если нет сигнала готовности и DI не игнорируются - переходим в NOT_READY
         if not self.disabled_di and not self.di_ready.val:
             if self.state not in (self.FAULT, self.NOT_READY):
@@ -177,6 +190,12 @@ class Engine(Mechanism, ModbusDataObject):
             self.save()
             self.logger.info(f'{self.name}: timeout set to {timeout_sec} s')
 
+    def set_warning_current_limit(self, limit: int):
+        if self.warning_current_limit != limit:
+            self.warning_current_limit = limit
+            self.save()
+            self.logger.info(f'{self.name}: warning limit set to {limit}')
+
     def _set_state(self, state: int):
         if self.state != state:
             self.state = state
@@ -201,6 +220,7 @@ class Engine(Mechanism, ModbusDataObject):
             if cmd & 0x0040:
                 self.disable()
             self.set_timeout(data[zero_addr + 1])
+            self.set_warning_current_limit(data[zero_addr + 5])
 
     def mb_output(self, start_addr):
         if self.mb_cells_idx is not None:
@@ -211,12 +231,15 @@ class Engine(Mechanism, ModbusDataObject):
                 + int(self.disabled_di) * (1 << 5)
                 + int(self.enabled) * (1 << 6)
                 + int(self.state == self.RUNNING) * (1 << 7)
+                + int(self.hi_current) * (1 << 8)
             )
             return {
                 self.mb_cells_idx + 0: 0,
                 self.mb_cells_idx + 1: int(self.timeout),
                 self.mb_cells_idx + 2: status,
                 self.mb_cells_idx + 3: self.state,
+                self.mb_cells_idx + 4: self.ai_current.val * 10,
+                self.mb_cells_idx + 5: int(self.warning_current_limit),
             }
         else:
             return {}
