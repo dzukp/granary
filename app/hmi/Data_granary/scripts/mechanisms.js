@@ -176,7 +176,7 @@ function showDlg(mech_name) {
             getScreen('engine_dlg').getObject('spin_current_limit').setEnabled(true)
         } 
         else {
-            getGlobalVar('dlg_warning_current_limit').setBindSpeaker(getTag('main', 'hr_1'))
+            getGlobalVar('dlg_warning_current_limit').setBindSpeaker(getGlobalVar('fake_bind'))
             getScreen('engine_dlg').getObject('spin_current_limit').setEnabled(false)
         }
     }
