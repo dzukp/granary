@@ -18,6 +18,7 @@
         <Screen Name="releaser_dlg"/>
         <Screen Name="alarm_dlg"/>
         <Screen Name="messages"/>
+        <Screen Name="trends"/>
     </Screens>
     <PopupMessage Name="Popup message"/>
     <Databases Name="Databases">
@@ -8130,6 +8131,45 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_348" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="60" rect.bottom="89" rect.left="679" rect.right="798"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnMousePress">
+                            <Expanded Value="1"/>
+                            <Confirm>
+                                <Action Name="Confirm">
+                                    <Expanded Value="0"/>
+                                    <Property Name="Confirm">
+                                        <Data Value="false"/>
+                                    </Property>
+                                    <Property Name="Title">
+                                        <Data Value="STA-SCADA"/>
+                                    </Property>
+                                    <Property Name="Message">
+                                        <Data Value="Perform a task ?"/>
+                                    </Property>
+                                </Action>
+                            </Confirm>
+                            <Action Name="Jump to screen">
+                                <Expanded Value="1"/>
+                                <Property Name="Screen">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Screen" Value="trends"/>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Text string="Тренды"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
             <Properties>
@@ -8137,7 +8177,7 @@
                 <Alignment StepSize="20" Enabled="1">
                     <AlignColor g="0" r="0" a="128" b="0"/>
                 </Alignment>
-                <Dialog Width="300" Title="" Height="460"/>
+                <Dialog Width="300" Title="" Height="500"/>
                 <HotKey key="Not assigned"/>
                 <Password CryptData="0"/>
                 <Comment Comment=""/>
@@ -8168,7 +8208,7 @@
                 <XMnemoLayer Name="general" Visible="1"/>
             </XMnemoLayers>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="pusk" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="380" rect.bottom="439" rect.left="20" rect.right="139"/>
+                <Geometry rect.top="420" rect.bottom="479" rect.left="20" rect.right="139"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -8229,7 +8269,7 @@
                 <LabelProperties TextAlign="1"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="stop" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="380" rect.bottom="439" rect.left="160" rect.right="279"/>
+                <Geometry rect.top="420" rect.bottom="479" rect.left="160" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -8280,7 +8320,7 @@
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
-                        <Event Name="OnChangeValue">
+                        <Event Name="OnEditingFinished">
                             <Expanded Value="1"/>
                             <Action Name="Set cur.value">
                                 <Expanded Value="1"/>
@@ -8305,7 +8345,7 @@
                 <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_5" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="320" rect.bottom="359" rect.left="160" rect.right="279"/>
+                <Geometry rect.top="360" rect.bottom="399" rect.left="160" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -8366,7 +8406,7 @@
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_7" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="260" rect.bottom="299" rect.left="230" rect.right="279"/>
+                <Geometry rect.top="300" rect.bottom="339" rect.left="230" rect.right="279"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -8413,7 +8453,7 @@
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoButton" Name="Button_8" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="260" rect.bottom="299" rect.left="160" rect.right="209"/>
+                <Geometry rect.top="300" rect.bottom="339" rect.left="160" rect.right="209"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -8460,7 +8500,7 @@
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_9" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="260" rect.bottom="299" rect.left="20" rect.right="79"/>
+                <Geometry rect.top="300" rect.bottom="339" rect.left="20" rect.right="79"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -8475,7 +8515,7 @@
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="Ellipse_10" ToolTip="" MnemoLayer="general">
                 <Conversion Type="1" Bit="5"/>
-                <Geometry rect.top="269" rect.bottom="290" rect.left="100" rect.right="119"/>
+                <Geometry rect.top="308" rect.bottom="329" rect.left="100" rect.right="119"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -8608,6 +8648,49 @@
                     <State g="128" r="128" a="255" b="128"/>
                     <State g="128" r="0" a="255" b="0"/>
                 </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="lbl_current_limit" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="260" rect.bottom="283" rect.left="20" rect.right="179"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="Предупреждение по току" format=""/>
+                <Transparency Value="1"/>
+                <Font size="10" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="1"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoSpinBox" Name="spin_current_limit" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="260" rect.bottom="283" rect.left="220" rect.right="279"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList>
+                        <Event Name="OnEditingFinished">
+                            <Expanded Value="1"/>
+                            <Action Name="Set cur.value">
+                                <Expanded Value="1"/>
+                                <Property Name="Type">
+                                    <Data Value="="/>
+                                </Property>
+                                <Property Name="Dest">
+                                    <Data Value=""/>
+                                    <UserData>
+                                        <Object Type="Global variable">
+                                            <Tag Type="Global Variable" TagName="GlobalVariable\dlg_warning_current_limit"/>
+                                        </Object>
+                                    </UserData>
+                                </Property>
+                            </Action>
+                        </Event>
+                    </EventList>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <SpinBoxProperties Step="1" Decimals="0" Min="0" Max="100"/>
+                <Font size="8" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
             </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="siren_dlg">
@@ -9689,6 +9772,77 @@
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
+        <MnemoScreen FullName="trends">
+            <Properties>
+                <Color g="192" r="192" a="255" b="192"/>
+                <Alignment StepSize="20" Enabled="1">
+                    <AlignColor g="0" r="0" a="128" b="0"/>
+                </Alignment>
+                <Dialog Width="2200" Title="" Height="1000"/>
+                <HotKey key="Not assigned"/>
+                <Password CryptData="0"/>
+                <Comment Comment=""/>
+                <Activate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Activate>
+                <Deactivate>
+                    <Action Name="Execute script">
+                        <Expanded Value="0"/>
+                        <Property Name="Script">
+                            <Data Value="0"/>
+                            <UserData>
+                                <ExecScript Value=""/>
+                            </UserData>
+                        </Property>
+                    </Action>
+                </Deactivate>
+            </Properties>
+            <XMnemoLayers>
+                <XMnemoLayer Name="general" Visible="1"/>
+            </XMnemoLayers>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTrend" Name="Trend_1" ToolTip="" MnemoLayer="general">
+                <Geometry rect.top="40" rect.bottom="939" rect.left="40" rect.right="2199"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Parameters zoomEnabled="0" topControl="1" timeControl="1" markerEnabled="0"/>
+                <RealTime bufferDepth="100000" valueUpdate="500" factorScreenUpdate="1000">
+                    <Pens>
+                        <Pen width="0" name="3.4" color="#f00000">
+                            <Tag type="SourceTag" name="m3_4_current" sourcename="main"/>
+                        </Pen>
+                    </Pens>
+                </RealTime>
+                <Archive bufferDepth="10000" weedingTolerance="1" weeding="0">
+                    <Pens/>
+                </Archive>
+                <TrendView legendPosition="right" title="" thicknessAxes="1" majorYCount="5" timeOnXAxis="1" majorXCount="4" timeDirection="right" accurancy="1" maxY="100" thicknessGrid="0" minY="0" legendOnStart="0" minorYCount="2" minorXCount="2"/>
+                <TimeRanges rangeValue="60">
+                    <Range rangeId="60-sec" baseTemplate="hh:mm:ss" extraTemplate="ss.zzz"/>
+                    <Range rangeId="2-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
+                    <Range rangeId="5-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
+                    <Range rangeId="10-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
+                    <Range rangeId="30-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
+                    <Range rangeId="1-hour" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
+                    <Range rangeId="3-hours" baseTemplate="hh:mm&#xa;dd.MM" extraTemplate="hh:mm:ss"/>
+                    <Range rangeId="8-hours" baseTemplate="hh:mm&#xa;dd.MM" extraTemplate="hh:mm:ss"/>
+                    <Range rangeId="12-hours" baseTemplate="hh:mm&#xa;dd.MM" extraTemplate="hh:mm:ss"/>
+                    <Range rangeId="24-hours" baseTemplate="hh:mm&#xa;dd.MM" extraTemplate="hh:mm:ss"/>
+                    <Range rangeId="7-days" baseTemplate="hh:mm&#xa;dd.MM" extraTemplate="hh:mm&#xa;dd.MM"/>
+                </TimeRanges>
+            </MnemoObject>
+        </MnemoScreen>
     </MnemoScreenList>
     <ResourceScreens>
         <ResBitmapLibScreen Name="scheme">
@@ -9797,7 +9951,7 @@
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
-        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="main_tcp_sock" IsTestConnect="0" TestLocation="">
+        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="TcpSocket 1" IsTestConnect="0" TestLocation="">
             <ListenersList/>
             <TagsList>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_1" Units="....." Location="1" IsReadTag="0">
@@ -9861,8 +10015,6 @@
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_di_30"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_di_17"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_di_18"/>
-                        <Listener Path="" Type="XMnemoRectangle" Name="m_di_30"/>
-                        <Listener Path="" Type="XMnemoRectangle" Name="m_di_30"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_ai_32"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_ai_31"/>
                     </ListenersList>
@@ -11550,29 +11702,23 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_cmd" Units="....." Location="371" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_cmd"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_timeout" Units="....." Location="372" IsReadTag="0">
-                    <ListenersList>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_timeout"/>
-                    </ListenersList>
+                    <ListenersList/>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" DataFormat="UInt16" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_status" Units="....." Location="373" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoShape" Name="m6_8_nosens"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m6_8_current_bottom"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_status"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m6_8_state" Units="....." Location="374" IsReadTag="0">
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoMultiState" Name="m6_8"/>
-                        <Listener Path="GlobalVariable\" Type="GlobalVariable" Name="dlg_state"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -12673,9 +12819,7 @@
     <GlobalVariablesList>
         <Group Marker="0" Name="engine_dlg">
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_cmd" Value="0">
-                <ListenersList>
-                    <Listener Path="main\" Type="Output register" Name="m6_8_cmd(4-371)"/>
-                </ListenersList>
+                <ListenersList/>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_status" Value="0">
                 <ListenersList>
@@ -12683,20 +12827,17 @@
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_14"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="Rectangle_16"/>
                     <Listener Path="engine_dlg" Type="XMnemoRectangle" Name="di_closed"/>
-                    <Listener Path="main\" Type="Output register" Name="m6_8_status(4-373)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_timeout" Value="0">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="SpinBox_4"/>
-                    <Listener Path="main\" Type="Output register" Name="m6_8_timeout(4-372)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_state" Value="0">
                 <ListenersList>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,0"/>
                     <Listener Path="" Type="DataItem" Name="Custom model 0,0,1"/>
-                    <Listener Path="main\" Type="Output register" Name="m6_8_state(4-374)"/>
                 </ListenersList>
             </GlobalVariable>
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_name" Value="">
@@ -12720,6 +12861,11 @@
             <GlobalVariable Retained="0" Type="String" Marker="0" Comments="" Name="dlg_sensor_name" Value="">
                 <ListenersList>
                     <Listener Path="engine_dlg" Type="XMnemoTextLabel" Name="TextLabel_15"/>
+                </ListenersList>
+            </GlobalVariable>
+            <GlobalVariable Retained="0" Type="Integer" Marker="0" Comments="" Name="dlg_warning_current_limit" Value="0">
+                <ListenersList>
+                    <Listener Path="engine_dlg" Type="XMnemoSpinBox" Name="spin_current_limit"/>
                 </ListenersList>
             </GlobalVariable>
         </Group>
@@ -12784,6 +12930,9 @@
             <ListenersList>
                 <Listener Path="main" Type="XMnemoMultiState" Name="MultiState_316"/>
             </ListenersList>
+        </GlobalVariable>
+        <GlobalVariable Retained="0" Type="Not assigned" Marker="0" Comments="" Name="fake_bind" Value="">
+            <ListenersList/>
         </GlobalVariable>
     </GlobalVariablesList>
     <TimersList>

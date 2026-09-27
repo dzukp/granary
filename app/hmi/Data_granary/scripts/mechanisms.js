@@ -11,6 +11,14 @@ function Mechanism(name, title) {
 	this.timeout = getTag('main', name + '_timeout')
 	this.status  = getTag('main', name + '_status')
 	this.state   = getTag('main', name + '_state')
+    try {
+        this.current = getTag('main', name + '_current')
+	    this.warning_current_limit = getTag('main', name + '_warning_current_limit')
+    }
+    catch (error) {
+        this.current = null
+        this.warning_current_limit = null
+    }
 }
 
 Mechanism.prototype.setEnable = function(enable) {
@@ -111,6 +119,8 @@ function init() {
 	mechanisms['m8_12'] = new Valve('m8_12', 'Задвижка 8.12')
 	mechanisms['m8_13'] = new Valve('m8_13', 'Задвижка 8.13')
 
+    resetCurrentMech()
+
 }
 
 
@@ -139,7 +149,7 @@ function showDlg(mech_name) {
 	scadaPrint('dialog ' + mech_name + ' ' + current)
 	getGlobalVar('dlg_cmd').setBindSpeaker(current.cmd)
 	getGlobalVar('dlg_status').setBindSpeaker(current.status)
-	getGlobalVar('dlg_timeout').setBindSpeaker(current.timeout)
+	getGlobalVar('dlg_timeout').setBindSpeaker(current.timeout) 	
 	getGlobalVar('dlg_state').setBindSpeaker(current.state)
 	getGlobalVar('dlg_name').setStringData(current.title)
 
@@ -151,6 +161,7 @@ function showDlg(mech_name) {
         getScreen('engine_dlg').getObject('lbl_state_valve').show()
         getScreen('engine_dlg').getObject('lbl_state_eng').hide()
         getScreen('engine_dlg').getObject('di_closed').show()
+        getScreen('engine_dlg').getObject('spin_current_limit').setEnabled(false)
     }
 	else {
         getGlobalVar('dlg_pusk_btn').setStringData('Пуск')
@@ -160,7 +171,25 @@ function showDlg(mech_name) {
         getScreen('engine_dlg').getObject('lbl_state_valve').hide()
         getScreen('engine_dlg').getObject('lbl_state_eng').show()
         getScreen('engine_dlg').getObject('di_closed').hide()
+        if ( current.warning_current_limit ) {
+            getGlobalVar('dlg_warning_current_limit').setBindSpeaker(current.warning_current_limit)
+            getScreen('engine_dlg').getObject('spin_current_limit').setEnabled(true)
+        } 
+        else {
+            getGlobalVar('dlg_warning_current_limit').setBindSpeaker(getTag('main', 'hr_1'))
+            getScreen('engine_dlg').getObject('spin_current_limit').setEnabled(false)
+        }
     }
+}
+
+
+function resetCurrentMech() {
+    var fake_bind = getGlobalVar('fake_bind')
+    getGlobalVar('dlg_cmd').setBindSpeaker(fake_bind)
+	getGlobalVar('dlg_status').setBindSpeaker(fake_bind)
+	getGlobalVar('dlg_timeout').setBindSpeaker(fake_bind)
+	getGlobalVar('dlg_state').setBindSpeaker(fake_bind)
+    getGlobalVar('dlg_warning_current_limit').setBindSpeaker(fake_bind)
 }
 
 
