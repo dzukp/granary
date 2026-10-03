@@ -9809,26 +9809,65 @@
                 <XMnemoLayer Name="general" Visible="1"/>
             </XMnemoLayers>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTrend" Name="Trend_1" ToolTip="" MnemoLayer="general">
-                <Geometry rect.top="40" rect.bottom="939" rect.left="40" rect.right="2199"/>
+                <Geometry rect.top="40" rect.bottom="939" rect.left="40" rect.right="2159"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
                     <ActionList/>
                     <ListenersList/>
                 </StandartProperies>
-                <Parameters zoomEnabled="0" topControl="1" timeControl="1" markerEnabled="0"/>
-                <RealTime bufferDepth="100000" valueUpdate="500" factorScreenUpdate="1000">
+                <Parameters zoomEnabled="1" topControl="1" timeControl="1" markerEnabled="1"/>
+                <RealTime bufferDepth="1000000" valueUpdate="500" factorScreenUpdate="1000">
                     <Pens>
-                        <Pen width="0" name="3.4" color="#f00000">
+                        <Pen width="0" name="3.3" color="#ff0000">
+                            <Tag type="SourceTag" name="m3_3_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="3.4" color="#55aa7f">
                             <Tag type="SourceTag" name="m3_4_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="3.5" color="#00f000">
+                            <Tag type="SourceTag" name="m3_5_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="3.6" color="#0000ff">
+                            <Tag type="SourceTag" name="m3_6_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.1" color="#ff00ff">
+                            <Tag type="SourceTag" name="m6_1_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.2" color="#8000ff">
+                            <Tag type="SourceTag" name="m6_2_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.4" color="#ff8000">
+                            <Tag type="SourceTag" name="m6_4_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.5" color="#aa5500">
+                            <Tag type="SourceTag" name="m6_5_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.6" color="#ff0080">
+                            <Tag type="SourceTag" name="m6_6_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.7" color="#8080ff">
+                            <Tag type="SourceTag" name="m6_7_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.8" color="#80ff80">
+                            <Tag type="SourceTag" name="m6_8_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.9" color="#ff8080">
+                            <Tag type="SourceTag" name="m6_9_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.10" color="#00ffff">
+                            <Tag type="SourceTag" name="m6_10_current" sourcename="main"/>
+                        </Pen>
+                        <Pen width="0" name="6.11" color="#ffff00">
+                            <Tag type="SourceTag" name="m6_11_current" sourcename="main"/>
                         </Pen>
                     </Pens>
                 </RealTime>
                 <Archive bufferDepth="10000" weedingTolerance="1" weeding="0">
                     <Pens/>
                 </Archive>
-                <TrendView legendPosition="right" title="" thicknessAxes="1" majorYCount="5" timeOnXAxis="1" majorXCount="4" timeDirection="right" accurancy="1" maxY="100" thicknessGrid="0" minY="0" legendOnStart="0" minorYCount="2" minorXCount="2"/>
-                <TimeRanges rangeValue="60">
+                <TrendView legendPosition="right" title="" thicknessAxes="1" majorYCount="5" timeOnXAxis="1" majorXCount="4" timeDirection="right" accurancy="1" maxY="100" thicknessGrid="0" minY="0" legendOnStart="1" minorYCount="2" minorXCount="2"/>
+                <TimeRanges rangeValue="300">
                     <Range rangeId="60-sec" baseTemplate="hh:mm:ss" extraTemplate="ss.zzz"/>
                     <Range rangeId="2-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
                     <Range rangeId="5-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
@@ -9951,7 +9990,7 @@
         </ResBitmapLibScreen>
     </ResourceScreens>
     <SourcesList>
-        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="main_tcp_sock" IsTestConnect="0" TestLocation="">
+        <SourceController FullName="main" Slave="1" MaxTags="120" QueryPeriod="1000" Timeout="100" TestCount="5" Comment="" Type="TcpSocket" Name="TcpSocket 1" IsTestConnect="0" TestLocation="">
             <ListenersList/>
             <TagsList>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="hr_1" Units="....." Location="1" IsReadTag="0">
@@ -13242,6 +13281,9 @@
             <ListenersList/>
         </TcpSocket>
         <TcpSocket AutoReconnect="0" Host="192.168.0.11" Marker="0" Comments="" Name="TcpSocket 1" Reconnect_delay="100" MaxTimeoutCount="1" Port="1502">
+            <ListenersList/>
+        </TcpSocket>
+        <TcpSocket AutoReconnect="0" Host="10.254.8.149" Marker="0" Comments="" Name="TcpSocket 2" Reconnect_delay="100" MaxTimeoutCount="1" Port="1502">
             <ListenersList/>
         </TcpSocket>
     </TcpSocketList>
