@@ -1,6 +1,7 @@
 import sqlite3
 from datetime import datetime
-from pathlib import Path
+
+import settings
 
 
 class DbLogger:
@@ -53,6 +54,6 @@ class DbLogger:
 
 
 db_logger = DbLogger(
-    db_path=str(Path(__file__).resolve().parent.parent / 'hmi/Data_granary/main.db'),
-    init_sql_path=str(Path(__file__).resolve().parent.parent / 'res/init.sql'),
+    db_path=settings.DB_PATH,
+    init_sql_path=settings.INIT_SQL_PATH,
 )

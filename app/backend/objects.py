@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from aspiration import Aspiration
 from engine import Engine
 from general_system import GeneralSystem
@@ -9,6 +7,8 @@ from siren import Siren
 from sound import Sound
 from top import Top
 from valve import Valve
+
+import settings
 
 
 mechanisms = {
@@ -608,9 +608,7 @@ objects = {
             'sound': {
                 'class': Sound,
                 'mb_cells_idx': 595,
-                'file_path': str(
-                    Path(__file__).resolve().parent.parent / 'res/alarm.wav'
-                ),
+                'file_path': settings.ALARM_SOUND_PATH,
             },
         },
     },
