@@ -1,6 +1,7 @@
 import sqlite3
 from datetime import datetime
-from pathlib import Path
+
+import settings
 
 
 class DbLogger:
@@ -9,19 +10,12 @@ class DbLogger:
         self._init_db(init_sql_path)
 
     def _init_db(self, init_sql_path):
-        cursor = self.conn.cursor()
-
-        cursor.execute("""
-            SELECT 1
-            FROM sqlite_master
-            WHERE type = 'table' AND name = 'messages'
-        """)
-
-        if cursor.fetchone() is None:
-            with open(init_sql_path, 'r', encoding='utf-8') as f:
-                self.conn.executescript(f.read())
-
-            self.conn.commit()
+        # init.sql использует CREATE TABLE IF NOT EXISTS, поэтому выполняется
+        # всегда (идемпотентно) — это создаёт и новые таблицы (trends, ...)
+        # на уже существующих базах.
+        with open(init_sql_path, 'r', encoding='utf-8') as f:
+            self.conn.executescript(f.read())
+        self.conn.commit()
 
     def save_message(self, text, level):
         now = datetime.now()
@@ -53,6 +47,6 @@ class DbLogger:
 
 
 db_logger = DbLogger(
-    db_path=str(Path(__file__).resolve().parent.parent / 'hmi/Data_granary/main.db'),
-    init_sql_path=str(Path(__file__).resolve().parent.parent / 'res/init.sql'),
+    db_path=settings.DB_PATH,
+    init_sql_path=settings.DB_INIT,
 )

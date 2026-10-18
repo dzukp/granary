@@ -1,8 +1,10 @@
+from .io_object import IoObject
 from .logged_object import LoggedObject
+from .tagsrv.tagsrv import TagSrv
 
 
 class SupervisorManager(LoggedObject):
-    """ Supervisor level manager """
+    """Supervisor level manager"""
 
     def __init__(self):
         super().__init__('Supervisors')
@@ -42,11 +44,10 @@ class SupervisorManager(LoggedObject):
 
 
 class BaseSupervisor(LoggedObject):
-
     def __init__(self, name):
         super().__init__(name)
-        self.top_object = None
-        self.tag_srv = None
+        self.top_object: IoObject = None
+        self.tag_srv: TagSrv = None
 
     def init(self):
         pass

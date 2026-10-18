@@ -3,7 +3,6 @@ from .channel import Channel
 
 
 class IoObject(LoggedObject):
-
     _save_attrs = ()
 
     def __init__(self, name='', parent=None):
@@ -28,7 +27,7 @@ class IoObject(LoggedObject):
 
     def add_child(self, child):
         self.children.append(child)
-        #child.set_parent(self)
+        # child.set_parent(self)
 
     def remove_child(self, child):
         try:
@@ -93,16 +92,26 @@ class IoObject(LoggedObject):
             child.save()
 
     def get_all_channels(self):
-        channels = [attr for name, attr in self.__dict__.items() if isinstance(attr, Channel)]
+        channels = [
+            attr for name, attr in self.__dict__.items() if isinstance(attr, Channel)
+        ]
         for child in self.children:
             channels.extend(child.get_all_channels())
         return channels
+
+    def get_all_objects(self):
+        objects = [self]
+        for child in self.children:
+            objects.extend(child.get_all_objects())
+        return objects
 
     def init_all(self):
         try:
             self.init()
         except Exception:
-            self.logger.exception(f'Undefined exception during child.process() name: {self.name}')
+            self.logger.exception(
+                f'Undefined exception during child.process() name: {self.name}'
+            )
         for child in self.children:
             child.init_all()
 
@@ -113,7 +122,9 @@ class IoObject(LoggedObject):
         try:
             self.process()
         except Exception:
-            self.logger.exception(f'Undefined exception during child.process() name: {self.name}')
+            self.logger.exception(
+                f'Undefined exception during child.process() name: {self.name}'
+            )
         for child in self.children:
             child.process_all()
 
