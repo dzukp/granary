@@ -43,8 +43,8 @@ mechanisms = {
         'human_name': 'Вентилятор осевой 13.1',
         'mb_cells_idx': 80,
         'do_start': 'do_21_4',
-        'di_ready': 'di_1_7',
-        'di_started': 'di_1_8',
+        'di_ready': 'di_1_5',
+        'di_started': 'di_1_6',
     },
     # А1 (DI) / А21 (DO) - noria_3.5 использует последние входы А1
     'noria_3_5': {
@@ -317,7 +317,7 @@ mechanisms = {
         'do_close': 'do_26_3',
         'di_ready': 'di_10_3',
         'di_opened': 'di_10_4',
-        'di_closed': 'di_26_5',
+        'di_closed': 'di_10_5',
     },
     'valve_8_8': {
         'class': Valve,
@@ -371,14 +371,14 @@ mechanisms = {
         'di_opened': 'di_12_5',
         'di_closed': 'di_12_6',
     },
-    # А27 (DI) / А27 (DO)
+    # А12 (DI) / А27 (DO)
     'fan_15_3': {
         'class': Engine,
         'human_name': 'Вентилятор осевой 15.3',
         'mb_cells_idx': 520,
         'do_start': 'do_27_7',
-        'di_ready': 'di_27_7',
-        'di_started': 'di_27_8',
+        'di_ready': 'di_12_7',
+        'di_started': 'di_12_8',
     },
     # А13 (DI) / А28 (DO)
     'valve_8_10': {
@@ -560,6 +560,7 @@ objects = {
         'm_di_16': 'DI_16',
         'm_di_17': 'DI_17',
         'm_di_18': 'DI_18',
+        'm_di_19': 'DI_19',
         'm_do_21': 'DO_21',
         'm_do_22': 'DO_22',
         'm_do_23': 'DO_23',

@@ -25,7 +25,7 @@ class Top(IoObject, MechManager, ModbusDataObject):
         self.modules: list[ModuleStateChannel] = []
         self.last_module_states: list[bool | None] = []
         self.module_names = {}
-        for i in range(1, 19):
+        for i in range(1, 20):
             variable = f'm_di_{i:02}'
             self.__dict__[variable] = ModuleStateChannel()
             self.modules.append(self.__dict__[variable])

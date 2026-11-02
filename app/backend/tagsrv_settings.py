@@ -21,7 +21,7 @@ serial_source = SerialSource(
 )
 
 
-for i in range(1, 19):
+for i in range(1, 20):
     module_tags = [InTag(j) for j in range(1, 9)]
     modules.append(
         OwenM110DiModule(
