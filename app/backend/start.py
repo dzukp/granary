@@ -7,6 +7,7 @@ from objects import objects
 from tagsrv_settings import tagsrv_config
 from logconfig import logging_config
 from rpc_supervisor import RpcSupervisor
+from trend_recorder import TrendRecorder
 
 
 def start():
@@ -17,7 +18,11 @@ def start():
         'objects': objects,
         'tagsrv_settings': tagsrv_config,
         'logging_conf': logging_config,
-        'supervisors': {'supervis_modbus': ModbusSupervisor, 'supervis_rpc': RpcSupervisor}
+        'supervisors': {
+            'supervis_modbus': ModbusSupervisor,
+            'supervis_rpc': RpcSupervisor,
+            'supervis_trend': TrendRecorder,
+        },
     }
     main(config)
 

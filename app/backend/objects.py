@@ -1,3 +1,4 @@
+import settings
 from aspiration import Aspiration
 from engine import Engine
 from general_system import GeneralSystem
@@ -7,8 +8,6 @@ from siren import Siren
 from sound import Sound
 from top import Top
 from valve import Valve
-
-import settings
 
 
 mechanisms = {
