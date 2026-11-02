@@ -111,7 +111,7 @@
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_315" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
-                <Geometry rect.top="40" rect.bottom="949" rect.left="2440" rect.right="2539"/>
+                <Geometry rect.top="40" rect.bottom="979" rect.left="2440" rect.right="2539"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7552,7 +7552,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_18" ToolTip="" MnemoLayer="modules" Group="Group_m_di_18">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_18" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="1"/>
                 <Geometry rect.top="560" rect.bottom="579" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7570,7 +7570,7 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_18_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_18">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_18_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Geometry rect.top="560" rect.bottom="579" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
@@ -7584,7 +7584,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_21" ToolTip="" MnemoLayer="modules" Group="Group_m_di_21">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_21" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="2"/>
                 <Geometry rect.top="590" rect.bottom="609" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7602,8 +7602,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_21_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_21">
-                <Geometry rect.top="590" rect.bottom="609" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_21_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="620" rect.bottom="639" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7616,7 +7616,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_22" ToolTip="" MnemoLayer="modules" Group="Group_m_di_22">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_22" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="3"/>
                 <Geometry rect.top="620" rect.bottom="639" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7634,8 +7634,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_22_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_22">
-                <Geometry rect.top="620" rect.bottom="639" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_22_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="650" rect.bottom="669" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7648,7 +7648,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_23" ToolTip="" MnemoLayer="modules" Group="Group_m_di_23">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_23" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="4"/>
                 <Geometry rect.top="650" rect.bottom="669" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7666,8 +7666,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_23_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_23">
-                <Geometry rect.top="650" rect.bottom="669" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_23_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="680" rect.bottom="699" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7680,7 +7680,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_24" ToolTip="" MnemoLayer="modules" Group="Group_m_di_24">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_24" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="5"/>
                 <Geometry rect.top="680" rect.bottom="699" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7698,8 +7698,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_24_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_24">
-                <Geometry rect.top="680" rect.bottom="699" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_24_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="710" rect.bottom="729" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7712,7 +7712,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_25" ToolTip="" MnemoLayer="modules" Group="Group_m_di_25">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_25" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="6"/>
                 <Geometry rect.top="710" rect.bottom="729" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7730,8 +7730,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_25_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_25">
-                <Geometry rect.top="710" rect.bottom="729" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_25_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="740" rect.bottom="759" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7744,7 +7744,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_26" ToolTip="" MnemoLayer="modules" Group="Group_m_di_26">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_26" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="7"/>
                 <Geometry rect.top="740" rect.bottom="759" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7762,8 +7762,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_26_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_26">
-                <Geometry rect.top="740" rect.bottom="759" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_26_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="770" rect.bottom="789" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7776,7 +7776,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_27" ToolTip="" MnemoLayer="modules" Group="Group_m_di_27">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_27" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="8"/>
                 <Geometry rect.top="770" rect.bottom="789" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7794,8 +7794,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_27_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_27">
-                <Geometry rect.top="770" rect.bottom="789" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_27_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="800" rect.bottom="819" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7808,7 +7808,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_28" ToolTip="" MnemoLayer="modules" Group="Group_m_di_28">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_28" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="9"/>
                 <Geometry rect.top="800" rect.bottom="819" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7826,8 +7826,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_28_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_28">
-                <Geometry rect.top="800" rect.bottom="819" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_28_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="830" rect.bottom="849" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7859,7 +7859,7 @@
                 </States>
             </MnemoObject>
             <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_29_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
-                <Geometry rect.top="830" rect.bottom="849" rect.left="2480" rect.right="2499"/>
+                <Geometry rect.top="860" rect.bottom="879" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -7872,7 +7872,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_30" ToolTip="" MnemoLayer="modules" Group="Group_m_di_30_label">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_di_30" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="11"/>
                 <Geometry rect.top="860" rect.bottom="879" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -7890,8 +7890,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_30_label" ToolTip="" MnemoLayer="modules" Group="Group_m_di_30_label">
-                <Geometry rect.top="860" rect.bottom="879" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_30_label" ToolTip="" MnemoLayer="modules" Group="Group_TextLabel_314">
+                <Geometry rect.top="890" rect.bottom="909" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -8067,8 +8067,8 @@
                 <Font size="28" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_344" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_344">
-                <Geometry rect.top="920" rect.bottom="939" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_344" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_314">
+                <Geometry rect.top="950" rect.bottom="969" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -8081,7 +8081,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_ai_32" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_344">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_ai_32" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="13"/>
                 <Geometry rect.top="920" rect.bottom="939" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -8099,8 +8099,8 @@
                     <State g="128" r="128" a="255" b="128"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_346" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_346">
-                <Geometry rect.top="890" rect.bottom="909" rect.left="2480" rect.right="2499"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_346" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_314">
+                <Geometry rect.top="920" rect.bottom="939" rect.left="2480" rect.right="2499"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -8113,7 +8113,7 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_ai_31" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_346">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m_ai_31" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_314">
                 <Conversion Type="1" Bit="12"/>
                 <Geometry rect.top="890" rect.bottom="909" rect.left="2510" rect.right="2529"/>
                 <StandartProperies Freeze="0">
@@ -8169,6 +8169,37 @@
                 <Text string="Тренды"/>
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <IconSizeElem IconHeight="16" IconWidth="16" AutoIconResize="0"/>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_349" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_314">
+                <Geometry rect.top="950" rect.bottom="969" rect.left="2510" rect.right="2529"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="0" r="128" a="255" b="0"/>
+                    <State g="128" r="128" a="255" b="128"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m_di_19_label" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_314">
+                <Geometry rect.top="590" rect.bottom="609" rect.left="2480" rect.right="2499"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="A19" format=""/>
+                <Transparency Value="1"/>
+                <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
             </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
@@ -10099,6 +10130,7 @@
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_di_18"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_ai_32"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_ai_31"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="Rectangle_349"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
