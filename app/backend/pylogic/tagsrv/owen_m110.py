@@ -17,7 +17,7 @@ class BaseM110Module(BaseOwenMx210):
     def init(self):
         if self.serial_port:
             self.mb = modbus_rtu.RtuMaster(serial=self.serial_port)
-            self.mb.set_timeout(min(0.02, self.timeout))
+            self.mb.set_timeout(max(0.01, self.timeout))
         else:
             super().init()
 
@@ -62,11 +62,10 @@ class OwenM110DiModule(BaseM110Module):
             quantity_of_x=self.quantity,
             data_format=self.data_format,
         )[0]
-        # print(f'src {bin(res)[2:]}')
-        res = ((res & 0x0000FFFF) << 16) + ((res & 0xFFFF0000) >> 16)
-        # print(f'DiMv2010 {bin(res)[2:]}')
+        if self.quantity == 2:
+            res = ((res & 0x0000FFFF) << 16) + ((res & 0xFFFF0000) >> 16)
         self.logger.debug(
-            f'data readed {bin(res)[2:].zfill(max(24, 16 * self.quantity))}',
+            f'data readed {bin(res)[2:].zfill(16 * self.quantity)}',
         )
         for tag in self.tags:
             tag.value = (res & (1 << (tag.addr - 1))) != 0
