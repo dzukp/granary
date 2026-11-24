@@ -112,7 +112,9 @@ class OwenM110DoModule(BaseM110Module):
     """Дискретный вывод"""
 
     def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
-        super().__init__(tags=tags, ip=ip, port=port, slave=slave, timeout=timeout)
+        super().__init__(
+            tags=tags, serial=serial, ip=ip, port=port, slave=slave, timeout=timeout
+        )
         self.name = kwargs.get('name') or self.name
 
     def do_request(self):
