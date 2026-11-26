@@ -81,7 +81,7 @@ class OwenM110AiModule(BaseM110Module):
 
     def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
         self.name = kwargs.get('name') or self.name
-        super().__init__(tags, serial, ip, port, slave, timeout)
+        super().__init__(tags, serial, ip, port, slave, timeout, **kwargs)
 
     def do_request(self):
         res = self.mb.execute(
@@ -115,7 +115,13 @@ class OwenM110DoModule(BaseM110Module):
     def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
         self.name = kwargs.get('name') or self.name
         super().__init__(
-            tags=tags, serial=serial, ip=ip, port=port, slave=slave, timeout=timeout
+            tags=tags,
+            serial=serial,
+            ip=ip,
+            port=port,
+            slave=slave,
+            timeout=timeout,
+            **kwargs,
         )
 
     def do_request(self):
