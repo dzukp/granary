@@ -11,8 +11,8 @@ from .module import BaseModule
 
 
 class BaseOwenMx210(BaseModule):
-    def __init__(self, tags, ip, port=502, slave=1, timeout=0.05):
-        super(BaseOwenMx210, self).__init__(name=f'{ip}')
+    def __init__(self, tags, ip, port=502, slave=1, timeout=0.05, **kwargs):
+        super(BaseOwenMx210, self).__init__(name=kwargs.get('name', f'{ip}:{port}'))
         self.ip = ip
         self.port = port
         self.slave = slave

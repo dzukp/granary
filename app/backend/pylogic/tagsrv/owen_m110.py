@@ -7,12 +7,14 @@ from modbus_tk import modbus_rtu
 import struct
 
 from pylogic.tagsrv.owen_mx210 import BaseOwenMx210
+from pylogic.tagsrv.tagsrv_logger import logger
 
 
 class BaseM110Module(BaseOwenMx210):
     def __init__(self, tags, serial=None, *args, **kwargs):
         self.serial_port = serial
         super().__init__(tags, *args, **kwargs)
+        self.logger = logger.getChild(self.name)
 
     def init(self):
         if self.serial_port:
@@ -46,8 +48,8 @@ class OwenM110DiModule(BaseM110Module):
     """Дискретный ввод"""
 
     def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
-        super().__init__(tags, serial, ip, port, slave, timeout)
         self.name = kwargs.get('name') or self.name
+        super().__init__(tags, serial, ip, port, slave, timeout, **kwargs)
         sorted_tags = sorted(tags, key=lambda x: x.addr)
         self.quantity = 2 if sorted_tags[-1].addr - sorted_tags[0].addr > 16 else 1
         self.data_format = (
@@ -78,8 +80,8 @@ class OwenM110AiModule(BaseM110Module):
     """Аналоговый ввод МВ110 (8 входов)"""
 
     def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
-        super().__init__(tags, serial, ip, port, slave, timeout)
         self.name = kwargs.get('name') or self.name
+        super().__init__(tags, serial, ip, port, slave, timeout)
 
     def do_request(self):
         res = self.mb.execute(
@@ -111,10 +113,10 @@ class OwenM110DoModule(BaseM110Module):
     """Дискретный вывод"""
 
     def __init__(self, tags, serial, ip='', port=502, slave=1, timeout=0.05, **kwargs):
+        self.name = kwargs.get('name') or self.name
         super().__init__(
             tags=tags, serial=serial, ip=ip, port=port, slave=slave, timeout=timeout
         )
-        self.name = kwargs.get('name') or self.name
 
     def do_request(self):
         data = 0
