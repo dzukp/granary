@@ -87,22 +87,24 @@ class OwenM110AiModule(BaseM110Module):
         res = self.mb.execute(
             slave=self.slave,
             function_code=cst.READ_HOLDING_REGISTERS,
-            starting_address=1,
+            starting_address=0,
             quantity_of_x=48,
             data_format='>' + 'H' * 48,
         )
         self.logger.debug(f'data readed {[x for x in res]}')
         f_data = [
-            struct.unpack('>f', struct.pack('>HH', res[i * 6 + 5], res[i * 6 + 4]))[0]
+            struct.unpack('>f', struct.pack('>HH', res[i * 6 + 4], res[i * 6 + 5]))[0]
             for i in range(0, 8)
         ]
-        statuses = [res[i * 6 + 1] for i in range(0, 8)]  #  noqa
+        statuses = [res[i * 6 + 2] for i in range(0, 8)]
         for tag in self.tags:
-            tag.value = (
-                tag.filter.apply(f_data[tag.addr - 1])
-                if tag.filter
-                else f_data[tag.addr - 1]
-            )
+            status = statuses[tag.addr - 1]
+            if status:
+                self.logger.warning(
+                    f'input {tag.addr} status {status:#06x}, value is not valid',
+                )
+            value = f_data[tag.addr - 1]
+            tag.value = tag.filter.apply(value) if tag.filter else value
         self.logger.debug(f'values readed {[tag.value for tag in self.tags]}')
 
     def _value_to_str(self, value):
