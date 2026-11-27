@@ -9881,7 +9881,7 @@
                     <ListenersList/>
                 </StandartProperies>
                 <Parameters zoomEnabled="1" topControl="1" timeControl="1" markerEnabled="1"/>
-                <RealTime bufferDepth="1000000" valueUpdate="500" factorScreenUpdate="1000">
+                <RealTime bufferDepth="1000000" valueUpdate="500" factorScreenUpdate="1">
                     <Pens>
                         <Pen width="0" name="3.3" color="#ff0000">
                             <Tag type="SourceTag" name="m3_3_current" sourcename="main"/>
