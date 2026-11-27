@@ -9973,8 +9973,8 @@
                         </Pen>
                     </Pens>
                 </Archive>
-                <TrendView legendPosition="right" title="" thicknessAxes="1" majorYCount="5" timeOnXAxis="1" majorXCount="4" timeDirection="right" accurancy="1" maxY="10" thicknessGrid="0" minY="-10" legendOnStart="1" minorYCount="2" minorXCount="2"/>
-                <TimeRanges rangeValue="86400">
+                <TrendView legendPosition="right" title="" thicknessAxes="1" majorYCount="5" timeOnXAxis="1" majorXCount="4" timeDirection="right" accurancy="1" maxY="30" thicknessGrid="0" minY="0" legendOnStart="0" minorYCount="2" minorXCount="2"/>
+                <TimeRanges rangeValue="600">
                     <Range rangeId="60-sec" baseTemplate="hh:mm:ss" extraTemplate="ss.zzz"/>
                     <Range rangeId="2-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
                     <Range rangeId="5-min" baseTemplate="hh:mm:ss" extraTemplate="mm:ss"/>
@@ -10163,8 +10163,6 @@
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_di_18"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_ai_32"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m_ai_31"/>
-                        <Listener Path="" Type="XMnemoRectangle" Name="Rectangle_349"/>
-                        <Listener Path="" Type="XMnemoRectangle" Name="m_ai_32"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="Rectangle_353"/>
                     </ListenersList>
                     <FilterList/>
