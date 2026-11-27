@@ -10454,7 +10454,11 @@
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoTextLabel" Name="TextLabel_351"/>
                     </ListenersList>
-                    <FilterList/>
+                    <FilterList>
+                        <Filter Offset="0" K="10" IsLimit="0" Min="0" Max="6000">
+                            <FilterEventList/>
+                        </Filter>
+                    </FilterList>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_warning_current_limit" Units="....." Location="76" IsReadTag="0">
                     <ListenersList/>
