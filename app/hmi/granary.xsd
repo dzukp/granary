@@ -1666,9 +1666,9 @@
                 <Transparency Value="1"/>
                 <Image_file Bitmap_collection="scheme" Name="машина 1.svg"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="m3_4_nosens" ToolTip="" MnemoLayer="general" Group="Group_m3_4_lbl">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="m3_4_nosens" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_351">
                 <Conversion Type="1" Bit="5"/>
-                <Geometry rect.top="497" rect.bottom="516" rect.left="374" rect.right="393"/>
+                <Geometry rect.top="467" rect.bottom="486" rect.left="370" rect.right="389"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -1684,7 +1684,7 @@
                     <State g="170" r="255" a="255" b="0"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m3_4" ToolTip="" MnemoLayer="general" Group="Group_m3_4_lbl">
+            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m3_4" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_351">
                 <Geometry rect.top="527" rect.bottom="1108" rect.left="323" rect.right="436"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
@@ -1743,8 +1743,8 @@
                     <State Bitmap_collection="scheme" Name="Н 3.4_darkyellow.svg"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m3_4_lbl" ToolTip="" MnemoLayer="general" Group="Group_m3_4_lbl">
-                <Geometry rect.top="492" rect.bottom="515" rect.left="396" rect.right="425"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m3_4_lbl" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_351">
+                <Geometry rect.top="462" rect.bottom="485" rect.left="392" rect.right="421"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2709,9 +2709,9 @@
                 <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="m6_2_nosens" ToolTip="" MnemoLayer="general" Group="Group_m6_2_nosens">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoShape" Name="m6_2_nosens" ToolTip="" MnemoLayer="general" Group="Group_m6_2_lbl">
                 <Conversion Type="1" Bit="5"/>
-                <Geometry rect.top="1077" rect.bottom="1096" rect.left="656" rect.right="675"/>
+                <Geometry rect.top="1076" rect.bottom="1095" rect.left="655" rect.right="674"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2727,7 +2727,7 @@
                     <State g="170" r="255" a="255" b="0"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_2_current_bottom" ToolTip="" MnemoLayer="general" Group="Group_m6_2_nosens">
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="m6_2_current_bottom" ToolTip="" MnemoLayer="general">
                 <Conversion Type="1" Bit="8"/>
                 <Geometry rect.top="1075" rect.bottom="1098" rect.left="687" rect.right="736"/>
                 <StandartProperies Freeze="0">
@@ -2745,8 +2745,8 @@
                     <State g="170" r="255" a="255" b="0"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_2_current" ToolTip="" MnemoLayer="general" Group="Group_m6_2_nosens">
-                <Geometry rect.top="1075" rect.bottom="1098" rect.left="687" rect.right="736"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_2_current" ToolTip="" MnemoLayer="general" Group="Group_m6_2_lbl">
+                <Geometry rect.top="1074" rect.bottom="1097" rect.left="686" rect.right="735"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -2759,8 +2759,8 @@
                 <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
-            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_2" ToolTip="" MnemoLayer="general" Group="Group_m6_2_nosens">
-                <Geometry rect.top="1105" rect.bottom="1124" rect.left="404" rect.right="943"/>
+            <MnemoObject Cursor="1" Comment="" Type="XMnemoMultiState" Name="m6_2" ToolTip="" MnemoLayer="general" Group="Group_m6_2_lbl">
+                <Geometry rect.top="1104" rect.bottom="1123" rect.left="403" rect.right="942"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList>
@@ -2818,8 +2818,8 @@
                     <State Bitmap_collection="scheme" Name="К 6.2_darkyellow.svg"/>
                 </States>
             </MnemoObject>
-            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_2_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_2_nosens">
-                <Geometry rect.top="1075" rect.bottom="1098" rect.left="617" rect.right="646"/>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="m6_2_lbl" ToolTip="" MnemoLayer="general" Group="Group_m6_2_lbl">
+                <Geometry rect.top="1074" rect.bottom="1097" rect.left="616" rect.right="645"/>
                 <StandartProperies Freeze="0">
                     <Palette SystemPalette="1"/>
                     <EventList/>
@@ -8201,6 +8201,38 @@
                 <Font size="12" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
                 <LabelProperties TextAlign="132"/>
             </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoRectangle" Name="Rectangle_352" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_351">
+                <Conversion Type="1" Bit="8"/>
+                <Geometry rect.top="496" rect.bottom="519" rect.left="372" rect.right="421"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <Color g="255" r="255" a="255" b="255"/>
+                <RectangleProperties Rounded="0" Brush="0" PenWidth="1" Frame="0">
+                    <PenColor g="0" r="0" a="255" b="0"/>
+                </RectangleProperties>
+                <States>
+                    <State g="255" r="255" a="255" b="255"/>
+                    <State g="170" r="255" a="255" b="0"/>
+                </States>
+            </MnemoObject>
+            <MnemoObject Cursor="0" Comment="" Type="XMnemoTextLabel" Name="TextLabel_351" ToolTip="" MnemoLayer="general" Group="Group_TextLabel_351">
+                <Geometry rect.top="495" rect.bottom="518" rect.left="370" rect.right="419"/>
+                <StandartProperies Freeze="0">
+                    <Palette SystemPalette="1"/>
+                    <EventList/>
+                    <ActionList/>
+                    <ListenersList/>
+                </StandartProperies>
+                <HTML html="0"/>
+                <Text Angle="0" string="-" format="%.1f"/>
+                <Transparency Value="1"/>
+                <Font size="14" family="MS Shell Dlg 2" bold="0" underline="0" strikeOut="0" italic="0"/>
+                <LabelProperties TextAlign="132"/>
+            </MnemoObject>
         </MnemoScreen>
         <MnemoScreen FullName="engine_dlg">
             <Properties>
@@ -10408,6 +10440,7 @@
                     <ListenersList>
                         <Listener Path="main" Type="XMnemoShape" Name="m3_4_nosens"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_m3_4_m6_10"/>
+                        <Listener Path="main" Type="XMnemoRectangle" Name="Rectangle_352"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
@@ -10418,7 +10451,9 @@
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_current" Units="....." Location="75" IsReadTag="0">
-                    <ListenersList/>
+                    <ListenersList>
+                        <Listener Path="main" Type="XMnemoTextLabel" Name="TextLabel_351"/>
+                    </ListenersList>
                     <FilterList/>
                 </Tag>
                 <Tag Active="1" Comment="" Marker="0" Type="Output register" Sense="Stable" Name="m3_4_warning_current_limit" Units="....." Location="76" IsReadTag="0">
@@ -11297,6 +11332,7 @@
                         <Listener Path="main" Type="XMnemoShape" Name="m6_2_nosens"/>
                         <Listener Path="main" Type="XMnemoLine" Name="arrow_m6_2"/>
                         <Listener Path="main" Type="XMnemoRectangle" Name="m6_2_current_bottom"/>
+                        <Listener Path="" Type="XMnemoRectangle" Name="m6_2_current_bottom"/>
                     </ListenersList>
                     <FilterList/>
                 </Tag>
